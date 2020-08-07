@@ -1,0 +1,242 @@
+{
+  "logo": "Site name",
+
+  "size": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+
+  "labels": {
+    "copy": {
+      "company": "© \"Company\" 2018",
+      "maker1": "Made with",
+      "maker2": "A1ex"
+    },
+    "error": {
+      "title": "Извините, но здесь ничего нет.",
+      "message": "<p>Неправильно набран адрес, или такой страницы больше не существует.</p><p>Чтобы продолжить работу с сайтом <a href='/'>вернитесь на главную страницу.</a></p>"
+    }
+  },
+  "tovars": [
+    {
+      "id": "321321321",
+      "title": "Двубортное пальто-жакет супер",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/001.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
+    },
+    {
+      "id": "321321322",
+      "title": "Укороченное пальто",
+      "content": "Puma",
+      "discount": "-30%",
+      "price": "2500",
+      "oldPrice": "3000",
+      "img1": "assets/img/tovar/002.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
+    },
+    {
+      "id": "321321323",
+      "title": "Стеганое пальто",
+      "content": "Nike",
+      "discount": "",
+      "price": "2500",
+      "oldPrice": "",
+      "img1": "assets/img/tovar/003.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
+    },
+    {
+      "id": "321321324",
+      "title": "Двубортное пальто-жакет 2",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/004.jpeg",
+      "img2": "assets/img/tovar/003.jpeg"
+    },
+    {
+      "id": "321321325",
+      "title": "Двубортное пальто-жакет 3",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/004.jpeg",
+      "img2": "assets/img/tovar/005.jpeg"
+    },
+    {
+      "id": "321321326",
+      "title": "Двубортное пальто-жакет 4",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/006.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
+    },
+    {
+      "id": "321321327",
+      "title": "Двубортное пальто-жакет 5",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/007.jpeg",
+      "img2": "assets/img/tovar/003.jpeg"
+    },
+    {
+      "id": "321321328",
+      "title": "Двубортное пальто-жакет 6",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/008.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
+    },
+    {
+      "id": "321321329",
+      "title": "Двубортное пальто-жакет 7",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/009.jpeg",
+      "img2": "assets/img/tovar/006.jpeg"
+    },
+    {
+      "id": "321321330",
+      "title": "Двубортное пальто-жакет 8",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/010.jpeg",
+      "img2": "assets/img/tovar/007.jpeg"
+    },
+    {
+      "id": "321321331",
+      "title": "Двубортное пальто-жакет 9",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/011.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
+    }
+  ],
+  "newCollections": [
+    {
+      "id": "321321321",
+      "title": "Двубортное пальто-жакет супер",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/001.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
+    },
+    {
+      "id": "321321322",
+      "title": "Укороченное пальто",
+      "content": "Puma",
+      "discount": "-30%",
+      "price": "2500",
+      "oldPrice": "3000",
+      "img1": "assets/img/tovar/002.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
+    },
+    {
+      "id": "321321323",
+      "title": "Стеганое пальто",
+      "content": "Nike",
+      "discount": "",
+      "price": "2500",
+      "oldPrice": "",
+      "img1": "assets/img/tovar/003.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
+    },
+    {
+      "id": "321321324",
+      "title": "Двубортное пальто-жакет 2",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/004.jpeg",
+      "img2": "assets/img/tovar/003.jpeg"
+    },
+    {
+      "id": "321321325",
+      "title": "Двубортное пальто-жакет 3",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/005.jpeg",
+      "img2": "assets/img/tovar/004.jpeg"
+    },
+    {
+      "id": "321321326",
+      "title": "Двубортное пальто-жакет 4",
+      "content": "Adidas",
+      "discount": "-50%",
+      "price": "2500",
+      "oldPrice": "3500",
+      "img1": "assets/img/tovar/006.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
+    }
+  ],
+  "sizeToPrice": [
+    {
+      "size": "XS",
+      "art": "qqq-0001-www-xs",
+      "oldPrice": "2600",
+      "discount": "-10%",
+      "price": "2500"
+    },
+    {
+      "size": "S",
+      "art": "qqq-0001-www-s",
+      "oldPrice": "2600",
+      "discount": "-10%",
+      "price": "2510"
+    },
+    {
+      "size": "M",
+      "art": "qqq-0001-www-m",
+      "oldPrice": "2600",
+      "discount": "-10%",
+      "price": "2520"
+    },
+    {
+      "size": "L",
+      "art": "qqq-0001-www-l",
+      "oldPrice": "2600",
+      "discount": "-10%",
+      "price": "2530"
+    },
+    {
+      "size": "XL",
+      "art": "qqq-0001-www-xl",
+      "oldPrice": "2600",
+      "discount": "-10%",
+      "price": "2540"
+    },
+    {
+      "size": "XXL",
+      "art": "qqq-0001-www-xxl",
+      "oldPrice": "2600",
+      "discount": "-10%",
+      "price": "2550"
+    },
+    {
+      "size": "XXXL",
+      "art": "qqq-0001-www-xxxl",
+      "discount": "-10%",
+      "oldPrice": "2600",
+      "price": "2560"
+    }
+  ]
+}

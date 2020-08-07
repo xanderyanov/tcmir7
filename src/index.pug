@@ -1,0 +1,35 @@
+- var pageTitle = 'Главная страница'
+
+include __head
+include __header
+include __slider-promo
+include __shop
+include __footer
+include __scripts
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    .indexInfo__area.w0
+      .indexInfo__outer.w1
+        .indexInfo__inner
+          i.icon-more1
+          span На сайте представлен каталог товаров, приобрести которые Вы можете в Торговом Комплексе МИР.
+    //- +sliderSlickInMain
+    +sliderSwiperInMain
+    +mainShopsBox
+    
+
+  .site__footer
+    +footer
+
+  +scripts
+  
