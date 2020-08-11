@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap&subset=cyrillic");
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
 @import "../../../node_modules/nouislider/distribute/nouislider.css";
 
 @import "../../../node_modules/swiper/css/swiper.css";
-@import "../../../node_modules/slider-pro/dist/css/slider-pro.css";
-@import "../../../node_modules/slick-carousel/slick/slick.css";
 @import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 @import "reset.css";
@@ -18,77 +17,14 @@
 @import "__header.css";
 @import "__header_media.css";
 
-/* @import "__adaptive-menu.css";
-@import "__adaptive-menu-media.css"; */
-
-@import "__adaptiveMenuArs.css";
-@import "__adaptiveMenuArs-media.css";
-
-@import "__top-search.css";
-@import "__adaptive-search.css";
-@import "__top-search-media.css";
-
-@import "__slider-promo.css";
-@import "__slider-promo-media.css";
-
-@import "__callAction.css";
-@import "__callAction-media.css";
-
 @import "__footer.css";
-@import "__footer-media.css";
+@import "__footer_media.css";
 
-@import "__breadcrumbs.css";
-
-@import "__leftMenu.css";
-@import "__leftMenu-media.css";
-
-@import "__catalog.css";
-@import "__catalog-media.css";
-
-@import "__filters-lib.css";
-@import "__filters.css";
-@import "__filters-media.css";
-
-@import "__filters-adaptive.css";
-@import "__filters-adaptive-media.css";
-
-@import "__filters-adaptive.css";
-@import "__filters-adaptive-media.css";
-
-@import "__tovar-slider_horiz.css";
-@import "__tovar-slider_horiz-media.css";
-
-@import "__tovar-info.css";
-@import "__tovar-info-media.css";
-
-@import "__tovar.css";
-@import "__tovar-media.css";
-
-/* @import "__sizeSelector.css"; */
-@import "__sizeSelector-media.css";
+@import "__sliders.css";
+@import "__sliders_media.css";
 
 @import "__shop.css";
-@import "__shop-media.css";
-
-@import "__brand.css";
-@import "__brand-media.css";
-
-@import "__registration.css";
-@import "__registration-media.css";
-
-@import "__cart.css";
-@import "__cart-media.css";
-
-@import "__rezerv.css";
-@import "__rezerv-media.css";
-
-@import "__m1_index.css";
-@import "__m1_index-media.css";
-
-@import "__m1_catalog.css";
-@import "__m1_catalog-media.css";
-
-@import "__content.css";
+@import "__shop_media.css";
 
 @import "main.css";
 @import "media.css";

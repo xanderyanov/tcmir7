@@ -1,11 +1,10 @@
 - var pageTitle = 'Главная страница'
 
-include __head
+include __const
 include __header
-include __slider-promo
+include __sliders
 include __shop
 include __footer
-include __scripts
 
 
 
@@ -18,18 +17,19 @@ body
     +header
 
   .site__center
-    .indexInfo__area.w0
-      .indexInfo__outer.w1
-        .indexInfo__inner
-          i.icon-more1
-          span На сайте представлен каталог товаров, приобрести которые Вы можете в Торговом Комплексе МИР.
-    //- +sliderSlickInMain
     +sliderSwiperInMain
-    +mainShopsBox
-    
 
+
+    .mainShopsBox__area.w0.inIndexPage
+      .mainShopsBox__outer.w1
+        .title0.indexShopCardTitle
+          h1 Наши магазины
+        +mainShopsBox
+ 
   .site__footer
+    
     +footer
+
 
   +scripts
   

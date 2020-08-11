@@ -1,0 +1,72 @@
+mixin newCollection
+  .newCollection
+    each item in newCollections
+      .newCollection__itemOuter(id=item.id)
+        a.newCollection__item(href="#")
+          span.newCollection__itemImg.newCollection__itemImg_main
+            img(src!=item.img1, alt="")
+            if item.discount 
+              span.newCollection__itemDiscount!=item.discount 
+          span.newCollection__itemInfo
+            span.newCollection__itemBrand!= item.content
+            span.newCollection__itemTitle!= item.title
+            span.newCollection__itemPriceArea
+              if item.oldPrice
+                span.newCollection__itemOldPrice!= item.oldPrice 
+                  span ₽
+                span.newCollection__itemPrice!= item.price 
+                  span ₽
+              else
+                span.newCollection__itemPrice!= item.price
+                  span ₽
+
+
+
+mixin mainShopsBox
+  .mainShopsBox
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/basconi-1.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/beauty_lounge.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/kasper.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/Monte_Napoleone.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+
+mixin m2_bottomMenu
+  .m2_bottomMenu__areaFake
+  .m2_bottomMenu__area
+    .m2_bottomMenu__outer
+      .m2_bottomMenu
+        a.m2_bottomMenu__item(href="#")
+          i.icon-home
+          span Главная
+        a.m2_bottomMenu__item(href="#")
+          i.icon-search
+          span Каталог
+        a.m2_bottomMenu__item(href="#")
+          i.icon-cart1
+          span Корзина
+          span.cartCounter 5
+        a.m2_bottomMenu__item(href="#")
+          i.icon-favorit1
+          span Избранное
+        a.m2_bottomMenu__item(href="#")
+          i.icon-avatar1
+          span Профиль

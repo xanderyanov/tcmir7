@@ -1,14 +1,16 @@
 @media only screen and (max-width: 1280px) {
-  .w1 {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 
 @media only screen and (max-width: 1140px) {
 }
 
 @media only screen and (max-width: 1080px) {
+  .julySlider.swiper-container {
+    height: 230px;
+  }
+  .julySlider__tovars {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -24,9 +26,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  html,
-  body {
-    font-size: 8px;
+  .julySlider.swiper-container {
+    height: 210px;
   }
 }
 
@@ -34,6 +35,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .julySlider.swiper-container {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
