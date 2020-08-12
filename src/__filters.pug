@@ -1,0 +1,270 @@
+mixin filtersArea
+  .catalogFilter1__area
+    .catalogFilter1__overlay
+    .catalogFilter1
+      .catalogFilter1__item
+        .catalogFilter1__itemTitle.catalogFilter1__itemTitle_sort
+          span Сортировка
+        .catalogFilter1__itemContent.catalogFilter1__itemContent_sort
+          +filterSort
+      .catalogFilter1__item
+        .catalogFilter1__itemTitle
+          span Материал
+        .catalogFilter1__itemContent
+          +filterCheckbox_material
+          
+      .catalogFilter1__item
+        .catalogFilter1__itemTitle
+          span Бренд
+        .catalogFilter1__itemContent
+          +filterCheckbox_brand
+      .catalogFilter1__item
+        .catalogFilter1__itemTitle
+          span Выбор цвета
+        .catalogFilter1__itemContent
+          +filterCheckbox_color
+      .catalogFilter1__item
+        .resetAllFiltersBtn
+          span Очистить фильтры
+
+mixin filterSort
+  .filterBox.filterBox__sort
+    //- .filterBox__title Выбор материала:
+    .filterBox__content
+      a.filterSort__item(href="#")
+        |По популярности
+      a.filterSort__item(href="#")
+        |По убыванию цены
+      a.filterSort__item(href="#")
+        |По возрастанию цены
+      a.filterSort__item(href="#")
+        |По новинкам
+      a.filterSort__item(href="#")
+        |По скидкам
+
+
+mixin filterCheckbox_material
+  .filterBox.filterBox__checkbox
+    .filterBox__title Выбор материала:
+    .filterBox__content
+      .xcheckbox
+        input#checkbox_1(type='checkbox', value='1', data-val="filter")
+        label(for='checkbox_1') Хлопок 100%
+      .xcheckbox
+        input#checkbox_2(type='checkbox', value='2', data-val="filter")
+        label(for='checkbox_2') Джинсовая ткань
+      .xcheckbox
+        input#checkbox_3(type='checkbox', value='3', data-val="filter")
+        label(for='checkbox_3') Лён
+      .xcheckbox
+        input#checkbox_4(type='checkbox', value='4', data-val="filter")
+        label(for='checkbox_4') Вискоза
+      .xcheckbox
+        input#checkbox_5(type='checkbox', value='5', data-val="filter")
+        label(for='checkbox_5') Искуственная кожа
+      .xcheckbox
+        input#checkbox_6(type='checkbox', value='6', data-val="filter")
+        label(for='checkbox_6') Натуральная кожа
+      .xcheckbox
+        input#checkbox_7(type='checkbox', value='7', data-val="filter")
+        label(for='checkbox_7') Синтетическое волокно
+    .filter__checkboxReset Очистить выбор
+    .filterEnterBtn
+      span Применить
+
+
+
+mixin filterCheckbox_brand
+  .filterBox.filterBox__checkbox
+    .filterBox__title Выбор бренда:
+    .filterBox__content
+      .xcheckbox
+        input#checkbox_11(type='checkbox', value='1')
+        label(for='checkbox_11') Adidas
+      .xcheckbox
+        input#checkbox_22(type='checkbox', value='2')
+        label(for='checkbox_22') Nike
+      .xcheckbox
+        input#checkbox_33(type='checkbox', value='3')
+        label(for='checkbox_33') Guinot
+      .xcheckbox
+        input#checkbox_44(type='checkbox', value='4')
+        label(for='checkbox_44') Sony
+      .xcheckbox
+        input#checkbox_55(type='checkbox', value='5')
+        label(for='checkbox_55') Apple
+      .xcheckbox
+        input#checkbox_66(type='checkbox', value='6')
+        label(for='checkbox_66') Puma
+      .xcheckbox
+        input#checkbox_77(type='checkbox', value='7')
+        label(for='checkbox_77') Большевичка
+    .filter__checkboxReset Очистить выбор
+    .filterEnterBtn
+      span Применить
+
+
+mixin filterCheckbox_color
+  .filterBox.filterBox__checkColor
+    .filterBox__title Выбор цвета:
+    .filterBox__content.filter__checkboxColor
+      .checkboxColor__item(title='Красный')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_ff0000(style='background: #ff0000;')
+        span.checkboxColorTitle Красный
+      .checkboxColor__item(title='Оранжевый')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_FFA500(style='background: #ffa500;')
+        span.checkboxColorTitle Оранжевый
+      .checkboxColor__item(title='Желтый')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_ffff00(style='background: #ffff00;')
+        span.checkboxColorTitle Желтый
+      .checkboxColor__item(title='Зеленый')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_008000(style='background: #008000;')
+        span.checkboxColorTitle Зеленый
+      .checkboxColor__item(title='Голубой')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_00bfff(style='background: #00bfff;')
+        span.checkboxColorTitle Голубой
+      .checkboxColor__item(title='Синий')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_0000FF(style='background: #0000ff;')
+        span.checkboxColorTitle Синий
+      .checkboxColor__item(title='Фиолетовый')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_8b00ff(style='background: #8b00ff;')
+        span.checkboxColorTitle Фиолетовый
+      .checkboxColor__item(title='Белый')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_ffffff(style='background: #ffffff;')
+        span.checkboxColorTitle Белый
+      .checkboxColor__item(title='Черный')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_000000(style='background: #000000;')
+        span.checkboxColorTitle Черный
+      .checkboxColor__item(title='Серый')
+        input.checkboxColor(type='checkbox')
+        span.checkboxColorBox.checkboxColorBox_808080(style='background: #808080;')
+        span.checkboxColorTitle Серый
+    .filter__checkboxColorReset Очистить выбор
+    .filterEnterBtn
+      span Применить
+
+
+
+
+
+mixin adaptiveFilters
+  .overlay1
+  .aFilters__wrapper
+    .aFilters__area
+      .aFilters__titleArea
+        .aFilters__title Подбор по параметрам
+        .aFilters__close
+          i.icon-close1
+      .overlay2
+      .aFilters__content
+        .aFilterBox
+          .aFilterBox__title Выбор материала
+          .aFilterBox__inner
+            .aFilterBox__innerTitleArea
+              .aFilterBox__innerTitle Выбор материала:
+              .aFilterBox__innerClose
+                i.icon-close1
+            .aFilterBox__innerContent
+              .aFilterBox__chooseArea
+                .xcheckbox
+                  input#checkbox_1(type='checkbox', value='1', data-val="filter")
+                  label(for='checkbox_1') Хлопок 100%
+                .xcheckbox
+                  input#checkbox_2(type='checkbox', value='2', data-val="filter")
+                  label(for='checkbox_2') Джинсовая ткань
+                .xcheckbox
+                  input#checkbox_3(type='checkbox', value='3', data-val="filter")
+                  label(for='checkbox_3') Лён
+                .xcheckbox
+                  input#checkbox_4(type='checkbox', value='4', data-val="filter")
+                  label(for='checkbox_4') Вискоза
+                .xcheckbox
+                  input#checkbox_5(type='checkbox', value='5', data-val="filter")
+                  label(for='checkbox_5') Искуственная кожа
+                .xcheckbox
+                  input#checkbox_6(type='checkbox', value='6', data-val="filter")
+                  label(for='checkbox_6') Натуральная кожа
+                .xcheckbox
+                  input#checkbox_7(type='checkbox', value='7', data-val="filter")
+                  label(for='checkbox_7') Синтетическое волокно
+              .aFilterBox__Reset Очистить выбор
+              .aFilterBoxEnterBtn
+                span Применить
+        .aFilterBox
+          .aFilterBox__title Выбор цвета
+          .aFilterBox__inner
+            .aFilterBox__innerTitleArea
+              .aFilterBox__innerTitle Выбор цвета:
+              .aFilterBox__innerClose
+                i.icon-close1
+            .aFilterBox__innerContent
+              .aFilterBox__chooseArea
+                .xcheckbox
+                  input#checkbox_21(type='checkbox', value='21', data-val="filter")
+                  label(for='checkbox_21') Красный
+                .xcheckbox
+                  input#checkbox_22(type='checkbox', value='22', data-val="filter")
+                  label(for='checkbox_22') Белый
+                .xcheckbox
+                  input#checkbox_23(type='checkbox', value='23', data-val="filter")
+                  label(for='checkbox_23') Зеленый
+                .xcheckbox
+                  input#checkbox_24(type='checkbox', value='24', data-val="filter")
+                  label(for='checkbox_24') Ситий
+                .xcheckbox
+                  input#checkbox_25(type='checkbox', value='25', data-val="filter")
+                  label(for='checkbox_25') Золотой
+                .xcheckbox
+                  input#checkbox_26(type='checkbox', value='26', data-val="filter")
+                  label(for='checkbox_26') Черный
+                .xcheckbox
+                  input#checkbox_27(type='checkbox', value='27', data-val="filter")
+                  label(for='checkbox_27') Желтый
+              .aFilterBox__Reset Очистить выбор
+              .aFilterBoxEnterBtn
+                span Применить
+        .aFilterBox
+          .aFilterBox__title Выбор размера
+          .aFilterBox__inner
+            .aFilterBox__innerTitleArea
+              .aFilterBox__innerTitle Выбор размера:
+              .aFilterBox__innerClose
+                i.icon-close1
+            .aFilterBox__innerContent
+              .aFilterBox__chooseArea
+                .xcheckbox
+                  input#checkbox_31(type='checkbox', value='31', data-val="filter")
+                  label(for='checkbox_31') M
+                .xcheckbox
+                  input#checkbox_32(type='checkbox', value='32', data-val="filter")
+                  label(for='checkbox_32') S
+                .xcheckbox
+                  input#checkbox_33(type='checkbox', value='33', data-val="filter")
+                  label(for='checkbox_33') L
+                .xcheckbox
+                  input#checkbox_34(type='checkbox', value='34', data-val="filter")
+                  label(for='checkbox_34') XL
+                .xcheckbox
+                  input#checkbox_35(type='checkbox', value='35', data-val="filter")
+                  label(for='checkbox_35') XXL
+                .xcheckbox
+                  input#checkbox_36(type='checkbox', value='36', data-val="filter")
+                  label(for='checkbox_36') XXXL
+                .xcheckbox
+                  input#checkbox_37(type='checkbox', value='37', data-val="filter")
+                  label(for='checkbox_37') XXXXL
+              .aFilterBox__Reset Очистить выбор
+              .aFilterBoxEnterBtn
+                span Применить
+      .aFilter__footer
+        .aFilter__footerReset Сбросить
+        .aFilter__footerEnter Показать

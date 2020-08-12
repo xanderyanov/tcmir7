@@ -140,10 +140,26 @@ mixin m2_header
 
 mixin m2_search
   .m2_search__area
-      .m2_search__outer
-        form.m2_search(action='#', method='get')
-          input.m2_search__input(type='text', name='', value='', placeholder='Поиск по названию товара')
-          button.m2_search__btn(type='submit')
-            i.icon-search1
+    .m2_search__outer
+      form.m2_search(action='#', method='get')
+        input.m2_search__input(type='text', name='', value='', placeholder='Поиск по названию товара')
+        button.m2_search__btn(type='submit')
+          i.icon-search1
+
+mixin m2_header
+  .m2_headerFake
+  .m2_header
+    +m2_search
+    .m2_topMenu__area
+      .m2_topMenu__outer
+        ul.m2_topMenu
+          li.active
+            a(href="#") Женщинам
+          li
+            a(href="#") Мужчинам
+          li
+            a(href="#") Детям
+          li
+            a(href="#") Красота
 
 

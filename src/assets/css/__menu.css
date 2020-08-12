@@ -1,0 +1,152 @@
+.catalogMenu__outer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 10px 20px 0 0;
+}
+
+.catalogMenuTopLink {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  color: var(--tColor);
+  margin-bottom: 0.5rem;
+}
+
+.catalogMenu__title {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  color: #fff;
+  background: var(--x1grey);
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.catalogMenu {
+  display: flex;
+  flex-direction: column;
+}
+.catalogMenu ul {
+  padding: 0 0 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.catalogMenu li {
+  list-style: none;
+  width: 100%;
+}
+
+.catalogMenu li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  padding: 2px 15px;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.catalogMenu_inShop > li > a {
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--x1dark);
+}
+
+.catalogMenu li.lmLev0 > a {
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--x1dark);
+}
+
+.catalogMenu li.lmLev0 > a > span {
+  color: #fff !important;
+}
+
+.catalogMenu li.lmLev1 > a {
+  color: #fff !important;
+}
+
+/* .catalogMenu_inShop > li > a > span {
+  color: #fff !important;
+}
+
+.catalogMenu_inShop > li > ul > li > a {
+  font-weight: 700;
+} */
+
+.catalogMenu li.hasInner > a {
+  /* padding: 2px 10px 2px 20px; */
+}
+.catalogMenu li.hasInner > a:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 3px;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background: url(../img/plus_black51.svg);
+  background-size: cover;
+  /* border: 1px solid #000; */
+}
+
+.catalogMenu li.hasInner > a:hover:before {
+  background-image: url(../img/plus_red51.svg);
+}
+
+.catalogMenu li.hasInner.active > a:before {
+  background-image: url(../img/plus_white51.svg);
+}
+.catalogMenu li.hasInner.active > a:hover:before {
+  background-image: url(../img/plus_white51.svg);
+}
+
+.catalogMenu li.lmLev0 > a:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 3px;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background: url(../img/plus_white51.svg);
+  background-size: cover;
+}
+
+.catalogMenu li.lmLev0:hover > a:before,
+.catalogMenu li.hasInner.lmLev0:hover > a:before {
+  background: url(../img/plus_white51.svg);
+  background-size: cover;
+}
+
+.catalogMenu li a span {
+  color: var(--tColor);
+  font-size: 1.4rem;
+}
+
+.catalogMenu li a span:last-child {
+  font-size: 1rem;
+  color: var(--x1grey);
+  margin-left: 1rem;
+}
+
+.catalogMenu li a:hover span {
+  color: var(--redFill);
+}
+.catalogMenu li.active > a {
+  background: var(--x1greyLight);
+}
+.catalogMenu li.active > a span {
+  color: #fff;
+}
+.catalogMenu li.active > a:hover span {
+  color: #fff;
+}
+
+.catalogMenu li.fw600 > a span:first-child {
+  font-weight: 600;
+}

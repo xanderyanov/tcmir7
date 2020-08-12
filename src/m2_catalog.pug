@@ -1,0 +1,50 @@
+- var pageTitle = 'Каталог как у Ламоды'
+
+include __const
+include __header
+include __filters
+include __menu
+//- include __catalog
+include __m2_catalog
+include __footer
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    .m2_hideHeader
+      +header
+    +m2_header
+
+  .site__center
+    +m2_catMenu
+    .title1.w1
+      h1 Одежда
+    +m2_innerCategory
+    +m2_category
+    //- include __breadcrumbs
+    .catalogPage__outer.w0
+      .title1.w1
+        h1= pageTitle
+        span 785
+      .catalogPage.w1
+        //- +adaptiveFilters
+        +leftMenu
+        .catalog__outer
+          .adaptiveFilterOnBtn Фильтрация
+          +filtersArea
+          +catalogArea
+            
+
+  
+
+
+  .site__footer
+    +adaptiveFilters
+    +m2_bottomMenu
+    .hideFooter
+      +footer
+
+  +scripts

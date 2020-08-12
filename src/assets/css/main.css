@@ -21,3 +21,43 @@ body {
 .site__footer {
   position: relative;
 }
+
+.title0 {
+  display: flex;
+  align-items: baseline;
+  margin: 8px auto 0;
+}
+
+.title0 h1,
+.title0 h2,
+.title0 h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.title1 {
+  padding: 0.5rem 0.625rem;
+  background: var(--x1greySuperLight);
+  display: flex;
+  align-items: baseline;
+  margin: 8px auto 0;
+}
+
+.title1 h1,
+.title1 h2,
+.title1 h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.title1 span {
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  margin-left: 1.25rem;
+}
+
+.screen-resolution {
+  margin-top: 10px;
+  color: rgba(65, 51, 40, 0.3);
+}

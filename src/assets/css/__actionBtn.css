@@ -1,0 +1,295 @@
+.callActionArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.callActionArea__left {
+  width: 45%;
+}
+
+.callActionArea__right {
+  width: 45%;
+}
+
+.callAction__wrapper------- {
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+  order: 5;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.callAction__intro {
+  margin-bottom: 10px;
+}
+
+.callAction__intro span {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #000;
+}
+
+.callAction__intro span.attention {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--redFill);
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.callAction__area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin-bottom: 1.25rem; */
+}
+
+/* .callAction__area_inShop .callActionBtn {
+  width: 300px !important;
+  margin-left: auto!;
+} */
+
+/* .callAction__title {
+  font-size: 1rem;
+  color: var(--tColor);
+  font-weight: 600;
+}
+
+.callAction {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: var(--redFill);
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.callAction i {
+  margin-right: 10px;
+  font-size: 1.25rem;
+} */
+
+.callActionBtnGoToShop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  background: var(--x1greyLight);
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.callActionBtnGoToShop:hover {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+.callActionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* width: 300px; */
+
+  height: 38px;
+  background: var(--redFill);
+  margin-left: auto;
+  /* padding: 10px 0; */
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.callActionBtn:hover {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+.callActionBtn_inTovar {
+  width: 50%;
+  margin-left: 0;
+  /* padding: 10px 0; */
+}
+
+.callActionBtn__text {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  /* display: none; */
+}
+
+.callAction__link {
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.callAction__link i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.callAction__link span {
+  font-size: 1.6rem;
+}
+
+.callActionBtn_open .callActionBtn__text {
+  display: none;
+}
+
+.callActionBtn_open .callAction__link {
+  display: flex;
+}
+
+.getDiscountBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  background: var(--redFill);
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.getDiscountBtn:hover {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+.getDiscountBtn__intro {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  /* display: none; */
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.getDiscountBtn__promocode {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 38px;
+  color: #fff;
+  font-weight: 400;
+  display: none;
+  position: relative;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.getDiscountBtn_active .getDiscountBtn__intro {
+  display: none;
+}
+
+.getDiscountBtn_active .getDiscountBtn__promocode {
+  display: block;
+}
+
+.getDiscountBtn__tooltipDesctop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: var(--redFill);
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 1s;
+  box-sizing: border-box;
+  z-index: 10;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+.getDiscountBtn__promocode:hover .getDiscountBtn__tooltipDesctop {
+  opacity: 1;
+  top: -6rem;
+}
+
+.getDiscountBtn__tooltipMobile {
+  width: 100%;
+  margin-bottom: 10px;
+  background: var(--redFill);
+  color: #fff;
+  padding: 0.625rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* opacity: 0; */
+  /* transition: all 1s; */
+  box-sizing: border-box;
+  z-index: 10;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  display: none;
+}
+
+.getDiscountBtn_mobileArea {
+  display: none;
+  width: 100%;
+}
+
+.getDiscountBtn_mobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  background: var(--redFill);
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.getDiscountBtn__intro_mobile {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  /* display: none; */
+  padding: 0 10px;
+}
+
+.getDiscountBtn__promocode_mobile {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 38px;
+  color: #fff;
+  font-weight: 400;
+  display: none;
+  position: relative;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.getDiscountBtn_mobile_active .getDiscountBtn__intro_mobile {
+  display: none;
+}
+
+.getDiscountBtn_mobile_active .getDiscountBtn__promocode_mobile {
+  display: block;
+}

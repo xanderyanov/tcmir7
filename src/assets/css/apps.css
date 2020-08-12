@@ -14,8 +14,27 @@
 
 @import "xandercode.css";
 
+@import "__index.css";
+@import "__index_media.css";
+
 @import "__header.css";
 @import "__header_media.css";
+
+@import "__menu.css";
+@import "__menu_media.css";
+
+@import "__catalog.css";
+@import "__catalog_media.css";
+
+@import "__m2_catalog.css";
+@import "__m2_catalog_media.css";
+
+@import "__filters.css";
+@import "__filters_adaptive.css";
+@import "__filters_media.css";
+
+@import "__actionBtn.css";
+@import "__actionBtn_media.css";
 
 @import "__footer.css";
 @import "__footer_media.css";

@@ -181,3 +181,260 @@
   opacity: 1;
   background: #be3f46;
 }
+
+.shop__sliderArea {
+  width: 50%;
+}
+
+/*************************************** слайдер на странице магазина - начало ******************************************/
+.shop__slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container_shop {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+
+.swiper-slide_shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide_shop img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper__cadr_shop {
+  width: 100%;
+  /* height: 20%; */
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+  visibility: hidden;
+}
+
+.swiper__cadr_shop:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.swiper__infoBoxShop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  /* background: #fff; */
+  align-items: flex-start;
+}
+
+.swiper__infoBoxShopTitle {
+  font-size: 2.4rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--tColor);
+}
+
+.swiper__infoBoxShopDescription {
+  color: var(--tColor);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.swiper__infoBoxShopLink {
+  margin-top: 1rem;
+  display: flex;
+  padding: 1rem 2rem;
+  background: var(--redFill);
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.swiper__infoBoxShopLink:hover {
+  background: var(--redFillhover);
+}
+
+.swiper-button-prevShop,
+.swiper-button-nextShop {
+  background: rgba(255, 255, 255, 0.8);
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  margin-top: -1.6rem;
+  border-radius: 3px;
+  transform: none;
+}
+
+.swiper-button-prevShop i,
+.swiper-button-nextShop i {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.swiper-button-prevShop:hover,
+.swiper-button-nextShop:hover {
+  background: var(--redFill);
+}
+
+.swiper-button-prevShop:hover i,
+.swiper-button-nextShop:hover i {
+  color: #fff;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-pagination_shop {
+  bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Это стили, определенные ранее в другом слайдере - если брать отсюда, то надо убрать комментарий */
+/* .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--redFill);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.2;
+  pointer-events: visible;
+  background-color: #a6a6a6;
+}
+
+.swiper-button-next.swiper-button-disabled:hover,
+.swiper-button-prev.swiper-button-disabled:hover {
+  background-color: #a6a6a6;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: "";
+} */
+/* слайдер на странице магазина - конец */
+
+/* brands carousel */
+
+.shop__brandsCarouselArea {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.brandsCarousel {
+  position: relative;
+  padding: 0 3.2rem;
+}
+
+.brandsCarousel-container1 {
+  position: relative;
+}
+
+.brandsCarousel__wrapper {
+  display: flex;
+}
+
+.brandsCarousel__btn {
+  position: absolute;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: var(--x1greySuperLight);
+  cursor: pointer;
+  transition: all 0.3s;
+  top: 50%;
+  margin-top: -1.4rem;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  outline: none;
+}
+
+.brandsCarousel__btn:hover {
+  background: var(--redFill);
+}
+
+.brandsCarousel__btn i {
+  color: #362b23;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.brandsCarousel__btn:hover i {
+  color: #fff;
+}
+
+.brandsCarousel__btnPrev {
+  left: 0;
+}
+.brandsCarousel__btnNext {
+  right: 0;
+}
+
+.brandsCarousel-pagination1 {
+  bottom: 30px !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: var(--x1greySuperLight);
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--redFill);
+}

@@ -1,0 +1,37 @@
+- var pageTitle = 'Страница магазина Каспер'
+
+include __const
+include __header
+include __shop
+include __filters
+include __menu
+include __m2_catalog
+//- include __textInContent
+include __footer
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	+head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		.title1.w1
+			h1= pageTitle
+		//- include __breadcrumbs
+		+shop
+		.catalogPage.w1
+			+adaptiveFilters
+			+leftMenuInShop
+			.catalog__outer
+				.adaptiveFilterOnBtn Фильтрация
+				+filtersArea
+				+catalogArea
+		+textInContent
+
+	.site__footer
+		+footer
+
+	+scripts
