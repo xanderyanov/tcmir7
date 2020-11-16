@@ -1,0 +1,50 @@
+.pag__area {
+  width: 100%;
+}
+
+.pag__outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 1rem;
+}
+
+.pag {
+  display: flex;
+  align-items: center;
+}
+
+a.pag__item {
+  text-decoration: none;
+  height: 2rem;
+  min-width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #000;
+  background: var(--colorLightGrey);
+  margin: 3px;
+  padding: 0 0.5rem;
+  transition: all 0.3s;
+}
+
+a.pag__item:hover {
+  color: #fff;
+  background: var(--orange);
+}
+
+a.pag__item.active {
+  color: #fff;
+  background: var(--orange);
+}
+
+a.pag__item i {
+  font-size: 1rem;
+  color: #000;
+}
+
+a.pag__item.active i,
+a.pag__item:hover i {
+  color: #fff;
+}

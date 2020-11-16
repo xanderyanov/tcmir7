@@ -1,0 +1,383 @@
+mixin cart
+  //- .content
+  //-   p
+  //-     | Ваша корзина пуста, добавьте товары!
+  .orderCart__area
+    .orderCart
+      .orderCart__row.orderCart__rowHeader
+        .orderCart__item.orderCart__itemTD10 Артикул
+        .orderCart__item.orderCart__itemTD20 Фото
+        .orderCart__item.orderCart__itemTD30 Наименование товара
+        .orderCart__item.orderCart__itemTD40 Характеристики
+        .orderCart__item.orderCart__itemTD50 Акции
+        .orderCart__item.orderCart__itemTD60 Количество
+        .orderCart__item.orderCart__itemTD70 Цена
+        .orderCart__item.orderCart__itemTD80 Удалить
+      .orderCart__row
+        .orderCart__item.orderCart__itemTD10 12259876
+        .orderCart__item.orderCart__itemTD20
+          img(src='assets/img/tovar/001.jpeg', alt='')
+        .orderCart__item.orderCart__itemTD30
+          a(href='#') Сабо женские классические Salvador
+        .orderCart__item.orderCart__itemTD40
+          .orderCart__descItem
+            span.orderCart__descItemTitle Размер:
+            span.orderCart__descItemInfo XXL
+          .orderCart__descItem
+            span.orderCart__descItemTitle Цвет:
+            span.orderCart__descItemInfo Белый
+          .orderCart__descItem
+            span.orderCart__descItemTitle Пол:
+            span.orderCart__descItemInfo Женский
+          .orderCart__descItem
+            span.orderCart__descItemTitle Вес:
+            span.orderCart__descItemInfo 170 гр.
+          .orderCart__descItem
+            span.orderCart__descItemTitle Сезон:
+            span.orderCart__descItemInfo Лето
+        .orderCart__item.orderCart__itemTD50
+          .orderCart__itemIcons
+            .orderCart__itemIcon.tovarCard__icon_sale -25%
+            .orderCart__itemIcon.tovarCard__icon_new NEW
+            .orderCart__itemIcon.tovarCard__icon_hit ХИТ
+        .orderCart__item.orderCart__itemTD60
+          .number
+            button.minus -
+            input.cartCountInput(type='text', name='count', value='1')
+            button.plus +
+        .orderCart__item.orderCart__itemTD70
+          .orderCart__priceArea
+            .orderCart__oldPrice 1800 руб
+            .orderCart__price 1500 руб
+        .orderCart__item.orderCart__itemTD80
+          .orderCart__delete(title='Удалить товар из корзины')
+            i.icon-close1
+      .orderCart__row
+        .orderCart__item.orderCart__itemTD10 12259876
+        .orderCart__item.orderCart__itemTD20
+          img(src='assets/img/tovar/002.jpeg', alt='')
+        .orderCart__item.orderCart__itemTD30
+          a(href='#') Сабо женские классические Salvador
+        .orderCart__item.orderCart__itemTD40
+          .orderCart__descItem
+            span.orderCart__descItemTitle Размер:
+            span.orderCart__descItemInfo XXL
+          .orderCart__descItem
+            span.orderCart__descItemTitle Цвет:
+            span.orderCart__descItemInfo Белый
+          .orderCart__descItem
+            span.orderCart__descItemTitle Пол:
+            span.orderCart__descItemInfo Женский
+          .orderCart__descItem
+            span.orderCart__descItemTitle Вес:
+            span.orderCart__descItemInfo 170 гр.
+          .orderCart__descItem
+            span.orderCart__descItemTitle Сезон:
+            span.orderCart__descItemInfo Лето
+        .orderCart__item.orderCart__itemTD50
+          .orderCart__itemIcons
+            .orderCart__itemIcon.tovarCard__icon_sale -25%
+            .orderCart__itemIcon.tovarCard__icon_new NEW
+            .orderCart__itemIcon.tovarCard__icon_hit ХИТ
+        .orderCart__item.orderCart__itemTD60
+          .number
+            button.minus -
+            input.cartCountInput(type='text', name='count', value='1')
+            button.plus +
+        .orderCart__item.orderCart__itemTD70
+          .orderCart__priceArea
+            .orderCart__oldPrice 1800 руб
+            .orderCart__price 1500 руб
+        .orderCart__item.orderCart__itemTD80
+          .orderCart__delete(title='Удалить товар из корзины')
+            i.icon-close1
+      .orderCart__row
+        .orderCart__item.orderCart__itemTD10 12259876
+        .orderCart__item.orderCart__itemTD20
+          img(src='assets/img/tovar/003.jpeg', alt='')
+        .orderCart__item.orderCart__itemTD30
+          a(href='#') Сабо женские классические Salvador
+        .orderCart__item.orderCart__itemTD40
+          .orderCart__descItem
+            span.orderCart__descItemTitle Размер:
+            span.orderCart__descItemInfo XXL
+          .orderCart__descItem
+            span.orderCart__descItemTitle Цвет:
+            span.orderCart__descItemInfo Белый
+          .orderCart__descItem
+            span.orderCart__descItemTitle Пол:
+            span.orderCart__descItemInfo Женский
+          .orderCart__descItem
+            span.orderCart__descItemTitle Вес:
+            span.orderCart__descItemInfo 170 гр.
+          .orderCart__descItem
+            span.orderCart__descItemTitle Сезон:
+            span.orderCart__descItemInfo Лето
+        .orderCart__item.orderCart__itemTD50
+          .orderCart__itemIcons
+            .orderCart__itemIcon.tovarCard__icon_sale -25%
+            .orderCart__itemIcon.tovarCard__icon_new NEW
+            .orderCart__itemIcon.tovarCard__icon_hit ХИТ
+        .orderCart__item.orderCart__itemTD60
+          .number
+            button.minus -
+            input.cartCountInput(type='text', name='count', value='1')
+            button.plus +
+        .orderCart__item.orderCart__itemTD70
+          .orderCart__priceArea
+            .orderCart__oldPrice 1800 руб
+            .orderCart__price 1500 руб
+        .orderCart__item.orderCart__itemTD80
+          .orderCart__delete(title='Удалить товар из корзины')
+            i.icon-close1
+      .orderCart__row
+        .orderCart__item.orderCart__itemTD10 12259876
+        .orderCart__item.orderCart__itemTD20
+          img(src='assets/img/tovar/004.jpeg', alt='')
+        .orderCart__item.orderCart__itemTD30
+          a(href='#') Сабо женские классические Salvador
+        .orderCart__item.orderCart__itemTD40
+          .orderCart__descItem
+            span.orderCart__descItemTitle Размер:
+            span.orderCart__descItemInfo XXL
+          .orderCart__descItem
+            span.orderCart__descItemTitle Цвет:
+            span.orderCart__descItemInfo Белый
+          .orderCart__descItem
+            span.orderCart__descItemTitle Пол:
+            span.orderCart__descItemInfo Женский
+          .orderCart__descItem
+            span.orderCart__descItemTitle Вес:
+            span.orderCart__descItemInfo 170 гр.
+          .orderCart__descItem
+            span.orderCart__descItemTitle Сезон:
+            span.orderCart__descItemInfo Лето
+        .orderCart__item.orderCart__itemTD50
+          .orderCart__itemIcons
+            .orderCart__itemIcon.tovarCard__icon_sale -25%
+            .orderCart__itemIcon.tovarCard__icon_new NEW
+            .orderCart__itemIcon.tovarCard__icon_hit ХИТ
+        .orderCart__item.orderCart__itemTD60
+          .number
+            button.minus -
+            input.cartCountInput(type='text', name='count', value='1')
+            button.plus +
+        .orderCart__item.orderCart__itemTD70
+          .orderCart__priceArea
+            .orderCart__oldPrice 1800 руб
+            .orderCart__price 1500 руб
+        .orderCart__item.orderCart__itemTD80
+          .orderCart__delete(title='Удалить товар из корзины')
+            i.icon-close1
+    .orderCart__total
+      span.orderCart__totalTitle Итого: 
+      span.orderCart__totalCount 5
+      span.orderCart__totalCountTitle товаров
+      span.orderCart__totalPriceTitle на сумму: 
+      span.orderCart__totalPrice 12500 руб.
+  .orderForm__wrapper
+    h2 Оформление заказа
+    form.orderForm__area(action='#')
+      .inputBox
+        label(for='formGroupExampleInput') Ваше имя
+        input#formGroupExampleInput(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput2') Ваш телефон
+        input#formGroupExampleInput2(type='text', placeholder='')
+      .inputBox
+        label(for='formGroupExampleInput3') Ваш email
+        input#formGroupExampleInput3(type='text', placeholder='')
+      h3 Варианты доставки:
+
+      .radioBox__wrapper
+        .radioBox
+          input#customRadio1(type='radio', name='customRadio')
+          label(for='customRadio1') Самовывоз
+        .radioBox
+          input#customRadio2(type='radio', name='customRadio')
+          label(for='customRadio2') Доставка
+      h3 Варианты оплаты:
+      .radioBox__wrapper
+        .radioBox
+          input#customRadio3(type='radio', name='customRadio2')
+          label(for='customRadio3') Наличными
+        .radioBox
+          input#customRadio4(type='radio', name='customRadio2')
+          label(for='customRadio4') Банковской картой
+      h3 Дополнительная информация:
+      .inputBox
+        label(for='exampleFormControlTextarea1') Уточните важные для Вас моменты
+        textarea#exampleFormControlTextarea1.form-control(rows='3')
+  .orderCart__total
+    span.orderCart__totalTitle Итого: 
+    span.orderCart__totalCount 5
+    span.orderCart__totalCountTitle товаров
+    span.orderCart__totalPriceTitle на сумму: 
+    span.orderCart__totalPrice 12500 руб.
+  button.orderForm__orderBtn(type='button')
+    i.icon-cart1
+    span Заказать
+
+
+
+mixin cartTab
+  .cartTab__area
+    .cartTab__outer
+      .cartTab
+        .cartTab__header
+          .cartTabH12 Наименование
+          .cartTabH3
+            span.dt Характеристики
+            span.mb Х-ки
+          .cartTabH4 
+            span.dt Цена за единицу
+            span.mb Цена за ед.
+          .cartTabH5
+            span.dt Количество
+            span.mb Кол-во
+          .cartTabH6.text-right Сумма
+          .cartTabH7
+        .cartTab__content
+          .cartTab__item
+            .cartTab1 
+              a(href="")
+                img(src="assets/img/tovar/001.jpeg", alt="").tovarImgInTab
+            .cartTab__info
+              .cartTab2 
+                a.tovarLinkInTab(href="#")
+                  span Название товара в несколько слов
+                  span 	J865L-1-3	3
+              .cartTab3.text-right размер 32
+              .cartTab4.text-right
+                .cartInTabPriceArea
+                  span.oldPriceInTab 12000
+                    nobr Р/шт
+                  span.discountInTab 15%
+                  span.bright.priceInTab 10000
+                    nobr Р/шт
+              .cartTab5.text-right
+                .text-center(style="display: inline-block")
+                  .number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                    span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                    input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                    span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+                  .rcontArea(style='display: none;', data-wareid='xxx', data-mode='rcont')
+                    .rcont__item(data-wareid='xxx', data-change='A')
+                      span.rcont__itemInfo(title='Исходя из количества других товаров в корзине')
+                        | Требуется: 
+                        span(data-wareid='xxx', data-mode='rval')
+                //- |  шт.
+              .cartTab6.text-right
+                span.cartTabTotalItemPrice 10000 р
+              .cartTab7.cart-td-delete.text-right
+                img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+          .cartTab__item
+            .cartTab1 
+              a(href="")
+                img(src="assets/img/tovar/001.jpeg", alt="").tovarImgInTab
+            .cartTab__info
+              .cartTab2 
+                a.tovarLinkInTab(href="#")
+                  span Название товара в несколько слов
+                  span 	J865L-1-3	3
+              .cartTab3.text-right размер 32
+              .cartTab4.text-right
+                .cartInTabPriceArea
+                  span.oldPriceInTab 12000
+                    nobr Р/шт
+                  span.discountInTab 15%
+                  span.bright.priceInTab 10000
+                    nobr Р/шт
+              .cartTab5.text-right
+                .text-center(style="display: inline-block")
+                  .number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                    span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                    input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                    span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+                  .rcontArea(style='display: none;', data-wareid='xxx', data-mode='rcont')
+                    .rcont__item(data-wareid='xxx', data-change='A')
+                      span.rcont__itemInfo(title='Исходя из количества других товаров в корзине')
+                        | Требуется: 
+                        span(data-wareid='xxx', data-mode='rval')
+                //- |  шт.
+              .cartTab6.text-right
+                span.cartTabTotalItemPrice 10000 р
+              .cartTab7.cart-td-delete.text-right
+                img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+
+
+mixin cart2
+  .cart2__area
+    .cart2__outer
+      .cart2
+        .cart2__header
+          .cart2col1
+          .cart2colWrapper
+            .cart2col2 Наименование
+            .cart2col3
+              span.dt Характеристики
+              span.mb Хар.
+            //- .cart2col4
+            //-   span.dt Цена за единицу
+            //-   span.mb Цена за ед.
+            .cart2col5
+              span.dt Количество
+              span.mb Кол-во
+            .cart2col6 Сумма
+          .cart2col7
+        .cart2__item
+          .cart2col1
+            a.cart2img(href="")
+                img(src="assets/img/tovar/001.jpeg", alt="")
+          .cart2colWrapper
+            .cart2col2
+              a(href="#").cart2title
+                span Название товара в несколько слов
+                span 	J865L-1-3	3
+            .cart2col3 
+              span Размер 32
+            //- .cart2col4
+            //-   .cart2__itemPriceArea
+            //-     span.cart2OldPrice 12000 Р/шт
+            //-     span.cart2Discount 15%
+            //-     span.cart2Price 10000 Р/шт
+            .cart2col5
+              .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+            .cart2col6
+              .cart2__itemPriceArea
+                span.cart2OldPrice 12000 Р/шт
+                span.cart2Discount 15%
+                span.cart2Price 10000 Р/шт
+          .cart2col7
+            img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+        .cart2__item
+          .cart2col1
+            a.cart2img(href="")
+                img(src="assets/img/tovar/001.jpeg", alt="")
+          .cart2colWrapper
+            .cart2col2
+              a(href="#").cart2title
+                span Название товара в несколько слов
+                span 	J865L-1-3	3
+            .cart2col3
+              span Размер 32
+            //- .cart2col4
+            //-   .cart2__itemPriceArea
+            //-     span.cart2OldPrice 12000 Р/шт
+            //-     span.cart2Discount 15%
+            //-     span.cart2Price 10000 Р/шт
+            .cart2col5
+              .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+            .cart2col6
+              .cart2__itemPriceArea
+                span.cart2OldPrice 12000 Р/шт
+                span.cart2Discount 15%
+                span.cart2Price 10000 Р/шт
+          .cart2col7
+            img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg

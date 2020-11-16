@@ -1,0 +1,72 @@
+mixin rega
+  .wide__area.w0
+    .wide__outer.w1
+      .title1
+        h1 Регистрация и авторизация
+      .wide
+        .regBox.regBox_visible
+          +registration
+        .regBox.regBox_hide
+          +autorization
+
+
+mixin registration
+  .regBox__title Регистрация пользователя
+  .regBox__formArea
+    form.formBox#registrationForm(action="")
+      .inputBox
+        label(for='formBoxInputName') Имя
+          span.requiredStar *
+        input#formBoxInputName(type='text', placeholder='Ваше имя')
+      .inputBox
+        label(for='formBoxInputPhone') Мобильный телефон (10 цифр без 8 или +7)
+          span.requiredStar *
+        .inputBox__inner
+          input#formBoxInputPhone(type='text', placeholder='Ваш телефон', maxlength="10")
+          .confirmPhoneBtn Подтвердить телефон
+          .changePhoneBtn Изменить телефон
+      .inputBox_confirmPhoneArea
+        .inputBox_confirmPhone
+          label(for='formBoxInputConfirmPhone') Введите код подтверждения телефонного номера из полученого смс (4 цифры)
+          .inputBox_confirmPhoneInner
+            input#formBoxInputConfirmPhone(placeholder='Код подтверждения', maxlength="4", type='text')
+            .sendPhoneCodeBtn Отправить код
+      .inputBox
+        label(for='formBoxInputEmail') Email
+          span.requiredStar *
+        input#formBoxInputEmail(type='text', placeholder='Ваш действующий адрес электронной почты')
+      .inputBox
+        label(for='formBoxInputPass') Пароль, длиной не менее 6 символов
+          span.requiredStar *
+        input#formBoxInputEmail(type='password', placeholder='')
+      .inputBox
+        label(for='formBoxInputConfirmPass') Подтверждение пароля
+          span.requiredStar *
+        input#formBoxInputConfirmPass(type='password', placeholder='')
+      .inputBox_row
+        input.formUsePrivacy(type='checkbox', name='privacy')
+        span.privacyDeclaration Я согласен на обработку персональных данных
+      .formFooter
+        button.formBox__registration.formBtn(type='submit' disabled) Зарегистрироваться
+        a.formFooterLink(href="#") У меня уже есть учетная запись
+
+
+mixin autorization
+  .regBox__title Авторизация пользователя
+  .regBox__intro Если Вы уже зарегистрированы, введите свои учетные данные. Если нет - нажмите "Зарегистрироваться".
+  .regBox__formArea
+    form.formBox#registrationForm(action="")
+      .inputBox
+        label(for='formBoxLogInInputPhone') Телефон
+          span.requiredStar *
+        input#formBoxLogInInputPhone(type='text', placeholder='Ваш телефон')
+      .inputBox
+        label(for='formBoxLogInInputPass') Пароль
+          span.requiredStar *
+        input#formBoxLogInInputEmail(type='password', placeholder='')
+      .inputBox_row
+        input.formUsePrivacy(type='checkbox', name='privacy')
+        span.privacyDeclaration Я согласен на обработку персональных данных
+      .formFooter
+        button.formBox__registration.formBtn(type='submit' disabled) Войти
+        a.formFooterLink(href="#") Зарегистрироваться

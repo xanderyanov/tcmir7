@@ -1,0 +1,106 @@
+/* collage */
+
+.collage__area {
+  width: 100%;
+  order: 3;
+}
+
+.collage__outer {
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+
+.collage__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collage {
+  width: 25%;
+}
+/* .collage__1 {
+  width: 20%;
+}
+.collage__2 {
+  width: 30%;
+} */
+
+.collage__itemOuter {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.collage__item {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: #eee;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.collage__item:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.collage__itemOuter:after {
+  display: block;
+  content: "";
+}
+
+.collage__itemOuter_1_1:after {
+  margin-top: 60%;
+}
+
+.collage__itemOuter_1_2:after {
+  margin-top: 40%;
+}
+
+.collage__itemOuter_2_1:after {
+  margin-top: 50%;
+}
+
+.collage__itemOuter_2_2 {
+  width: 50%;
+}
+
+.collage__itemOuter_2_2:after {
+  margin-top: 100%;
+}
+
+.collage__itemOuter_2_3 {
+  width: 50%;
+}
+
+.collage__itemOuter_2_3:after {
+  margin-top: 100%;
+}
+
+.collage__itemOuter_3_1:after {
+  margin-top: 100%;
+}
+.collage__itemOuter_4_1:after {
+  margin-top: 50%;
+}
+.collage__itemOuter_4_2:after {
+  margin-top: 50%;
+}

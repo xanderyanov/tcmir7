@@ -33,23 +33,23 @@
 
 .tm {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: rgba(65, 51, 40, 0.5);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .oferta {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: rgba(65, 51, 40, 0.5);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 a.policy1 {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.4;
   text-transform: capitalize;
   color: #413328;
@@ -80,7 +80,7 @@ a.policy1:hover {
   text-decoration: none;
   color: var(--tColor);
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.25;
   text-transform: capitalize;
 }
@@ -91,7 +91,7 @@ a.policy1:hover {
 
 .footer__address {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: var(--tColor);
   margin-bottom: 0.5rem;
@@ -99,7 +99,7 @@ a.policy1:hover {
 
 .footerTime {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: var(--tColor);
   margin-bottom: 2.5rem;
@@ -107,7 +107,7 @@ a.policy1:hover {
 
 .footerPhone {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: var(--tColor);
   text-decoration: none;
@@ -121,10 +121,10 @@ a.policy1:hover {
 
 .footer__linksTitle {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: rgba(65, 51, 40, 0.5);
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .footerSGlinks {
@@ -136,13 +136,13 @@ a.policy1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   text-decoration: none;
 }
 
 .footerSGlinks a i {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: rgba(13, 9, 9, 0.7);
   transition: all 0.3s;
 }

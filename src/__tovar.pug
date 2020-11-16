@@ -1,0 +1,251 @@
+include __callAction
+include __rezerv
+
+mixin tovarSlider7
+  .tovarSlider7__area.tovarSlider7_swiperSlider
+    .tovarSlider7
+      .tovarSlider7__min.swiper-container
+        .swiper-wrapper
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-3.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar4/Destra-Krossovki-6661-22-7141-1.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG)")
+          .tovarSlider7__minItem.swiper-slide(style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG)")
+      .tovarSlider7__img.swiper-container
+        .swiper-wrapper
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', data-fancybox='group1', data-caption='001', style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', data-fancybox='group1', data-caption='002', style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-3.JPG', data-fancybox='group1', data-caption='003', style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-3.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar4/Destra-Krossovki-6661-22-7141-1.JPG', data-fancybox='group1', data-caption='004', style="background-image: url(assets/img/tovar4/Destra-Krossovki-6661-22-7141-1.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG', data-fancybox='group1', data-caption='005', style="background-image: url(assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG', data-fancybox='group1', data-caption='005', style="background-image: url(assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', data-fancybox='group1', data-caption='006', style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG', data-fancybox='group1', data-caption='005', style="background-image: url(assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG', data-fancybox='group1', data-caption='005', style="background-image: url(assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG)")
+          .tovarSlider7__imgItem.swiper-slide
+            a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', data-fancybox='group1', data-caption='006', style="background-image: url(assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG)")
+        .tovarSlider7__pagination
+        .tovarSlider7__Prev
+          i.icon-arr-left1
+        .tovarSlider7__Next
+          i.icon-arr-right1
+        
+      
+mixin tovarInfo
+  .tovarPage__info
+    .tovarTitle
+      .tovarTitle__text
+        h1 Платье
+      .tovarTitle__logo
+        img(src='assets/img/vendor/camelactive/camel_active.png', alt='')
+        span Adidas
+      .tovarTitle__logo_adaptive
+        span Adidas
+    //- .tovarPage__desc
+    //-   | Короткое описание товара в несоклько строчек Lorem ipsum dolor sit amet consectetur adipisicing
+    //-   | elit. Ipsa optio corporis voluptates ea expedita molestiae ipsam, est esse modi libero beatae
+    //-   | perferendis omnis inventore provident pariatur veniam. Omnis, in sit.
+    
+
+    +sizeToPrice
+
+
+    //- .tovar__priceArea
+    //-   .tovar__oldPrice Старая цена: 1800 руб
+    //-   .tovar__price Цена: 1500 руб
+    
+    //- .tovarCard__icons.tovarCard__icons_inPage
+    //-   .tovarCard__icon.tovarCard__icon_sale -25%
+    //-   .tovarCard__icon.tovarCard__icon_new NEW
+    //-   .tovarCard__icon.tovarCard__icon_hit ХИТ
+    
+    //- +sizeSelector
+
+    .difColorLink__area
+      .difColorLink__title В другом цвете:
+      .difColorLink__content
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/01.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/02.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/01.jpg", alt="")
+        a(href="#", title="12321")
+          span(style='background-color: #C56430; height: 100%')
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/02.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/01.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/02.jpg", alt="")
+    
+    .callAction__areaInTovar
+      .callActionArea
+        .callActionArea__left
+          a.callActionBtnGoToShop(href="") Все товары продавца
+        .callActionArea__right
+          +callActionBtn
+          //- +callActionBtnDiscount
+
+
+    //- .addToCartOuter
+    //-   .number
+    //-     button.minus -
+    //-     input.cartCountInput(type='text', name='count', value='1')
+    //-     button.plus +
+    //-   a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
+    //-     span Купить
+
+    +rezerv
+
+    +simpleReg
+
+    .tovarDescTab__area
+      .tovarDescTab__areaTitle О товаре:
+      .table_outer250
+        table
+          tbody
+            //- tr
+            //-   td(colspan='2') Характеристики:
+            tr
+              td Пол
+              td Женский
+            tr
+              td Сезон
+              td Лето
+            tr
+              td Стиль
+              td Спортивный
+            tr
+              td Материал
+              td Хлопок
+            tr
+              td Размер
+              td XL, L, S
+
+
+    .aboutDelivery__area.infoArea_js
+      .aboutDelyvery__title.infoTitle_js
+        span Информация о доставке
+        i.icon-truck
+      .aboutDelyvery__content.infoContent_js Курьерская доставка бесплатна и осуществляется во все регионы России (только при покупке от 2000 рублей) компанией «СДЭК». Чтобы воспользоваться курьерской доставкой нужно выбрать способ доставки «курьерская доставка» при оформлении заказа и ввести адрес доставки и данные получателя. Когда заказ будет отправлен, Вам придет уведомление с информацией для отслеживания заказа.
+    
+    .aboutDelivery__area.infoArea_js
+      .aboutDelyvery__title.infoTitle_js
+        span Информация о возврате
+        i.icon-history
+      .aboutDelyvery__content.infoContent_js
+        .content 
+          p Не подошедший Вам товар можно вернуть в интернет-магазин в течение 14 дней с момента получения заказа, заполнив заявление, полученное с заказом (форма здесь) одним из двух способов:
+          ul
+            li  Почтой России
+            li  в Пункте выдачи заказов
+          p подробнее о порядке возврата смотрите в разделе Информация о возврате
+    .newShopLink__area
+      span
+      | Товар представлен в магазине 
+      a(href='') Монте
+
+mixin sizeSelector
+  .sizeSelector__area
+    .sizeSelector__title Укажите нужный размер:
+    .sizeSelector
+      each item in size
+        .sizeSelector__item
+          span=item
+
+
+mixin sizeToPrice
+  .sizeToPrice__area
+    .sizeToPrice
+      .sizeToPrice__result
+        each item in sizeToPrice
+          .sizeToPrice__resultItem
+            span.sizeToPrice__art 
+              span.sizeToPrice__artTitle Артикул:
+              span.sizeToPrice__artInfo!= item.art
+            span.sizeToPrice__priceArea
+              span.sizeToPrice__oldPrice!= item.oldPrice
+              span.sizeToPrice__price!= item.price
+                span ₽
+              span.sizeToPrice__discount!= item.discount
+      .sizeToPrice__header
+        .sizeToPrice__headerTitle Размер:
+        .sizeToPrice__selector
+          each item in sizeToPrice
+            .sizeToPrice__selectorItem
+              span!= item.size
+    .tabSizeOpen
+      a(href="#") Таблица соответствия размеров
+    
+    .tabSize__overlay
+    .tabSize__window
+      .tabSize__windowClose
+        i.icon-close1
+      table
+        tr
+          td Размер
+          td XS
+          td S
+          td M
+          td L
+          td XL
+        tr
+          td Российские размеры
+          td 40-42
+          td 42-44
+          td 44-46
+          td 46-48
+          td 48
+        tr
+          td Обхват груди в см
+          td 80-84
+          td 84-88
+          td 88-92
+          td 92-96
+          td 96
+        tr
+          td Обхват талии в см
+          td 60-64
+          td 64-68
+          td 68-72
+          td 72-76
+          td 76
+        tr
+          td Обхват бёдер в см
+          td 88-92
+          td 92-96
+          td 96-100
+          td 100-104
+          td 104
+        tr
+          td Длина рукава в см
+          td 60-61
+          td 61-62
+          td 62-63
+          td 63-64
+          td 
+        tr
+          td Длина брюк в см
+          td 96
+          td 97
+          td 98
+          td 99
+          td 
+
+    
+

@@ -1,0 +1,33 @@
+- var pageTitle = 'Избранное'
+
+include __head
+include __header
+include __filters
+include __filters-adaptive
+include __leftMenu
+include __catalog
+include __footer
+include __scripts
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	+head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		//- include __breadcrumbs
+		.catalogPage__outer.w0
+			.title1.w1
+				h1= pageTitle
+			.catalogPage.w1
+				.catalog__outer.catalog__outer_fav
+					+catalogAreaFav
+
+
+	.site__footer
+		+footer
+
+	+scripts

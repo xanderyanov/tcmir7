@@ -1,0 +1,93 @@
+.breadcrumbs__area {
+  padding: 1rem 0 1rem;
+  /* background-color: #e5e5e5; */
+  /* background-color: var(--colorLightGrey); */
+}
+.breadcrumbs {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.breadcrumbs div:first-child {
+  margin: 0 5px 0 0;
+}
+.breadcrumbs div {
+  margin: 0 5px;
+}
+.breadcrumbs div a {
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+.breadcrumbs div a:hover {
+  color: var(--orange);
+}
+
+.breadcrumbs div span {
+  color: var(--orange);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+/* fake-breadcrumbs */
+
+.fakeBreadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.fakeBreadcrumbs h1 {
+  text-align: right;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.backBtn i {
+  font-size: 1rem;
+  line-height: 1;
+  margin-right: 0.6125rem;
+  color: var(--tColor);
+}
+
+.backBtn span {
+  font-size: 1rem;
+  line-height: 1;
+  margin-right: 0.6125rem;
+  color: var(--tColor) !important;
+}
+
+.shopInBreadcrumbsTitle {
+  color: var(--tColor);
+  font-size: 1rem !important;
+}
+
+.brandTitle {
+  margin: 0 !important;
+}
+
+.brandTitle h1 {
+  margin: 0 !important;
+}

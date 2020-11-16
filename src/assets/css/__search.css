@@ -1,0 +1,125 @@
+.topSearch__area {
+  width: 30%;
+  padding: 0.25rem 0;
+}
+
+.topSearch__area100 {
+  width: 100%;
+}
+
+.topSearch {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--colorGrey);
+  background: var(--colorLightGrey);
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.topSearch__input {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  color: var(--color2);
+
+  height: 1.875rem;
+  width: 100%;
+  background: transparent;
+}
+
+.topSearch__btn {
+  position: absolute;
+  right: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.625rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.topSearch__btn i {
+  font-size: 1rem;
+  color: var(--color2);
+  transition: all 0.3s;
+}
+
+.topSearch__btn:hover i {
+  color: var(--orange);
+}
+
+.searchWhite__area {
+  width: 100%;
+  padding: 10px 0;
+  background: var(--header);
+  z-index: 480;
+  /* border-bottom-right-radius: 13px; */
+  /* border-bottom-left-radius: 13px; */
+  position: relative;
+  /* border-bottom: 1px solid #d7d7d7; */
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchWhite__outer {
+  padding: 0 10px;
+}
+
+.searchWhite {
+  display: flex;
+  align-items: center;
+  background: var(--colorLightGrey);
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 7px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.searchWhite__input {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--color2);
+
+  height: 2rem;
+  width: 100%;
+  background: transparent;
+}
+
+.searchWhite__btn {
+  position: absolute;
+  right: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 1.625rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+/* .searchWhite__btn:hover {
+  background: var(--redFillhover);
+} */
+
+.searchWhite__btn i {
+  font-size: 1rem;
+  color: var(--color2);
+}

@@ -1,3 +1,54 @@
+include __m2_catalog
+include __brand
+include __shopTab
+include __adaptiveMenuArs
+
+mixin siteFooter2
+  .footer2__area
+    .footer2__outer.p1280
+      footer.footer2
+        .footer2__left
+          a.footer2__logo(href="#")
+            img(src="assets/img/logo8801000mir.svg", alt="")
+          .footer2__item
+            span Адрес
+            p г. Саратов, ул. Московская, 113-117
+          .footer2__item
+            span Телефон
+            a(href="tel:+78452759933") +7 (8452) 75-99-33
+          .footer2__item
+            p Информация на сайте не является<br> публичной офертой
+        .footer2__right
+          nav.footer2__menuArea
+            ul.footer2__menu
+              li
+                a(href="#") О компании
+              li
+                a(href="#") Информация
+              li.active
+                a(href="#") Оформление заказа
+              li
+                a(href="#") Оплата и получение
+              li
+                a(href="#") Возврат
+          .footer2__paySystems
+            .footer2__paySystemsItem
+              img(src="assets/img/index2/mastercard.svg", alt="")
+            .footer2__paySystemsItem
+              img(src="assets/img/index2/mir.svg", alt="")
+            .footer2__paySystemsItem
+              img(src="assets/img/index2/visa.svg", alt="")
+
+          .footer2__links
+            a.footer2__link(href="#" target="_blank") Пользовательское Соглашение
+            a.footer2__link(href="#" target="_blank") Политика Конфиденциальности
+  +m2_bottomMenu
+  //- +aBrands
+  +aBrandsTabs
+  +shopTab
+  +adaptiveMenuArs
+  //- +footer  
+
 mixin footer
   .footer__area.w0
     footer.footer.w1
@@ -33,3 +84,7 @@ mixin footer
             i.icon-ok
           a(href='#')
             i.icon-ig
+  +m2_bottomMenu
+  //- +aBrands
+  +aBrandsTabs
+  +adaptiveMenuArs

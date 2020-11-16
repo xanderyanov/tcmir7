@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap&subset=cyrillic");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
+
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
 @import "../../../node_modules/nouislider/distribute/nouislider.css";
 
 @import "../../../node_modules/swiper/css/swiper.css";
+@import "../../../node_modules/slider-pro/dist/css/slider-pro.css";
+@import "../../../node_modules/slick-carousel/slick/slick.css";
 @import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+/* @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+@import "../../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 
 @import "reset.css";
 
@@ -14,36 +20,126 @@
 
 @import "xandercode.css";
 
-@import "__index.css";
-@import "__index_media.css";
-
 @import "__header.css";
-@import "__header_media.css";
+@import "__header-media.css";
 
-@import "__menu.css";
-@import "__menu_media.css";
+/* @import "__adaptive-menu.css";
+@import "__adaptive-menu-media.css"; */
 
-@import "__catalog.css";
-@import "__catalog_media.css";
+@import "__adaptiveMenuArs.css";
+@import "__adaptiveMenuArs-media.css";
 
-@import "__m2_catalog.css";
-@import "__m2_catalog_media.css";
+@import "__search.css";
+@import "__adaptive-search.css";
+@import "__search-media.css";
 
-@import "__filters.css";
-@import "__filters_adaptive.css";
-@import "__filters_media.css";
-
-@import "__actionBtn.css";
-@import "__actionBtn_media.css";
-
-@import "__footer.css";
-@import "__footer_media.css";
+/* @import "__slider-promo.css";
+@import "__slider-promo-media.css"; */
 
 @import "__sliders.css";
-@import "__sliders_media.css";
+@import "__sliders-media.css";
+
+@import "__index.css";
+@import "__index-media.css";
+
+@import "__callAction.css";
+@import "__callAction-media.css";
+
+@import "__footer.css";
+@import "__footer-media.css";
+
+@import "__breadcrumbs.css";
+@import "__breadcrumbs-media.css";
+
+@import "__leftMenu.css";
+@import "__leftMenu-media.css";
+
+@import "__catalog.css";
+@import "__catalog-media.css";
+
+@import "__filters-lib.css";
+@import "__filters.css";
+@import "__filters-adaptive.css";
+@import "__filters-media.css";
+
+@import "__tovar-slider_horiz.css";
+@import "__tovar-slider_horiz-media.css";
+
+@import "__tovar-info.css";
+@import "__tovar-info-media.css";
+
+@import "__tovar.css";
+@import "__tovar-media.css";
+
+@import "__variants.css";
+@import "__variants-media.css";
+
+/* @import "__sizeSelector.css"; */
+@import "__sizeSelector-media.css";
 
 @import "__shop.css";
-@import "__shop_media.css";
+@import "__shop-media.css";
+
+@import "__brand.css";
+@import "__brand-media.css";
+
+@import "__registration.css";
+@import "__registration-media.css";
+
+@import "__cart.css";
+@import "__cart-media.css";
+
+@import "__cart2.css";
+@import "__cart2-media.css";
+
+@import "__rezerv.css";
+@import "__rezerv-media.css";
+
+@import "__m1_catalog.css";
+@import "__m1_catalog-media.css";
+
+@import "__cabinet1.css";
+@import "__cabinet1-media.css";
+
+@import "__orderDetails.css";
+@import "__orderDetails-media.css";
+
+@import "__popUp.css";
+@import "__popUp-media.css";
+
+@import "__arendator.css";
+@import "__arendator-media.css";
+
+@import "__aCatalog.css";
+@import "__aCatalog-media.css";
+
+@import "__pagination.css";
+@import "__pagination-media.css";
+
+@import "__content.css";
+
+@import "__index2.css";
+@import "__index2-media.css";
+
+@import "../chunks/__sliderMain1/__sliderMain1.css";
+@import "../chunks/__sliderMain1/__sliderMain1-media";
+
+@import "../chunks/__best/__best.css";
+@import "../chunks/__best/__best-media.css";
+
+@import "../chunks/__collage/__collage.css";
+@import "../chunks/__collage/__collage-media";
+
+@import "__brandsPage2.css";
+@import "__brandsPage2-media.css";
+
+@import "../chunks/__loader/__loader.css";
+
+@import "__shopTab.css";
+@import "__shopTab-media.css";
+
+@import "__lookPage.css";
+@import "__lookPage-media.css";
 
 @import "main.css";
 @import "media.css";

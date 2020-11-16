@@ -1,0 +1,209 @@
+mixin slider-promo
+  .promoBox__area
+    .promoBox.clearfix
+      .promoBox__big
+        .mainSlider
+          .swiper-container.swiper-container1
+            .swiper-wrapper
+              .swiper-slide.swiper-slide1(style='background-image: url(assets/img/shop2/kasper2.jpg);')
+                .swiper__cadr
+                  .swiper__infoBox
+                    //- .swiper__infoBoxTitle Детская одежда
+                    //- .swiper__infoBoxDescription в магазине Каспер
+                    a.swiper__infoBoxLink(href='#') В магазин
+                img(src='assets/img/slider1cover.png', alt='')
+              .swiper-slide.swiper-slide1(style='background-image: url(assets/img/shop2/kasper1.jpg);')
+                .swiper__cadr
+                  .swiper__infoBox
+                    //- .swiper__infoBoxTitle Одежда для девочек
+                    //- .swiper__infoBoxDescription Новая летняя коллекция в магазине Каспер
+                    a.swiper__infoBoxLink(href='#') В магазин
+                img(src='assets/img/slider1cover.png', alt='')
+            // Add Pagination
+            .swiper-pagination.swiper-pagination1
+            // Add Arrows
+            .swiper-pagination.swiper-button-prev.swiper-button-prev1
+              i.icon-arr-left1
+            .swiper-pagination.swiper-button-next.swiper-button-next1
+              i.icon-arr-right1
+      .promoBox__small
+        .promoBox__smallInner
+          a(href='#' style='background-image: url(assets/img/shop2/Giotto1.jpg);')
+            img(src='assets/img/pr413-229.png', alt='')
+            span.promoBox__smallLink В магазин
+      .promoBox__small
+        .promoBox__smallInner 
+          a(href='#' style='background-image: url(assets/img/shop2/nebrosko1.jpg);')
+            img(src='assets/img/pr413-229.png', alt='')
+            span.promoBox__smallLink В магазин
+      .promoBox__small
+        .promoBox__smallInner
+          a(href='#' style='background-image: url(assets/img/shop2/Giotto1.jpg);')
+            img(src='assets/img/pr413-229.png', alt='')
+            span.promoBox__smallLink В магазин
+      .promoBox__small
+        .promoBox__smallInner 
+          a(href='#' style='background-image: url(assets/img/shop2/nebrosko1.jpg);')
+            img(src='assets/img/pr413-229.png', alt='')
+            span.promoBox__smallLink В магазин
+      .promoBox__small
+        .promoBox__smallInner
+          a(href='#' style='background-image: url(assets/img/shop2/Giotto1.jpg);')
+            img(src='assets/img/pr413-229.png', alt='')
+            span.promoBox__smallLink В магазин
+      .promoBox__small
+        .promoBox__smallInner 
+          a(href='#' style='background-image: url(assets/img/shop2/nebrosko1.jpg);')
+            img(src='assets/img/pr413-229.png', alt='')
+            span.promoBox__smallLink В магазин
+
+
+mixin sliderSlickInMain
+  .juneSlider__area.w0
+    .juneSlider__outer.w1
+      .juneSlider
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/june/001.jpg", alt="")
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/xslider/03.jpg", alt="")
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/june/003.jpg", alt="")
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/xslider/01.jpg", alt="")
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/xslider/04.jpg", alt="")
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/june/006.jpg", alt="")
+        .juneSlider__item
+          a(href="#")
+            img(src="assets/img/xslider/01.jpg", alt="")
+      .juneSlider__tovars
+        .juneSlider__tovarsItem
+          +newCollection
+        .juneSlider__tovarsItem
+          +newCollection
+        .juneSlider__tovarsItem
+          +newCollection
+        .juneSlider__tovarsItem
+          +newCollection
+        .juneSlider__tovarsItem
+          +newCollection
+        .juneSlider__tovarsItem
+          +newCollection
+        .juneSlider__tovarsItem
+          +newCollection
+
+
+mixin sliderSwiperInMain
+  .julySlider__area.w0
+    .julySlider__outer.w1
+      .julySlider.swiper-container
+        .swiper-wrapper
+          .julySlider__item.swiper-slide
+            a(href="#")
+              img(src="assets/img/slider1/Basconi_slider.jfif", alt="")
+          .julySlider__item.swiper-slide
+            a(href="#")
+              img(src="assets/img/slider1/patrizia_slider_main.jpg", alt="")
+          .julySlider__item.swiper-slide
+            a(href="#")
+              img(src="assets/img/slider1/taliogiotto_slider_main.jpg", alt="")
+          .julySlider__item.swiper-slide
+            a(href="#")
+              img(src="assets/img/slider1/Kasper.png", alt="")
+          .julySlider__item.swiper-slide
+            a(href="#")
+              img(src="assets/img/slider1/MonteNapoleone_slider_main.jpg", alt="")
+          .julySlider__item.swiper-slide
+            a(href="#")
+              img(src="assets/img/slider1/beauty-lounge_slider_main.jpg", alt="")
+      .julySlider__pag
+        
+        .julySlider__Prev
+          i.icon-arr-left1
+        .julySlider__pagination
+        .julySlider__Next
+          i.icon-arr-right1
+      .julySlider__tovars.swiper-container
+        .swiper-wrapper
+          .julySlider__tovarsItem.swiper-slide
+            +newCollection
+          .julySlider__tovarsItem.swiper-slide
+            +newCollection
+          .julySlider__tovarsItem.swiper-slide
+            +newCollection
+          .julySlider__tovarsItem.swiper-slide
+            +newCollection
+          .julySlider__tovarsItem.swiper-slide
+            +newCollection
+          .julySlider__tovarsItem.swiper-slide
+            +newCollection
+
+mixin mainShopsBox
+  .mainShopsBox__area.w0.inIndexPage
+    .mainShopsBox__outer.w1
+      .title0.indexShopCardTitle
+        h2 Магазины торгового комплекса Мир 
+      .mainShopsBox
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/basconi-1.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/beauty_lounge.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/kasper.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/Monte_Napoleone.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        
+        
+mixin mainShopsBox_inPage
+  .mainShopsBox__area.w0
+    .mainShopsBox__outer.w1
+      .title0.indexShopCardTitle
+        h1 Магазины торгового комплекса Мир 
+      .mainShopsBox
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/basconi-1.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/beauty_lounge.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/kasper.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/Monte_Napoleone.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')
+        .mainShopsBox__item
+          .mainShopsBox__itemInner
+            a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+              img(src='assets/img/pr413-229.png', alt='')

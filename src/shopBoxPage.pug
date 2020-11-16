@@ -1,0 +1,27 @@
+- var pageTitle = 'Главная страница'
+
+include __head
+include __header
+include __slider-promo
+include __shop
+include __footer
+include __scripts
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    +mainShopsBox_inPage
+    
+
+  .site__footer
+    +footer
+
+  +scripts

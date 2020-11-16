@@ -1,0 +1,216 @@
+.best2slider__area {
+  width: 100%;
+  order: 1;
+}
+
+.best2slider__outer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.best2__title {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best2__title img {
+  width: 100%;
+  display: block;
+}
+
+.best2__title span {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+  z-index: 10; */
+  color: var(--text2);
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.best2__title span:last-child {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+  z-index: 10; */
+  color: var(--text2);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.625rem;
+}
+
+.best2slider {
+  width: 100%;
+  padding: 10px 0 30px;
+  position: relative;
+}
+
+.best2 {
+  display: flex;
+  /* align-items: center; */
+}
+
+.best2-slide {
+  height: auto;
+}
+
+.best2__itemOuter {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.best2__item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 10px;
+  height: 100%;
+}
+
+.best2__item:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.best2__itemImg {
+  width: 100%;
+  /* height: 245px; */
+
+  margin-bottom: 0.625rem;
+  position: relative;
+}
+
+.best2__itemImg img {
+  display: block;
+  width: 100%;
+}
+
+.best2__itemImgInner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.best2__itemImgInner img {
+  display: block;
+  width: 100%;
+}
+
+.best2__itemInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.best2__itemTitle {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: var(--text2);
+}
+
+.best2__itemDesc {
+  font-size: 0.875rem;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+.best2__itemPriceArea {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.best2__itemOldPrice {
+  font-size: 1.125rem;
+  white-space: nowrap;
+  color: var(--text2light);
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+.best2__itemPrice {
+  font-size: 1.125rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--text2);
+}
+
+.best2-container {
+  position: relative;
+  padding: 1rem 0 2rem;
+}
+
+.best2__left,
+.best2__right {
+  position: absolute;
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -1.9375rem;
+  background: #fff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.best2__left:hover,
+.best2__right:hover {
+  background: var(--orange);
+}
+
+.best2__left:focus,
+.best2__right:focus {
+  border: none;
+  outline: none;
+}
+
+.best2__left {
+  left: -1.9375rem;
+}
+
+.best2__right {
+  right: -1.9375rem;
+}
+
+.best2__left i,
+.best2__right i {
+  font-size: 1.5rem;
+  color: var(--text2);
+  transition: all 0.3s;
+}
+
+.best2__left:hover i,
+.best2__right:hover i {
+  color: #fff;
+}

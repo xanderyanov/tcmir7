@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .ss2_info {
+    height: 4rem;
+  }
+  .ss2__left,
+  .ss2__right {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+  .ss2_info {
+    height: 3.5rem;
+    font-size: 1.125rem;
+  }
+  .ss2__left,
+  .ss2__right {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .ss2_info {
+    height: 3rem;
+  }
+  .ss2__left,
+  .ss2__right {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ss2_info {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

@@ -1,0 +1,39 @@
+- var pageTitle = 'Страница товара'
+
+include __head
+include __header
+include __breadcrumbs
+include __tovar-slider
+include __tovar-info
+include __tovar
+include __tovarArsTab
+include __textInContent
+include __footer
+include __scripts
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	+head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		+fake-breadcrumbs
+
+		.xBlock__area.w0
+			.xBlock.w1
+				.tovarPage__area
+					.tovarPage
+						.tovarPage__top
+							+tovarSliderPro3
+							+tovar-info1
+				+tovarArsTab
+		//- +textInContent
+
+
+	.site__footer
+		+footer
+
+	+scripts

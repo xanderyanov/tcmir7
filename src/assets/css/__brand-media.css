@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .aBrands__overlay {
+    height: 60vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+  }
+  .aBrands__area {
+    transform: none;
+    width: auto;
+    height: 60vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    padding: 0;
+  }
+  .aBrands__itemOuter {
+    width: 16.666%;
+  }
+  .aBrands__item {
+    height: 15vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .aBrands__itemOuter {
+    width: 25%;
+  }
+  .aBrands__azItemOuter {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .aBrands__azItemOuter {
+    width: 33.333%;
+  }
+  .aBrands__azLetterBoxTitle {
+    width: 8%;
+  }
+
+  .aBrands__azLetterBoxContent {
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+  .aBrands__azItemOuter {
+    width: 33.333%;
+  }
+}

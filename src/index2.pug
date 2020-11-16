@@ -1,0 +1,320 @@
+- var pageTitle = 'Главная страница'
+
+include __const
+include __index2
+include __header
+include __footer
+include __m2_catalog
+include __brand
+include __adaptiveMenuArs
+
+
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  +siteHeader2
+  .site__center.site__center_fdc
+    .dubleSliders__area.p1280
+      .dubleSliders__outer
+        .dubleSliders
+          .dubleSliders__small
+            .firstPromo__outer
+              .firstPromo.firstPromo_dt(href="#" style="background-image: url(https://tcmir.ru/img/banners/Rinascimento_FW20.jpg)")
+                span.darkText Новые <br>коллекции <br> уже в продаже!
+              .firstPromo.firstPromo_mb(href="#" style="background-image: url(https://tcmir.ru/img/banners/Rinascimento_FW20.jpg)")
+                span.darkText Новые <br>коллекции <br> уже в продаже!
+                //- img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+              
+              
+              //- span.ss1_info Маникюр премиум класса
+            //- .swiper-container.s1-container
+            //-   .swiper-wrapper.s1-wrapper
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-   .ss1__pag
+            //-     .ss1__buttons
+            //-       .ss1__left
+            //-         i.icon-leftss2
+            //-       .ss1__right
+            //-         i.icon-rightss2
+            //-     .s1-pagination
+          .dubleSliders__big
+            .swiper-container.s2-container
+              .swiper-wrapper.s2-wrapper
+                .swiper-slide.ss2
+                  a(href="#")
+                    img.ss2_cover(src="assets/img/ss1/ss02.png", alt="")
+                    span.ss2_info Мужская классика
+                .swiper-slide.ss2
+                  a(href="#")
+                    img.ss2_cover(src="assets/img/ss1/ss02.png", alt="")
+                    span.ss2_info Профессиональный уход за кожей
+                //- a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/ss02.png)")
+                //-   img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+                //-   span.ss2_info Мужская классика
+                //- a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/babor.jpg)")
+                //-   img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+                //-   span.ss2_info Профессиональный уход за кожей
+              //- .ss2__pag
+              //-   .ss2__buttons
+              .ss2__left
+                i.icon-arr-left1
+              .ss2__right
+                i.icon-arr-right1
+                //- .s2-pagination
+    .best2slider__area.p1280
+      .best2slider__outer
+        .best2__title
+          //- img(src="assets/img/index2/best2titlebg2.jpg", alt="")
+          span Лучшая цена на товар
+          span Выбор наших стилистов
+        .best2slider
+          .swiper-container.best2-container
+            .swiper-wrapper.best2-wrapper
+              .swiper-slide.best2-slide
+                +best2-1
+              .swiper-slide.best2-slide
+                +best2-2
+              .swiper-slide.best2-slide
+                +best2-3
+              .swiper-slide.best2-slide
+                +best2-4
+              .swiper-slide.best2-slide
+                +best2-5
+              .swiper-slide.best2-slide
+                +best2-6
+
+          .best2__left
+            i.icon-arr-left1
+          .best2__right
+            i.icon-arr-right1
+
+    //- .linkBox2__area
+    //-   .linkBox2__outer
+    //-     .linkBox2.clearfix
+    //-       .linkBox2__group
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#" style="background-image: url(assets/img/lb2/001.jpg)")
+    //-             img.linkBox2__cover.linkBox2__cover_long(src="assets/img/square413.png", alt="")
+    //-             span Красота
+    //-       .linkBox2__group
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#" style="background-image: url(assets/img/lb2/002.jpg)")
+    //-             img.linkBox2__cover.linkBox2__cover_big(src="assets/img/square413.png", alt="")
+    //-             span Женщинам
+    //-       .linkBox2__group.linkBox2__group_col
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#" style="background-image: url(assets/img/lb2/003.jpg)")
+    //-             img.linkBox2__cover.linkBox2__cover_small(src="assets/img/square413.png", alt="")
+    //-             span Детям
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#" style="background-image: url(assets/img/lb2/004.jpg)")
+    //-             img.linkBox2__cover.linkBox2__cover_small(src="assets/img/square413.png", alt="")
+    //-             span Мужчинам
+
+    
+    .linkBox3__area
+      .linkBox3__outer
+        .linkBox3.clearfix
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_1
+            .linkBox3__itemOuter.linkBox3__itemOuter_1
+              a.linkBox3__item.linkBox3__item_1(href="#" style="background-image: url(assets/img/lb2/001.jpg)")
+                span Красота
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_2
+            .linkBox3__itemOuter.linkBox3__itemOuter_2
+              a.linkBox3__item.linkBox3__item_2(href="#" style="background-image: url(assets/img/lb2/002.jpg)")
+                span Женщинам
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_3
+            .linkBox3__itemOuter.linkBox3__itemOuter_3
+              a.linkBox3__item.linkBox3__item_3(href="#" style="background-image: url(assets/img/lb2/003.jpg)")
+                span Детям
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_4
+            .linkBox3__itemOuter.linkBox3__itemOuter_4
+              a.linkBox3__item.linkBox3__item_4(href="#" style="background-image: url(assets/img/lb2/004.jpg)")
+                span Мужчинам
+
+
+
+    
+    
+    //- .linkBox2__area
+    //-   .linkBox2__outer
+    //-     .linkBox2.clearfix
+    //-       .linkBox2__group
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#")
+    //-             img.linkBox2__cover.linkBox2__cover_long(src="assets/img/lb2/001.jpg", alt="")
+    //-             span Красота
+    //-       .linkBox2__group
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#")
+    //-             img.linkBox2__cover.linkBox2__cover_big(src="assets/img/lb2/002.jpg", alt="")
+    //-             span Женщинам
+    //-       .linkBox2__group.linkBox2__group_col
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#")
+    //-             img.linkBox2__cover.linkBox2__cover_small(src="assets/img/lb2/003.jpg", alt="")
+    //-             span Детям
+    //-         .linkBox2__itemOuter
+    //-           a.linkBox2__item(href="#")
+    //-             img.linkBox2__cover.linkBox2__cover_small(src="assets/img/lb2/004.jpg", alt="")
+    //-             span Мужчинам
+
+    //- .best3_area
+    //-   .best3__outer
+    //-     .best3__title
+    //-       img(src="assets/img/best3/title.jpg", alt="Лучшие предложения осени!")
+    //-     .best3slider
+    //-       .swiper-container.best3-container
+    //-         .swiper-wrapper.best3-wrapper
+    //-           .swiper-slide.best3-slide
+    //-             +best3
+    //-           .swiper-slide.best3-slide
+    //-             +best3
+    //-           .swiper-slide.best3-slide
+    //-             +best3
+    //-       .best3__left
+    //-         i.icon-arr-left1
+    //-       .best3__right
+    //-         i.icon-arr-right1
+
+
+
+    .collage__area
+      .collage__outer
+        .collage__wrapper.clearfix
+          .collage.collage__1
+            .collage__itemOuter.collage__itemOuter_1_1
+              a.collage__item.collage__item_1_1(href="assets/img/collage/001.jpg" style="background-image: url(assets/img/collage/001.jpg)" data-fancybox='group', data-caption='001')
+            .collage__itemOuter.collage__itemOuter_1_2
+              a.collage__item.collage__item_1_2(href="assets/img/collage/002.jpg" style="background-image: url(assets/img/collage/002.jpg)" data-fancybox='group', data-caption='002')
+          .collage.collage__2
+            .collage__itemOuter.collage__itemOuter_2_1
+              a.collage__item.collage__item_2_1(href="assets/img/collage/010.jpg" style="background-image: url(assets/img/collage/010.jpg)" data-fancybox='group', data-caption='003')
+            .collage__itemOuter.collage__itemOuter_2_2
+              a.collage__item.collage__item_2_2(href="assets/img/collage/004.jpg" style="background-image: url(assets/img/collage/004.jpg)" data-fancybox='group', data-caption='004')
+            .collage__itemOuter.collage__itemOuter_2_3
+              a.collage__item.collage__item_2_3(href="assets/img/collage/009.jpg" style="background-image: url(assets/img/collage/009.jpg)" data-fancybox='group', data-caption='005')
+          .collage.collage__3
+            .collage__itemOuter.collage__itemOuter_3_1
+              a.collage__item.collage__item_3_1(href="assets/img/collage/006.jpg" style="background-image: url(assets/img/collage/006.jpg)" data-fancybox='group', data-caption='006')
+          .collage.collage__4
+            .collage__itemOuter.collage__itemOuter_4_1
+              a.collage__item.collage__item_4_1(href="assets/img/collage/011.jpg" style="background-image: url(assets/img/collage/011.jpg)" data-fancybox='group', data-caption='007')
+            .collage__itemOuter.collage__itemOuter_4_2
+              a.collage__item.collage__item_4_2(href="assets/img/collage/003.jpg" style="background-image: url(assets/img/collage/003.jpg)" data-fancybox='group', data-caption='008')
+
+    .about3__area
+      .about3__outer.p1280
+        .about3
+          h2 О компании
+          .content
+            p Торговый комплекс МИР более 10 лет радует жителей Саратова качественным европейским шопингом.
+            p <strong>tcmir.ru — это онлайн копия Торгового комплекса МИР</strong>
+            p Теперь товары торгового комплекса можно купить в официальном интернет-магазине и заказать курьерскую доставку (доставляем компанией СДЭК) или оформить самовывоз (Пункт выдачи находится на 1 этаже Торгового комплекса МИР).
+            p <strong>tcmir.ru — это торговый комплекс МИР онлайн</strong>
+          a.about3__redmore(href="#") Подробнее
+    
+    
+    //- .about2__area.p1280
+    //-   .about2__outer
+    //-     .about2
+    //-       .about2__left
+    //-         .about2__img
+    //-           img(src="assets/img/index2/about2-1.jpg", alt="")
+    //-       .about2__right
+    //-         .about2__content
+    //-           h2 О компании
+    //-           .content
+    //-             p Торговый комплекс МИР более 10 лет радует жителей Саратова качественным европейским шопингом.
+    //-             p <strong>tcmir.ru — это онлайн копия Торгового комплекса МИР</strong>
+    //-             p Теперь товары торгового комплекса можно купить в официальном интернет-магазине и заказать курьерскую доставку (доставляем компанией СДЭК) или оформить самовывоз (Пункт выдачи находится на 1 этаже Торгового комплекса МИР).
+    //-             p <strong>tcmir.ru — это торговый комплекс МИР онлайн</strong>
+    //-           a.about2__redmore(href="#") Подробнее
+
+
+
+    .bottomWide__area
+      .bottomWide__outer
+        .bottomWide
+          .bottomWide-container.swiper-container
+            .bottomWide-wrapper.swiper-wrapper
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              
+          .bottomWide__left
+            i.icon-arr-left1
+          .bottomWide__right
+            i.icon-arr-right1
+
+ 
+  +siteFooter2
+
+  +scripts
+
+
+
+
+
+
+
+  

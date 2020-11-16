@@ -1,6 +1,164 @@
 include __search
+include __popUpBlocks
+
+
+mixin siteHeader2
+  .topLine2__area.p1280
+    .topLine2__outer
+      .topLine2
+        .topLine2__item
+          i.icon-marker1
+          span г. Саратов, ул. Московская, 113-117
+        .topLine2__item
+          i.icon-phone
+          a(href="tel:+78452759933") +7 (8452) 75 99 33
+  +orangeHeader
+  .header2__area.p1280
+    .header2__searchArea
+      .header2__searchOuter
+        .header2__search
+          .logo2
+            a(href="#")
+              img(src="assets/img/logo8801000mir.svg", alt="")
+          form.header2_searchForm(action="")
+            input(type="text" placeholder="Платье, костюм или крем?")
+            button(type="submit") 
+              i.icon-search2
+            .searchPreResults__area
+              ul.searchPreResults.xScroll
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/best3/001.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title <b>Кросс</b>овки
+                      span.searchPreResults__brand Clemento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/best3/002.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Платье
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/ss1/t9.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Брюки
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/best3/002.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Платье
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/ss1/t9.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Брюки
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/best3/002.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Платье
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/ss1/t9.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Брюки
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/ss1/t9.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Брюки
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/best3/002.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Платье
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+                li
+                  a(href="")
+                    span.searchPreResults__img
+                      img(src="assets/img/ss1/t9.jpg", alt="")
+                    span.searchPreResults__info
+                      span.searchPreResults__title Брюки
+                      span.searchPreResults__brand Rinachimento
+                    span.searchPreResults__price 5184 ₽
+              a.searchPreResults__allBtn(href="") Показать все результаты
+
+
+          .header2_searchClose(title="Скрыть поиск")
+            i.icon-close1
+    .header2__outer
+      header.header2
+        nav.menu20__area
+          ul.menu20
+            li.active
+              a(href="#") Женщинам
+            li
+              a(href="#") Мужчинам
+            li
+              a(href="#") Детям
+            li
+              a(href="#") Красота
+            li
+              a.openBrands_dt(href="#") Бренды
+        .logo2
+          a(href="#")
+            img(src="assets/img/logo8801000mir.svg", alt="")
+
+        .header2__buttons
+          .headerRightLi.openShops_dt(href="#") Магазины
+          .login2__area
+            .login2__item
+              a(href="#") Войти
+            .login2__item
+              a(href="#") Регистрация
+          .buttons2__area
+            .buttons2__item.header2__search_jsEvent
+              i.icon-search2
+            .buttons2__item
+              i.icon-like2
+            .buttons2__item
+              .miniCart2__area
+                i.icon-bag
+                .miniCart2__counter 25
+
+mixin menu21
+  .menu21__area.p1280
+    .menu21__Outer
+      ul.menu21
+        li.active
+          a(href="#") Одежда
+        li
+          a(href="#") Обувь
+        li
+          a(href="#") Аксессуары
 
 mixin header
+  +orangeHeader
   //- +adaptiveSearch
   //- +adaptiveMenuArs
   //- +adaptiveHeader
@@ -36,12 +194,12 @@ mixin header
             li
               a(href='#') Красота
             li
-              a(href='#') Дом
+              a.openBrands_dt(href='#') Бренды
           +menuButton1
         .logo1__area
           .logo1
             a(href='#')
-              img(src='assets/img/logotry2.svg', alt='Торговый комплекс МИР')
+              img(src='assets/img/logo8801000mir.svg', alt='Торговый комплекс МИР')
         .header__action
           .topFavBtn__area
             .topFavBtn.topFavBtn_notFav.greyRoundBtn
@@ -146,11 +304,8 @@ mixin m2_search
         button.m2_search__btn(type='submit')
           i.icon-search1
 
-mixin m2_header
-  .m2_headerFake
-  .m2_header
-    +m2_search
-    .m2_topMenu__area
+mixin m2_topMenu
+  .m2_topMenu__area
       .m2_topMenu__outer
         ul.m2_topMenu
           li.active
@@ -162,4 +317,130 @@ mixin m2_header
           li
             a(href="#") Красота
 
+mixin m2_header
+  .m2_headerFake
+  .m2_header
+    +m2_search
+    +m2_topMenu
+    
 
+
+
+mixin searchWhite
+  .searchWhite__area
+    .searchWhite__outer
+      form.searchWhite(action='#', method='get')
+        input.searchWhite__input(type='text', name='', value='', placeholder='Поиск по названию товара')
+        button.searchWhite__btn(type='submit')
+          i.icon-search1
+        .searchPreResults__area_mb
+          ul.searchPreResults_mb.xScroll
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/best3/001.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb <b>Кросс</b>овки
+                  span.searchPreResults__brand_mb Clemento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/best3/002.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Платье
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/ss1/t9.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Брюки
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/best3/002.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Платье
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/ss1/t9.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Брюки
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/best3/002.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Платье
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/ss1/t9.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Брюки
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/ss1/t9.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Брюки
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            li
+              a(href="")
+                span.searchPreResults__img_mb
+                  img(src="assets/img/best3/002.jpg", alt="")
+                span.searchPreResults__info_mb
+                  span.searchPreResults__title_mb Платье
+                  span.searchPreResults__brand_mb Rinachimento
+                span.searchPreResults__price_mb 5184 ₽
+            //- li
+            //-   a(href="")
+            //-     span.searchPreResults__img_mb
+            //-       img(src="assets/img/ss1/t9.jpg", alt="")
+            //-     span.searchPreResults__info_mb
+            //-       span.searchPreResults__title_mb Брюки
+            //-       span.searchPreResults__brand_mb Rinachimento
+            //-     span.searchPreResults__price_mb 5184 ₽
+          a.searchPreResults__allBtn_mb(href="") Показать все результаты
+
+mixin orangeHeader
+  .orangeHeader__areaFake
+  .orangeHeader__areaFake2
+  .orangeHeader__area
+    .orangeHeader__outer
+      +upBox
+      .orangeHeader
+        .orangeLogo
+          a(href="#")
+            //- img(src="assets/img/logo-white-mir.svg", alt='Торговый комплекс МИР')
+            img(src="assets/img/logo8801000mir.svg", alt='Торговый комплекс МИР')
+        i.icon-favorit1(style="margin-left: auto; font-size: 1.5rem; margin-right: 1rem")
+        i.icon-search1(style=" font-size: 1.5rem; margin-right: 1rem")
+        +menuButton1
+      //- +searchWhite
+      
+
+mixin orangeHeader_inCatalog
+  .orangeHeader__areaFake
+  .orangeHeader__area
+    .orangeHeader__outer
+      .orangeHeader
+        .orangeLogo
+          a(href="#")
+            img(src="assets/img/logo-white-mir.svg", alt='Торговый комплекс МИР')
+      +searchWhite
+      +m2_topMenu

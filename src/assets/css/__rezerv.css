@@ -1,0 +1,105 @@
+.rezerv__area {
+  margin: 20px 0 0 0;
+  width: 100%;
+  order: 90;
+}
+
+.rezervBtn,
+#purchaseBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: #fff;
+  background: var(--orange);
+  border: none;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rezervBtn:hover,
+#purchaseBtn:hover {
+  background: var(--orange);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.rezervBtn_inReserv {
+  background: var(--orange);
+}
+
+.rezervNo {
+  display: block;
+}
+
+.rezervYes {
+  display: none;
+}
+
+.simpleReg__area {
+  width: 100%;
+  order: 95;
+}
+
+.simpleReg {
+  margin: 20px 0 0 0;
+}
+
+#simpleReg__readPhone {
+  margin: 0 0 10px 0;
+}
+
+#simpleReg__readPass {
+  margin: 0 0 10px 0;
+}
+
+#simpleReg__readSmsCode {
+  margin: 0 0 10px 0;
+}
+
+.simpleReg__readPhoneSubmit {
+}
+
+.simpleReg .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.simpleReg .inputBox label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.simpleReg .inputBox input {
+  width: 70%;
+}
+
+.simpleReg .inputBox button {
+  width: 25%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--x1border);
+  background: var(--x1border);
+  color: #000;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.simpleReg__codeLostSubmit {
+  margin-top: 10px;
+}
+
+.simpleReg__enterNewPhoneSubmit {
+  margin-top: 10px;
+}

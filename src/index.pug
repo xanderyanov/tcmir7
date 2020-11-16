@@ -3,8 +3,11 @@
 include __const
 include __header
 include __sliders
+include __m1_catalog
 include __shop
+include __m1_index
 include __footer
+
 
 
 
@@ -19,18 +22,27 @@ body
   .site__center
     +sliderSwiperInMain
 
-    +m1_mainBtn
+    //- +m1_mainBtn
+    +m1_catalog
 
     .mainShopsBox__area.w0.inIndexPage
       .mainShopsBox__outer.w1
         .title0.indexShopCardTitle
           h2 Наши магазины
         +mainShopsBox
+
+    +septSlider2   
+    +septSlider1   
+    +septSlider2   
+    +septSlider1   
  
   .site__footer
     
     +footer
 
+  
 
   +scripts
+
+
   

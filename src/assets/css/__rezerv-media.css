@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .rezerv__area {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 501;
+  }
+  .rezervBtn,
+  #purchaseBtn {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .rezervBtn,
+  #purchaseBtn {
+    padding: 15px 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rezervBtn,
+  #purchaseBtn {
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

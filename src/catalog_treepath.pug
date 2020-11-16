@@ -1,0 +1,50 @@
+- var pageTitle = 'Страница каталога'
+
+include __const
+include __header
+include __filters
+include __leftMenu
+include __m2_catalog
+include __aCatalog
+include __pagination
+include __footer
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  +aCatalog
+  .site__header
+    +header
+    +m2_topMenu
+
+  .site__center
+    +m2_catMenu
+    //- .title1.w1
+    //-   h1 Одежда
+    
+    +m2_category
+    +m2_innerCategory
+    //- include __breadcrumbs
+    .catalogPage__outer.w0
+      //- .title1.w1
+      //-   h1= pageTitle
+      //-   span 785
+      .catalogPage.w1
+        +adaptiveFilters
+        +leftMenuTreePath
+        .catalog__outer
+          +filtersBtnsLine
+          +filtersArea
+          +catalogArea
+          +pagiantion
+            
+
+  
+
+
+  .site__footer
+    +footer
+
+  +scripts

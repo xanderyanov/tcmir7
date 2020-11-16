@@ -7,9 +7,11 @@
   --color1: rgba(65, 51, 40, 0.6);
   --color2: rgba(65, 51, 40, 0.8);
   /* --redFill: #f76060; */
-  --redFill: #ff4141;
-  --redFillhover: #ff2525;
-  --tColor: #413328;
+  /* --redFill: #ff4141; */
+  --redFill: #ff8000;
+  --redFillhover: #ff8000;
+  /* --tColor: #413328; */
+  --tColor: #000;
   --x1dark: #4b4b4b;
   --x1grey: #929292;
   --x1greyLight: #aaaaaa;
@@ -17,6 +19,19 @@
   --x1greySuperLight: #cccccc;
   --x1greyDark: #525252;
   --title1bg: #e6e6e6;
+  /* --orange: #ff6600; */
+  --orange: rgba(255, 51, 0, 1);
+  --LimeGreen: #32cd32;
+  --blueLink: #346ca6;
+  --xGreen: #00994c;
+
+  --dark2: #252525;
+  --text2: #404040;
+  --text2light: #8d8d8d;
+  /* --header: #404040; */
+  /* --header: rgba(255, 51, 0, 1); */
+  --header: rgba(255, 255, 255, 1);
+  --lmDark: #404040;
 }
 
 .w0 {
@@ -29,6 +44,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 0 0 0;
+}
+.mx15- {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .colorFFF {
@@ -81,4 +100,14 @@ a.hover {
   content: "";
   clear: both;
   display: table;
+}
+
+.h20 {
+  height: 1.25rem;
+  width: 100%;
+}
+
+.detailed {
+  color: var(--orange);
+  font-weight: 700;
 }

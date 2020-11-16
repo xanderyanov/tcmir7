@@ -1,0 +1,28 @@
+- var pageTitle = 'Текстовая страница'
+
+include __head
+include __header
+include __breadcrumbs
+include __textInContent
+include __footer
+include __scripts
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	+head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		+breadcrumbs
+		+textInContent
+
+		
+
+
+	.site__footer
+		+footer
+
+	+scripts

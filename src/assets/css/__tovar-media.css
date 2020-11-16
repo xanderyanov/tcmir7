@@ -1,0 +1,136 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .tovarSlider7__min {
+    display: none;
+  }
+  .tovarSlider7__img {
+    width: 100%;
+    /* padding: 0; */
+  }
+  .tovarPage__topLeft {
+    width: 45%;
+  }
+
+  .tovarPage__topRight {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .tovarTitle__logo {
+    display: none;
+  }
+  .tovarTitle__logo_adaptive {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tovarPage__topLeft {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tovarPage__topRight {
+    width: 100%;
+  }
+  .tovarPage__info {
+    padding: 0;
+  }
+  .tovarTitle {
+    align-items: center;
+  }
+  .tovarTitle__logo_adaptive {
+    justify-content: center;
+  }
+  .tovarTitle__text {
+    text-align: center;
+  }
+  .tovarPage__desc {
+    text-align: center;
+  }
+  .tovar__priceArea {
+    align-items: center;
+    margin: 1.25rem 0 0;
+  }
+  .sizeSelector__title {
+    text-align: center;
+  }
+  .sizeSelector {
+    justify-content: center;
+  }
+  .difColorLink__title {
+    text-align: center;
+  }
+  .difColorLink__content {
+    justify-content: center;
+  }
+  .difColorLink__content a {
+    margin: 0.3125rem;
+  }
+  .sizeToPrice__headerTitle {
+    text-align: center;
+  }
+  .sizeToPrice__selector {
+    justify-content: center;
+  }
+  .sizeToPrice__art {
+    justify-content: center;
+  }
+  .sizeToPrice__priceArea {
+    justify-content: center;
+  }
+  .callAction__areaInTovar {
+    margin-top: 10px;
+  }
+  .tovarPage__area {
+    margin: 0;
+  }
+  .tovarTitle__logo_adaptive {
+    margin-bottom: 5px;
+  }
+  .tovarTitle__logo_adaptive span {
+    font-size: 1rem;
+  }
+  .sizeToPrice__price {
+    font-size: 1.625rem;
+  }
+  .tovarTitle {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .fakeBreadcrumbs {
+    background: #fff;
+  }
+  .difColorLink__area {
+    margin: 10px 0 0;
+  }
+  .tovarTitle__text {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

@@ -1,0 +1,44 @@
+mixin lookLinks
+  .lookLinks__area.p1280
+    .lookLinks__outer.xScroll
+      .lookLinks
+        a.lookLink.lookLink_all(href="#") Все
+        a.lookLink(href="#") Мужской стиль Salvatini
+        a.lookLink(href="#") Косметика Babor
+        a.lookLink(href="#") Elisabetta Franchi: выбор стилиста
+        a.lookLink(href="#") После работы
+        a.lookLink(href="#") Леди Босс
+
+mixin lookSlider
+  .lookSlider
+    .swiper-container.lookSlider-container
+      .swiper-wrapper.lookSlider-wrapper
+        .swiper-slide.lookSlider-slide
+          a(href='assets/img/look/01.jpg', data-fancybox='group', data-caption='look 1')
+            img.lookSlider_cover(src="assets/img/look/01.jpg", alt="")
+        .swiper-slide.lookSlider-slide
+          a(href='assets/img/look/01.jpg', data-fancybox='group', data-caption='look 1')
+            img.lookSlider_cover(src="assets/img/look/01.jpg", alt="")
+        .swiper-slide.lookSlider-slide
+          a(href='assets/img/look/01.jpg', data-fancybox='group', data-caption='look 1')
+            img.lookSlider_cover(src="assets/img/look/01.jpg", alt="")
+        .swiper-slide.lookSlider-slide
+          a(href='assets/img/look/01.jpg', data-fancybox='group', data-caption='look 1')
+            img.lookSlider_cover(src="assets/img/look/01.jpg", alt="")
+        .swiper-slide.lookSlider-slide
+          a(href='assets/img/look/01.jpg', data-fancybox='group', data-caption='look 1')
+            img.lookSlider_cover(src="assets/img/look/01.jpg", alt="")
+      .lookSlider__pag
+        .lookSlider__arrows
+          .lookSlider__left
+            i.icon-arrow-left2
+          .lookSlider__right
+            i.icon-arrow-right2
+        .lookSlider__buttons
+          .lookSlider-pagination
+
+mixin lookVideo
+  .lookVideo
+    a(data-fancybox='', href='https://www.youtube.com/watch?v=dl16e_mG6hg?rel=0', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>', style="background-image: url(assets/img/index2/poster1.jpg)")
+      //- img(src='assets/img/index2/poster1.jpg', alt='')
+

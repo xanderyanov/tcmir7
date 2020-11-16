@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .callAction__area {
+    flex-direction: column;
+  }
+  .callAction__title {
+    margin-bottom: 10px;
+  }
+  .callActionBtn_inTovar {
+    width: 100%;
+  }
+  .getDiscountBtn {
+    width: 100%;
+  }
+  .getDiscountBtn_desktop {
+    display: none;
+  }
+  .getDiscountBtn_mobileArea {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .callActionArea__left {
+    width: 40%;
+  }
+
+  .callActionArea__right {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .callActionBtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .callActionArea__left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .callActionArea__right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .callActionArea__left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* .callActionBtn {
+    width: 70%;
+  } */
+  /* .callActionBtn_fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 700;
+  } */
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

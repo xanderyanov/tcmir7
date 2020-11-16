@@ -1,6 +1,201 @@
+mixin m2_header
+  .m2_headerFake
+  .m2_header
+    .m2_search__area
+      .m2_search__outer
+        form.m2_search(action='#', method='get')
+          input.m2_search__input(type='text', name='', value='', placeholder='Поиск по названию товара')
+          button.m2_search__btn(type='submit')
+            i.icon-search1
+    .m2_topMenu__area
+      .m2_topMenu__outer
+        ul.m2_topMenu
+          li.active
+            a(href="#") Женщинам
+          li
+            a(href="#") Мужчинам
+          li
+            a(href="#") Детям
+          li
+            a(href="#") Красота
+
+mixin m2_catMenu
+  .m2_catMenu__area
+    .m2_catMenu__outer
+      .m2_catMenu
+        .m2_catMenuItem__outer.active
+          a.m2_catMenuItem
+            .m2_catMenuItemImg
+              img(src="assets/img/m2/clothes.jpg", alt="")
+            .m2_catMenuItemInfo Одежда
+        .m2_catMenuItem__outer
+          a.m2_catMenuItem
+            .m2_catMenuItemImg
+              img(src="assets/img/m2/shoes.jpg", alt="")
+            .m2_catMenuItemInfo Обувь
+        .m2_catMenuItem__outer
+          a.m2_catMenuItem
+            .m2_catMenuItemImg
+              img(src="assets/img/m2/accessories.jpg", alt="")
+            .m2_catMenuItemInfo Аксессуары
+        //- .m2_catMenuItem__outer
+        //-   a.m2_catMenuItem
+        //-     .m2_catMenuItemImg
+        //-       img(src="assets/img/m2/clothes.jpg", alt="")
+        //-     .m2_catMenuItemInfo Одежда
+        //- .m2_catMenuItem__outer
+        //-   a.m2_catMenuItem
+        //-     .m2_catMenuItemImg
+        //-       img(src="assets/img/m2/shoes.jpg", alt="")
+        //-     .m2_catMenuItemInfo Обувь
+        //- .m2_catMenuItem__outer
+        //-   a.m2_catMenuItem
+        //-     .m2_catMenuItemImg
+        //-       img(src="assets/img/m2/accessories.jpg", alt="")
+        //-     .m2_catMenuItemInfo Аксессуары
+        //- .m2_catMenuItem__outer
+        //-   a.m2_catMenuItem
+        //-     .m2_catMenuItemImg
+        //-       img(src="assets/img/m2/clothes.jpg", alt="")
+        //-     .m2_catMenuItemInfo Одежда
+        //- .m2_catMenuItem__outer
+        //-   a.m2_catMenuItem
+        //-     .m2_catMenuItemImg
+        //-       img(src="assets/img/m2/shoes.jpg", alt="")
+        //-     .m2_catMenuItemInfo Обувь
+        //- .m2_catMenuItem__outer
+        //-   a.m2_catMenuItem
+        //-     .m2_catMenuItemImg
+        //-       img(src="assets/img/m2/accessories.jpg", alt="")
+        //-     .m2_catMenuItemInfo Аксессуары
+
+//- mixin addCartBtn
+//-   .addCartBtn__area
+//-     .addCartBtn__outer
+//-       .addCartBtn1 В корзину
+
+mixin m2_bottomMenu
+  .m2_bottomMenu__areaFake
+  .m2_bottomMenu__area
+    //- +addCartBtn
+    .m2_bottomMenu__outer
+      .m2_bottomMenu
+        a.m2_bottomMenu__item(href="#")
+          i.icon-home
+          span Главная
+        a.m2_bottomMenu__item.aCatalogOpenBtn.aCatalogOpenBtn2(href="#")
+          i.icon-search
+          span Каталог
+        a.m2_bottomMenu__item.aBrandOpenBtn(href="#")
+          i.icon-flyers
+          span Бренды
+        a.m2_bottomMenu__item(href="#")
+          i.icon-cart1
+          span Корзина
+          span.cartCounter 5
+        //- a.m2_bottomMenu__item(href="#")
+        //-   i.icon-favorit1
+        //-   span Избранное
+        a.m2_bottomMenu__item(href="#")
+          i.icon-avatar1
+          span Профиль
+  
+
+mixin m2_category
+  .m2_category__area
+    .m2_category__outer
+      //- a.m2_category__allBtn(href="#") Все товары
+      .m2_category
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/01.jpg", alt="")
+            .m2_category__itemInfo Рубашки и блузки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/02.jpg", alt="")
+            .m2_category__itemInfo Брюки
+        .m2_category__itemOuter.active
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/03.jpg", alt="")
+            .m2_category__itemInfo Верхняя одежда
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/01.jpg", alt="")
+            .m2_category__itemInfo Рубашки и блузки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/02.jpg", alt="")
+            .m2_category__itemInfo Брюки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/03.jpg", alt="")
+            .m2_category__itemInfo Верхняя одежда
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/01.jpg", alt="")
+            .m2_category__itemInfo Рубашки и блузки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/02.jpg", alt="")
+            .m2_category__itemInfo Брюки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/03.jpg", alt="")
+            .m2_category__itemInfo Верхняя одежда
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/01.jpg", alt="")
+            .m2_category__itemInfo Рубашки и блузки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/02.jpg", alt="")
+            .m2_category__itemInfo Брюки
+        .m2_category__itemOuter
+          a.m2_category__item(href="#")
+            .m2_category__itemImg
+              img(src="assets/img/m2cat/03.jpg", alt="")
+            .m2_category__itemInfo Верхняя одежда
+
+
+mixin m2_innerCategory
+  .m2_innerCategory__area
+    .m2_innerCategory__outer.xScroll
+      .m2_innerCategory
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Куртки
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Пальто
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Дубленки
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Желетки
+        .m2_innerCategory__itemOuter.active
+          a.m2_innerCategory__item(href="#") Джинсовые куртки
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Плащи
+  //- .m2_innerCategory__arrow
+  //-   i.icon-left-and-right-arrows
+
 mixin catalogArea  
   //- импорт из data.json (подключается через gulp task)
   .catalog
+    .lookCard__area.lookCard__area_mb
+      .lookCard__outer
+        a.lookCard(href="")
+          .lookCard__inner
+            img(src="assets/img/look/01.jpg", alt="")
+            .lookCard__buyBtn Купить
     each item in tovars
       .tovarCard__area(id=item.id)
         .tovarCard__areaborder
@@ -35,6 +230,7 @@ mixin catalogArea
                     span Размеры: 
                     span S, L, XL, XXL
                   .tovarCard__moreInfoLink Подробнее...
+    
             
 
   
@@ -73,87 +269,3 @@ mixin catalogAreaFav
                     span Размеры: 
                     span S, L, XL, XXL
                   .tovarCard__moreInfoLink Подробнее...
-
-
-mixin m2_innerCategory
-  .m2_innerCategory__area
-    .m2_innerCategory__outer
-      .m2_innerCategory
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Куртки
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Пальто
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Джинсовые куртки
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Куртки
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Пальто
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Джинсовые куртки
-
-mixin m2_category
-  .m2_category__area
-    .m2_category__outer
-      a.m2_category__allBtn(href="#") Все товары
-      .m2_category
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/01.jpg", alt="")
-            .m2_category__itemInfo Рубашки и блузки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/02.jpg", alt="")
-            .m2_category__itemInfo Брюки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/03.jpg", alt="")
-            .m2_category__itemInfo Верхняя одежда
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/01.jpg", alt="")
-            .m2_category__itemInfo Рубашки и блузки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/02.jpg", alt="")
-            .m2_category__itemInfo Брюки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/03.jpg", alt="")
-            .m2_category__itemInfo Верхняя одежда
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/01.jpg", alt="")
-            .m2_category__itemInfo Рубашки и блузки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/02.jpg", alt="")
-            .m2_category__itemInfo Брюки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/03.jpg", alt="")
-            .m2_category__itemInfo Верхняя одежда
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/01.jpg", alt="")
-            .m2_category__itemInfo Рубашки и блузки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/02.jpg", alt="")
-            .m2_category__itemInfo Брюки
-        .m2_category__itemOuter
-          a.m2_category__item(href="#")
-            .m2_category__itemImg
-              img(src="assets/img/m2cat/03.jpg", alt="")
-            .m2_category__itemInfo Верхняя одежда

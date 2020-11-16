@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .lookCard__area_mb {
+    display: block;
+  }
+  .lookCard__area_dt {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .lookPage__left {
+    width: 100%;
+    padding: 0 0 20px 0;
+    display: flex;
+  }
+  .lookPage__right {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+  .lookSlider {
+    margin-bottom: 0;
+    width: 30%;
+    padding: 0 20px 0 0;
+  }
+  .lookVideo {
+    width: 70%;
+  }
+  .lookVideo:after {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .lookLinks {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .lookSlider__buttons {
+    display: none;
+  }
+  .lookCard__area {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .lookSlider {
+    width: 40%;
+    padding: 0 15px 0 0;
+  }
+  .lookVideo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .lookPage__left {
+    display: block;
+  }
+  .lookSlider {
+    width: 100%;
+    padding: 0 0 15px 0;
+  }
+  .lookVideo {
+    width: 100%;
+  }
+  .lookVideo:after {
+    margin-top: 60%;
+  }
+  .lookSlider__buttons {
+    display: flex;
+  }
+  .lookCard__area {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+  .lookCard__area {
+    width: 90%;
+  }
+}

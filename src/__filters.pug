@@ -2,30 +2,36 @@ mixin filtersArea
   .catalogFilter1__area
     .catalogFilter1__overlay
     .catalogFilter1
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle.catalogFilter1__itemTitle_sort
-          span Сортировка
-        .catalogFilter1__itemContent.catalogFilter1__itemContent_sort
-          +filterSort
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle
-          span Материал
-        .catalogFilter1__itemContent
-          +filterCheckbox_material
-          
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle
-          span Бренд
-        .catalogFilter1__itemContent
-          +filterCheckbox_brand
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle
-          span Выбор цвета
-        .catalogFilter1__itemContent
-          +filterCheckbox_color
-      .catalogFilter1__item
-        .resetAllFiltersBtn
-          span Очистить фильтры
+      .catalogFilter1__inner
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle.catalogFilter1__itemTitle_sort
+            span Сортировка
+          .catalogFilter1__itemContent.catalogFilter1__itemContent_sort
+            +filterSort
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Материал
+          .catalogFilter1__itemContent
+            +filterCheckbox_material
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Цена
+          .catalogFilter1__itemContent
+            +filter__price
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Бренд
+          .catalogFilter1__itemContent
+            +filterCheckbox_brand
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Выбор цвета
+          .catalogFilter1__itemContent
+            +filterCheckbox_color
+        .catalogFilter1__item.catalogFilter1__item_allReset
+          .resetAllFiltersBtn
+            span Очистить фильтры
+      //- .brandBtnDT(title="Выбрать бренд") Бренды
 
 mixin filterSort
   .filterBox.filterBox__sort
@@ -42,6 +48,23 @@ mixin filterSort
       a.filterSort__item(href="#")
         |По скидкам
 
+
+
+
+mixin filter__price
+  .filterBox.filterBox__checkbox
+    .xInputBox__content
+      .xInputBox
+        label(for='xInputBox_1') От
+        input#xInputBox_1.only_num(type='text', value='', data-val="filter", placeholder="520")
+      .xInputBox
+        label(for='xInputBox_2') До
+        input#xInputBox_2.only_num(type='text', value='', data-val="filter", placeholder="10300")
+    .filter__apply
+      .filter__checkboxReset.filter__xInputBoxReset 
+        span Очистить выбор
+      .priceFilterEnterBtn
+        span Применить
 
 mixin filterCheckbox_material
   .filterBox.filterBox__checkbox
@@ -68,9 +91,11 @@ mixin filterCheckbox_material
       .xcheckbox
         input#checkbox_7(type='checkbox', value='7', data-val="filter")
         label(for='checkbox_7') Синтетическое волокно
-    .filter__checkboxReset Очистить выбор
-    .filterEnterBtn
-      span Применить
+    .filter__apply
+      .filter__checkboxReset 
+        span Очистить выбор
+      .filterEnterBtn
+        span Применить
 
 
 
@@ -99,9 +124,11 @@ mixin filterCheckbox_brand
       .xcheckbox
         input#checkbox_77(type='checkbox', value='7')
         label(for='checkbox_77') Большевичка
-    .filter__checkboxReset Очистить выбор
-    .filterEnterBtn
-      span Применить
+    .filter__apply
+      .filter__checkboxReset 
+        span Очистить выбор
+      .filterEnterBtn
+        span Применить
 
 
 mixin filterCheckbox_color
@@ -148,9 +175,16 @@ mixin filterCheckbox_color
         input.checkboxColor(type='checkbox')
         span.checkboxColorBox.checkboxColorBox_808080(style='background: #808080;')
         span.checkboxColorTitle Серый
-    .filter__checkboxColorReset Очистить выбор
-    .filterEnterBtn
-      span Применить
+    //- .filter__apply
+    //-   .filter__checkboxColorReset 
+    //-     span Очистить выбор
+    //-   .filterEnterBtn
+    //-     span Применить
+    .filter__apply
+      .filter__checkboxReset.filter__checkboxColorReset
+        span Очистить выбор
+      .filterEnterBtn
+        span Применить
 
 
 
@@ -268,3 +302,36 @@ mixin adaptiveFilters
       .aFilter__footer
         .aFilter__footerReset Сбросить
         .aFilter__footerEnter Показать
+
+
+mixin filtersBtnsLine
+  .filtersBtnsLine__area
+    .filtersBtnsLine__outer
+      .filtersBtn.filtersBtn_brand
+        i.icon-flyers
+        span Бренды
+      .filtersBtn.filtersBtn_shop
+        i.icon-qrcode
+        span Магазины
+      .filtersBtn.filtersBtn_sort
+        i.icon-sort2
+        //- span Сортировка
+      .filtersBtn.filtersBtn_filtr
+        i.icon-filter3
+        //- span Фильтрация
+
+mixin filtersBtnsLine2
+  .filtersBtnsLine__area
+    .filtersBtnsLine__outer
+      //- .filtersBtn.filtersBtn_brand
+      //-   i.icon-flyers
+      //-   span Бренды
+      //- .filtersBtn.filtersBtn_shop
+      //-   i.icon-qrcode
+      //-   span Магазины
+      //- .filtersBtn.filtersBtn_sort
+      //-   i.icon-sort2
+      //-   span Сортировка
+      .filtersBtn.filtersBtn_filtr
+        i.icon-filter3
+        span Фильтры

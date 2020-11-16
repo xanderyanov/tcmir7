@@ -1,0 +1,67 @@
+- var pageTitle = 'Страница бренда'
+
+include __const
+include __index2
+include __brandsPage2
+include __header
+include __footer
+include __breadcrumbs
+include __m2_catalog
+include __brand
+include __shopTab
+include __adaptiveMenuArs
+
+include __filters
+include __leftMenu
+include __m2_catalog
+include __aCatalog
+include __pagination
+
+include assets/chunks/__loader/__loader
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  +siteHeader2
+
+  .site__center.site__center_fdc
+    +fake-breadcrumbs_inBrand
+    .brands2promo__area.p1280
+      .brands2promo__outer
+        .brands2promo
+          .brands2promo__left
+            //- +loader1
+            +brands2slider
+          .brands2promo__right
+            .content
+              span <strong>Wella — немецкий бренд,</strong> уже более ста лет работающий в области косметики и парфюмерии. Компания предлагает высококачественное профессиональное средство, которое можно использовать для окрашивания волос дома и в салонах.
+            .content.content_hide
+              span <strong>Wella — немецкий бренд,</strong> уже более ста лет работающий в области косметики и парфюмерии. Компания предлагает высококачественное профессиональное средство, которое можно использовать для окрашивания волос дома и в салонах. <br> <strong>Wella — немецкий бренд,</strong> уже более ста лет работающий в области косметики и парфюмерии. Компания предлагает высококачественное профессиональное средство, которое можно использовать для окрашивания волос дома и в салонах.
+            .content__redmore.brands2openIntro
+              div.content__redmore_open Подробнее
+              div.content__redmore_close Свернуть
+    .catalogPage__outer.w0
+      .catalogPage.w1
+        +adaptiveFilters
+        +leftMenuUlLi
+        .catalog__outer
+          +filtersBtnsLine2
+          +filtersArea
+          +catalogArea
+          +pagiantion
+  +siteFooter2
+
+  +scripts
+
+
+
+
+
+
+
+  

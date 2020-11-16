@@ -1,0 +1,153 @@
+mixin cabinet1
+  .cabinet1__area.w0
+    .cabinet1__outer.w1
+      .title1.title1_bgw
+        h1= pageTitle
+      .cabinet1
+        .cabTab
+          .cabTabHeader
+            .cabTab__title 
+              i.icon-clipboard
+              span Мои заказы
+            //- .cabTab__title
+            //-   i.icon-favorit1
+            //-   span Избранное
+            //- .cabTab__title
+            //-   i.icon-cart1
+            //-   span Корзина
+            .cabTab__title
+              i.icon-avatar1
+              span Профиль
+          .cabTabContent
+            .cabTab__item
+              .cabTab__title_mobile
+                i.icon-clipboard
+                span Мои заказы
+              .cabTab__itemContent
+                +order
+            //- .cabTab__item
+            //-   .cabTab__title_mobile
+            //-     i.icon-favorit1
+            //-     span Избранное
+            //-   .cabTab__itemContent
+            //-     .catalogPage
+            //-       .catalog__outer.catalog__outer_fav
+            //-         +catalogAreaFav
+            //- .cabTab__item
+            //-   .cabTab__title_mobile
+            //-     i.icon-cart1
+            //-     span Корзина
+            //-   .cabTab__itemContent
+            //-     +cart
+            .cabTab__item
+              .cabTab__title_mobile 
+                i.icon-avatar1
+                span Профиль
+              .cabTab__itemContent 
+                +profile
+            .cabTab__item
+              a.cabTab__title_mobile(href="#")
+                i.icon-cart1
+                span Корзина
+
+
+mixin order
+  .order__area
+    .order__outer
+      .order
+        .order__item
+          .order__itemRow
+            .order__itemRowTitle Номер и дата:
+            .order__itemRowInfo 003563 / 2020-06-08 11:17:17
+          .order__itemRow
+            .order__itemRowTitle Состояние
+            .order__itemRowInfo Согласован
+          .order__itemRow
+            .order__itemRowTitle Сумма заказа:
+            .order__itemRowInfo 
+              span 12500 р
+          .order__itemRow
+            .order__itemRowTitle Товары:
+            .order__itemRowInfo
+              .order__itemTovarsList
+                .order__itemTovarsListTitle 2 шт
+                .order__itemTovarsListInfo 
+                  .order__itemTovarsListInfoItem Куртка джинсовая
+                  .order__itemTovarsListInfoItem Кроссовки беговые
+          .order__itemRow
+            .order__itemRowTitle Оплата:
+            .order__itemRowInfo В процессе1
+          .order__itemRow
+            .order__itemRowTitle
+            .order__itemRowInfo
+              a.order__itemDetals(href="#") Подробнее...
+        .order__item
+          .order__itemRow
+            .order__itemRowTitle Номер и дата:
+            .order__itemRowInfo 003563 / 2020-06-08 11:17:17
+          .order__itemRow
+            .order__itemRowTitle Состояние
+            .order__itemRowInfo.order-status-1 Отменен пользователем
+          .order__itemRow
+            .order__itemRowTitle Сумма заказа:
+            .order__itemRowInfo 
+              span 12500 р
+          .order__itemRow
+            .order__itemRowTitle Оплата:
+            .order__itemRowInfo В процессе
+          .order__itemRow
+            .order__itemRowTitle
+            .order__itemRowInfo
+              a.order__itemDetals(href="#") Подробнее...
+        .order__item
+          .order__itemRow
+            .order__itemRowTitle Номер и дата:
+            .order__itemRowInfo 003563 / 2020-06-08 11:17:17
+          .order__itemRow
+            .order__itemRowTitle Состояние
+            .order__itemRowInfo.order-status-6 Согласован
+          .order__itemRow
+            .order__itemRowTitle Сумма заказа:
+            .order__itemRowInfo 
+              span 12500 р
+          .order__itemRow
+            .order__itemRowTitle Оплата:
+            .order__itemRowInfo В процессе
+          .order__itemRow
+            .order__itemRowTitle
+            .order__itemRowInfo
+              a.order__itemDetals(href="#") Подробнее...
+
+mixin profile
+  .profile__area
+    .profile__outer
+      .profile
+        .avatar__area
+          .avatar__img
+            img(src="assets/img/avatar1.png", alt="")
+          .avatar__imgBtn Загрузить изображение
+        .profile__infoArea
+          .profile__info
+            .profile__town
+              span Город: 
+              span Саратов
+            .profile__gender 
+              span Пол:
+              span Женский
+            .profile__create 
+              span Аккаунт создан
+              span 18.08.2020
+          //- .profile__status Активный покупатель
+          .profil__info2
+            .profil__email
+              span Email:
+              span pokupatel@tcmir.ru
+            .profil__tel
+              span Телефон:
+              span 8-927-310-88-10
+            .profil__correctBtn Изменить данные
+        .profil__exitArea
+          a.profil__exit(href="", title="Выйти")
+            i.icon-exit
+
+

@@ -1,0 +1,139 @@
+- var pageTitle = 'Главная страница'
+
+include __const
+include __index2
+include __header
+include assets/chunks/__sliderMain1/__sliderMain1
+include assets/chunks/__best/__best
+include assets/chunks/__collage/__collage
+include __footer
+include __m2_catalog
+include __brand
+include __adaptiveMenuArs
+
+
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +siteHeader2
+  .site__center.site__center_fdc
+    .dubleSliders__area.p1280
+      .dubleSliders__outer
+        .dubleSliders
+          .dubleSliders__small
+            .firstPromo__outer
+              .firstPromo.firstPromo_dt(href="#" style="background-image: url(https://tcmir.ru/img/banners/Rinascimento_FW20.jpg)")
+                span.darkText Новые <br>коллекции <br> уже в продаже!
+              .firstPromo.firstPromo_mb(href="#" style="background-image: url(https://tcmir.ru/img/banners/Rinascimento_FW20.jpg)")
+                span.darkText Новые <br>коллекции <br> уже в продаже!
+          .dubleSliders__big
+            +sliderMain1
+    +best2slider
+    
+    .linkBox3__area
+      .linkBox3__outer
+        .linkBox3.clearfix
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_1
+            .linkBox3__itemOuter.linkBox3__itemOuter_1
+              a.linkBox3__item.linkBox3__item_1(href="#" style="background-image: url(assets/img/lb2/001.jpg)")
+                span Красота
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_2
+            .linkBox3__itemOuter.linkBox3__itemOuter_2
+              a.linkBox3__item.linkBox3__item_2(href="#" style="background-image: url(assets/img/lb2/002.jpg)")
+                span Женщинам
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_3
+            .linkBox3__itemOuter.linkBox3__itemOuter_3
+              a.linkBox3__item.linkBox3__item_3(href="#" style="background-image: url(assets/img/lb2/003.jpg)")
+                span Детям
+          .linkBox3__itemWrapper.linkBox3__itemWrapper_4
+            .linkBox3__itemOuter.linkBox3__itemOuter_4
+              a.linkBox3__item.linkBox3__item_4(href="#" style="background-image: url(assets/img/lb2/004.jpg)")
+                span Мужчинам
+
+
+    +collage
+
+    .about3__area
+      .about3__outer.p1280
+        .about3
+          h2 О компании
+          .content
+            p Торговый комплекс МИР более 10 лет радует жителей Саратова качественным европейским шопингом.
+            p <strong>tcmir.ru — это онлайн копия Торгового комплекса МИР</strong>
+            p Теперь товары торгового комплекса можно купить в официальном интернет-магазине и заказать курьерскую доставку (доставляем компанией СДЭК) или оформить самовывоз (Пункт выдачи находится на 1 этаже Торгового комплекса МИР).
+            p <strong>tcmir.ru — это торговый комплекс МИР онлайн</strong>
+          a.about3__redmore(href="#") Подробнее
+    
+    
+    .bottomWide__area
+      .bottomWide__outer
+        .bottomWide
+          .bottomWide-container.swiper-container
+            .bottomWide-wrapper.swiper-wrapper
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a.videoLink_dt(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+                a.videoLink_mb(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу с мобилы</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              
+          .bottomWide__left
+            i.icon-arr-left1
+          .bottomWide__right
+            i.icon-arr-right1
+
+  .site__footer
+    +siteFooter2
+
+  +scripts
+
+
+
+
+
+
+
+  

@@ -1,0 +1,39 @@
+include __head
+include __header
+include __breadcrumbs
+include __brand
+include __filters
+include __filters-adaptive
+include __leftMenu
+include __catalog
+include __footer
+include __scripts
+
+- var pageTitle = 'Бренд'
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	+head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		//- +breadcrumbs
+		+fake-breadcrumbs_inBrand
+		+brand
+		.catalogPage.w1
+			+adaptiveFilters
+			+leftMenu
+			.catalog__outer
+				+filtersBtnsLine
+				+filtersArea
+				+catalogArea
+
+
+	.site__footer
+		+footer
+
+	+scripts

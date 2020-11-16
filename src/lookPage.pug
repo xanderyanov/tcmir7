@@ -1,0 +1,56 @@
+- var pageTitle = 'Страница лука'
+
+include __const
+include __header
+include __footer
+include __index2
+
+include __lookPage
+
+include __breadcrumbs
+include __m2_catalog
+include __catalog
+include __brand
+include __shopTab
+include __adaptiveMenuArs
+
+include __filters
+include __leftMenu
+include __aCatalog
+include __pagination
+
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  +siteHeader2
+
+  .site__center.site__center_fdc
+    +fake-breadcrumbs_inBrand
+    +lookLinks
+    .lookPage__area.p1280
+      .lookPage__outer
+        .lookPage
+          .lookPage__left.clearfix
+            +lookSlider
+            +lookVideo
+          .lookPage__right
+            +catalogArea
+
+
+    
+  +siteFooter2
+
+  +scripts
+
+
+
+
+
+
+
+  

@@ -1,0 +1,51 @@
+- var pageTitle = 'Страница Variants'
+
+include __head
+include __header
+include __variants
+include __breadcrumbs
+include __shop
+include __tovar
+include __tovar-slider
+//- include __tovar-info
+include __tovarArsTab
+include __textInContent
+include __footer
+include __scripts
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  
+  .site__header
+    +siteHeader2
+
+  .site__center
+    //- +fake-breadcrumbs
+    +backLine_link
+
+    .variants__pageArea.w0
+      .variants__page.container-xxl
+        .row
+          .col-6
+            +tovarSlider7
+          .col-6
+            +tovarInfo
+    //- .tovarPage__area.w0
+    //-   .tovarPage.w1
+    //-     .tovarPage__top
+    //-       .tovarPage__topLeft
+    //-         +tovarSlider7
+    //-       .tovarPage__topRight
+    //-         +tovarInfo
+            //- +sizeToPrice
+        //- +tovarArsTab
+    +textInContent
+
+
+  .site__footer
+    +siteFooter2
+
+  +scripts

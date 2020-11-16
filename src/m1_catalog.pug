@@ -1,0 +1,28 @@
+- var pageTitle = 'Каталог - мобильное исполнение'
+
+include __head
+include __header
+include __m1_catalog
+include __footer
+include __scripts
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    .title1.w1
+      h1= pageTitle
+    +m1_catalog
+    
+
+  .site__footer
+    +footer
+
+  +scripts

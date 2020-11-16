@@ -1,0 +1,28 @@
+mixin rezerv
+  .rezerv__area
+    .rezervBtn
+      span.rezervNo Зарезервировать
+      span.rezervYes Зарезервировано
+
+
+
+mixin simpleReg
+  .simpleReg__area
+    .simpleReg
+      .inputBox
+        label(for='simpleReg__readPhone') Введите телефон
+          //- span.requiredStar *
+        input#simpleReg__readPhone(type='text', placeholder='')
+        button.simpleReg__readPhoneSubmit(type='submit') Далее...
+      .inputBox
+        label(for='simpleReg__readPass') Введите пароль
+          //- span.requiredStar *
+        input#simpleReg__readPass(type='text', placeholder='')
+        button.simpleReg__readPassSubmit(type='submit') Далее...
+      .inputBox
+        label(for='simpleReg__readSmsCode') Введите код из смс
+          //- span.requiredStar *
+        input#simpleReg__readSmsCode(type='text', placeholder='')
+        button.simpleReg__readSmsCodeSubmit(type='submit') Далее...
+
+

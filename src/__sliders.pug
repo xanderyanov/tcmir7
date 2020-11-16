@@ -42,3 +42,102 @@ mixin sliderSwiperInMain
             +newCollection
           .julySlider__tovarsItem.swiper-slide
             +newCollection
+
+
+mixin septSlider1
+  .septSlider__area.septSlider__outer_gray
+    .septSlider__title Мужчинам
+    .septSlider1__outer.septSlider__outer
+      .septSlider1.septSlider.swiper-container
+        .swiper-wrapper
+          +septSliderCardSmall
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/001.jpeg", alt="")
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/002.jpeg", alt="")
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/003.jpeg", alt="")
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/004.jpeg", alt="")
+      .septSlider__pag
+        .septSlider__Prev
+          i.icon-arr-left1
+        .septSlider__Next
+          i.icon-arr-right1
+
+
+mixin septSliderCardBig
+  each item in newCollections
+    .septSliderCardBig__itemOuter.swiper-slide(id=item.id)
+      a.septSliderCardBig__item(href="#")
+        span.septSliderCardBig__itemImg.septSliderCardBig__itemImg_main
+          img(src!=item.img1, alt="")
+          if item.discount 
+            span.septSliderCardBig__itemDiscount!=item.discount 
+        span.septSliderCardBig__itemInfo
+          span.septSliderCardBig__itemBrand!= item.content
+          span.septSliderCardBig__itemTitle!= item.title
+          span.septSliderCardBig__itemPriceArea
+            if item.oldPrice
+              span.septSliderCardBig__itemOldPrice!= item.oldPrice 
+                span ₽
+              span.septSliderCardBig__itemPrice!= item.price 
+                span ₽
+            else
+              span.septSliderCardBig__itemPrice!= item.price
+                span ₽
+
+
+mixin septSliderCardSmall
+  each item in newCollections
+    .septSliderCardSmall__itemOuter.swiper-slide(id=item.id)
+      a.septSliderCardSmall__item(href="#")
+        .septSliderCardSmall__itemLeft
+          span.septSliderCardSmall__itemInfo
+            span.septSliderCardSmall__itemBrand!= item.content
+            span.septSliderCardSmall__itemTitle!= item.title
+            if item.discount 
+              span.septSliderCardSmall__itemDiscount!=item.discount 
+            span.septSliderCardSmall__itemPriceArea
+              if item.oldPrice
+                span.septSliderCardSmall__itemOldPrice!= item.oldPrice 
+                  span ₽
+                span.septSliderCardSmall__itemPrice!= item.price 
+                  span ₽
+              else
+                span.septSliderCardSmall__itemPrice!= item.price
+                  span ₽
+        .septSliderCardSmall__itemRight
+          span.septSliderCardSmall__itemImg.septSliderCardSmall__itemImg_main
+            img(src!=item.img1, alt="")
+            
+        
+
+mixin septSlider2
+  .septSlider__area
+    .septSlider__title Женщинам
+    .septSlider2__outer.septSlider__outer
+      .septSlider2.septSlider.swiper-container
+        .swiper-wrapper
+          +septSliderCardBig
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/001.jpeg", alt="")
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/002.jpeg", alt="")
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/003.jpeg", alt="")
+          //- .septSlider__item.swiper-slide
+          //-   a(href="#")
+          //-     img(src="assets/img/tovar2/004.jpeg", alt="")
+      .septSlider__pag
+        .septSlider__Prev
+          i.icon-arr-left1
+        .septSlider__Next
+          i.icon-arr-right1

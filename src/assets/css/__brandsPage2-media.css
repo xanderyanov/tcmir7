@@ -1,0 +1,73 @@
+@media only screen and (max-width: 1300px) {
+  .brands2promo__left {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .brands2promo__right {
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .brands2slider-slide {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .brands2slider_dt {
+    display: none;
+  }
+  .brands2slider_mb {
+    display: block;
+  }
+  .brands2promo {
+    flex-direction: column;
+  }
+  .brands2promo__left {
+    width: 100%;
+    padding: 0 20px 1rem;
+  }
+
+  .brands2promo__right {
+    width: 100%;
+    padding-left: 0;
+  }
+  .brands2slider-slide_img a:after {
+    opacity: 1;
+  }
+  .brands2slider-slide a:after {
+    opacity: 1;
+  }
+  .brands2slider-slide {
+    max-width: 33%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .brands2slider-slide {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

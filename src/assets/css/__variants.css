@@ -1,0 +1,65 @@
+.backLine__area {
+  background-color: var(--colorLightGrey);
+}
+
+.backLine__outer {
+  position: relative;
+}
+
+.backLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.backBtn i {
+  font-size: 1rem;
+  line-height: 1;
+  margin-right: 0.6125rem;
+  color: var(--tColor);
+}
+
+.backBtn:hover i {
+  color: var(--orange);
+}
+
+.backBtn span {
+  font-size: 1rem;
+  line-height: 1;
+  margin-right: 0.6125rem;
+  color: var(--tColor) !important;
+}
+.backBtn:hover span {
+  color: var(--orange) !important;
+}
+
+.backLine__linkTitle {
+  color: var(--tColor);
+  font-size: 1rem !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.backLine__linkTitle:hover,
+.backLine__linkTitle:focus {
+  color: var(--orange);
+}
+
+.backLine__title {
+  margin: 0 !important;
+}
+
+.backLine__title h1 {
+  margin: 0 !important;
+}
+
+/* pageArea */

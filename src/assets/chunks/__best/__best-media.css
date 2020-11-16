@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1300px) {
+  .best2slider {
+    padding: 10px 2rem 20px;
+  }
+  .best2__left {
+    left: 0;
+  }
+
+  .best2__right {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .best2__itemInfo {
+    align-items: center;
+  }
+  .best2__itemPriceArea {
+    justify-content: center;
+  }
+  .best2__itemOuter {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .best2slider {
+    padding: 10px 1rem 1rem;
+  }
+  .best2__left,
+  .best2__right {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 400px) {
+  .best2slider {
+    padding: 10px 0 1rem;
+  }
+  .best2__left,
+  .best2__right {
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}

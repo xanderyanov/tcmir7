@@ -1,7 +1,9 @@
 @media only screen and (max-width: 1280px) {
   .w1 {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 0 10px 0 10px;
+  }
+  .title1 {
+    padding: 0.5rem 0.625rem;
   }
 }
 
@@ -9,9 +11,20 @@
 }
 
 @media only screen and (max-width: 1080px) {
-}
-
-@media only screen and (max-width: 1024px) {
+  .toTop {
+    left: auto;
+    right: 10px;
+    bottom: 107px;
+  }
+  .stop {
+    overflow: hidden;
+    padding-right: 0;
+  }
+  :root {
+    --orange: #ff6600;
+    /* --header: #404040; */
+    --header: rgba(255, 255, 255, 1);
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -21,20 +34,90 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .gallery__item {
+    width: 25%;
+  }
+  .toTop {
+    bottom: 73px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   html,
   body {
-    font-size: 8px;
+    font-size: 12px !important;
+  }
+  .gallery__item {
+    width: 33.333%;
+  }
+  .indexShopCardTitle h2 {
+    font-size: 1.375rem;
+  }
+  .indexInfo__inner span {
+    font-size: 0.875rem;
+  }
+  .xBlock__area {
+    padding: 0.625rem 0;
+  }
+
+  .content ul,
+  .content ol {
+    padding: 0 0 5px 20px;
+    list-style-position: outside;
+  }
+  .content ul li {
+    margin: 0;
+    padding: 0 0 5px 0;
+  }
+  .content p,
+  .content blockquote,
+  .content table {
+    margin: 0 0 5px 0;
+  }
+  .content {
+    margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  /* .w1 {
+    padding: 0 5px 0 5px;
+  } */
+  .title1 {
+    padding: 0.3125rem 0.3125rem;
+  }
+  .videoBox__outer {
+    width: 100%;
+  }
+  .gallery__item {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  .indexShopCardTitle h2 {
+    font-size: 1.125rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
 }
+
+/* @media screen and (orientation: landscape) and (max-device-width: 900px) {
+  html {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    width: 320px; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+} */

@@ -64,6 +64,8 @@ var jsfiles = [
   "node_modules/jquery/dist/jquery.min.js",
   "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
   "node_modules/swiper/js/swiper.min.js",
+  "node_modules/slider-pro/dist/js/jquery.sliderPro.min.js",
+  "node_modules/slick-carousel/slick/slick.min.js",
   "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
   "node_modules/sweetalert/dist/sweetalert.min.js",
   // "node_modules/instafeed.js/instafeed.min.js"
@@ -96,6 +98,31 @@ gulp.task("myJs", function () {
   );
 });
 
+gulp.task("devjs", function () {
+  return (
+    gulp
+      // .src("src/assets/js/**/*.*")
+      .src("src/assets/js/devjs.js")
+      .pipe(plumber())
+      // .pipe(sourcemaps.init()) //Инициализируем sourcemap
+      // .pipe(uglify()) //Сожмем наш js
+      // .pipe(sourcemaps.write("."))
+      .pipe(gulp.dest("build/assets/js"))
+  );
+});
+
+gulp.task("sliderJs", function () {
+  return (
+    gulp
+      .src("src/assets/js/slider.js")
+      .pipe(plumber())
+      // .pipe(sourcemaps.init()) //Инициализируем sourcemap
+      // .pipe(uglify()) //Сожмем наш js
+      // .pipe(sourcemaps.write("."))
+      .pipe(gulp.dest("build/assets/js"))
+  );
+});
+
 gulp.task("fonts", function () {
   return gulp.src("src/assets/fonts/**/*.*").pipe(gulp.dest("build/assets/fonts"));
 });
@@ -104,7 +131,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "myJs", "fonts")));
+gulp.task(
+  "build",
+  gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "sliderJs", "myJs", "devjs", "fonts"))
+);
 
 gulp.task("watch", function () {
   gulp.watch("src/assets/**/*.css*", gulp.series("css")).on("uplink", function (filepath) {
@@ -118,6 +148,14 @@ gulp.task("watch", function () {
   gulp.watch("src/assets/js/**/*.js*", gulp.series("myJs")).on("uplink", function (filepath) {
     remember.forget("myJs", path.resolve(filepath));
     delete cached.caches.myJs[path.resolve(filepath)];
+  });
+  gulp.watch("src/assets/js/devjs.js", gulp.series("devjs")).on("uplink", function (filepath) {
+    remember.forget("devjs", path.resolve(filepath));
+    delete cached.caches.devjs[path.resolve(filepath)];
+  });
+  gulp.watch("src/assets/js/slider.js", gulp.series("sliderJs")).on("uplink", function (filepath) {
+    remember.forget("sliderJs", path.resolve(filepath));
+    delete cached.caches.sliderJs[path.resolve(filepath)];
   });
   gulp.watch("src/**/*.pug", gulp.series("pug"));
 });

@@ -1,0 +1,133 @@
+//- mixin callAction
+//-   .callAction__wrapper
+//-     .callAction__intro 
+//-       span.attention Внимание!
+//-       span Временно функционал сайта ограничен. Вы можете связться с продавцом для консультации по товару.
+//-     .callAction__area
+      //- .callAction__title Связаться с продавцом:
+      //- a.callAction(href="tel:88008888888")
+      //-   i.icon-phone1
+      //-   span 8-800-888-88-88
+      //- a.callActionBtnGoToShop(href="") Все товары продавца 
+      //- .callActionBtn.callActionBtn_inTovar
+      //-   .callActionBtn__text Связаться с магазином
+      //-   a.callAction__link(href="tel:88008888888")
+      //-     i.icon-phone1
+      //-     span 8-800-888-88-88
+      
+
+      
+//- mixin callActionBtn
+//-   .callAction__wrapper
+//-     //- .callAction__intro 
+//-     //-   span.attention Внимание!
+//-     //-   span Временно функционал сайта ограничен. Вы можете связться с продавцом для консультации по товару.
+//-     .callAction__area
+//-       //- .callAction__title Связаться с продавцом:
+//-       //- a.callAction(href="tel:88008888888")
+//-       //-   i.icon-phone1
+//-       //-   span 8-800-888-88-88
+
+//-       .callActionBtn
+//-         .callActionBtn__text Связаться с магазином
+//-         a.callAction__link(href="tel:88008888888")
+//-           i.icon-phone1
+//-           span 8-800-888-88-88
+
+//- mixin callActionBtn_inShop
+//-   //- .callAction__wrapper
+//-     //- .callAction__area.callAction__area_inShop
+//-   button.callActionBtn
+//-     .callActionBtn__text Связаться с магазином
+//-     a.callAction__link(href="tel:88008888888")
+//-       i.icon-phone1
+//-       span 8-800-888-88-88
+
+
+
+
+
+
+
+//- mixin callActionBtnInTovar
+//-   .callAction__wrapper
+//-     .callAction__area
+//-       a.callActionBtnGoToShop(href="") Все товары продавца 
+//-       .callActionBtn 
+//-         .callActionBtn__text Связаться с магазином
+//-         a.callAction__link(href="tel:88008888888")
+//-           i.icon-phone1
+//-           span 8-800-888-88-88
+
+
+mixin callActionArea 
+  .callActionArea
+    .callActionArea__left
+      a.callActionBtnGoToShop(href="") Все товары продавца
+    .callActionArea__right
+      button.callActionBtn
+        .callActionBtn__text Связаться с магазином
+        a.callAction__link(href="tel:88008888888")
+          i.icon-phone1
+          span 8-800-888-88-88
+
+mixin callActionArea_inShop
+  .callActionArea
+    .callActionArea__left
+      .shop__logo
+        img(src="assets/img/vendor/guinot/guinot.jpg", alt="")
+    .callActionArea__right
+      button.callActionBtn
+        .callActionBtn__text Связаться с магазином
+        a.callAction__link(href="tel:88008888888")
+          i.icon-phone1
+          span 8-800-888-88-88         
+
+mixin getDiscountBtn
+  .callActionArea
+    .callActionArea__left
+      a.callActionBtnGoToShop(href="") Все товары продавца 
+    .callActionArea__right  
+      .getDiscountBtn.getDiscountBtn_desktop
+        .getDiscountBtn__intro Получить скидку
+        .getDiscountBtn__promocode HRJHF65GGI759543
+          .getDiscountBtn__tooltipDesctop Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+      .getDiscountBtn_mobileArea
+        .getDiscountBtn__tooltipMobile Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+        .getDiscountBtn_mobile
+          .getDiscountBtn__intro_mobile Получить скидку
+          .getDiscountBtn__promocode_mobile HRJHF65GGI759543
+
+mixin getDiscountBtn_inShop
+  .callActionArea
+    .callActionArea__left
+      .shop__logo
+        img(src="assets/img/vendor/guinot/guinot.jpg", alt="")
+    .callActionArea__right  
+      .getDiscountBtn.getDiscountBtn_desktop
+        .getDiscountBtn__intro Получить скидку
+        .getDiscountBtn__promocode HRJHF65GGI759543
+          .getDiscountBtn__tooltipDesctop Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+      .getDiscountBtn_mobileArea
+        .getDiscountBtn__tooltipMobile Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+        .getDiscountBtn_mobile
+          .getDiscountBtn__intro_mobile Получить скидку
+          .getDiscountBtn__promocode_mobile HRJHF65GGI759543
+
+mixin callActionBtn
+  button.callActionBtn.callActionBtn_fixed
+    .callActionBtn__text Связаться с магазином
+    a.callAction__link(href="tel:88008888888")
+      i.icon-phone1
+      span 8-800-888-88-88
+
+mixin callActionBtnDiscount
+  .getDiscountBtn.getDiscountBtn_desktop
+    .getDiscountBtn__intro Получить скидку
+    .getDiscountBtn__promocode HRJHF65GGI759543
+      .getDiscountBtn__tooltipDesctop Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+  .getDiscountBtn_mobileArea
+    .getDiscountBtn__tooltipMobile Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+    .getDiscountBtn_mobile
+      .getDiscountBtn__intro_mobile Получить скидку
+      .getDiscountBtn__promocode_mobile HRJHF65GGI759543

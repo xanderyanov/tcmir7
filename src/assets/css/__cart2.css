@@ -1,0 +1,171 @@
+.cart2__area {
+  width: 100%;
+}
+.cart2__outer {
+  width: 100%;
+}
+
+.cart2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart2col1 {
+  width: 10%;
+}
+.cart2colWrapper {
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.cart2col2 {
+  width: 50%;
+  padding: 0 10px;
+}
+.cart2col3 {
+  width: 20%;
+  /* text-align: right; */
+}
+/* .cart2col4 {
+  width: 15%;
+  text-align: right;
+} */
+.cart2col5 {
+  width: 15%;
+  text-align: center;
+}
+.cart2col5 .number {
+  justify-content: center;
+}
+.cart2col6 {
+  width: 15%;
+  text-align: right;
+}
+.cart2col7 {
+  width: 5%;
+  text-align: right;
+}
+
+.dt {
+  display: block;
+}
+.mb {
+  display: none;
+}
+
+.cart2__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart2__header div {
+}
+
+.cart2__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  border-bottom: 2px solid #e5e5e5;
+}
+.cart2__item:last-child {
+  border-bottom: none;
+}
+
+a.cart2img {
+  text-decoration: none;
+}
+
+.cart2img img {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+}
+
+a.cart2title {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart2title span {
+  font-size: 1.25rem;
+  /* color: var(--blueLink); */
+  color: #000;
+}
+
+.cart2title span:first-child {
+  font-size: 0.875rem;
+  /* color: var(--blueLink); */
+  color: #000;
+}
+
+.cart2title span:last-child {
+  font-size: 0.875rem;
+  color: #a6a6a6;
+}
+
+.cart2col3 span {
+  font-size: 1rem;
+}
+
+.cart2__item4 {
+}
+
+.cart2__itemPriceArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart2__itemPriceArea span {
+  white-space: nowrap;
+}
+
+.cart2OldPrice {
+  margin-bottom: 0.3125rem;
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #a6a6a6;
+}
+
+.cart2Discount {
+  color: var(--redFill);
+  font-size: 1rem;
+  margin-bottom: 0.3125rem;
+}
+
+.cart2Price {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.cart2number {
+  justify-content: center;
+}
+
+.delete-svg {
+  width: 100%;
+  max-width: 24px;
+}
+
+#purchaseBtn.buyComplete {
+  background: #00994c;
+}
+
+#purchaseBtn.buyComplete:hover {
+  background: #00994c;
+}
+
+.miniCartBuyComplete {
+  background: #00994c;
+}
+
+.cart__refundInfo {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.4;
+  margin-top: 20px;
+}
