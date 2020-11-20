@@ -172,14 +172,18 @@
 }
 
 .filtersBtn.active {
-  border: 1px solid var(--orange);
-  background: var(--orange);
+  border: 1px solid #000;
+  /* background: var(--orange); */
+  background: #fff;
 }
 .filtersBtn.active i {
-  color: #fff;
+  /* color: #fff; */
+  color: var(--orange);
 }
 .filtersBtn.active span {
   color: #fff;
+  color: var(--orange);
+  font-weight: 600;
 }
 
 .filtersBtn_brand {

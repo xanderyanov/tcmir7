@@ -21,7 +21,7 @@
     padding-right: 0;
   }
   :root {
-    --orange: #ff6600;
+    /* --orange: #ff6600; */
     /* --header: #404040; */
     --header: rgba(255, 255, 255, 1);
   }
