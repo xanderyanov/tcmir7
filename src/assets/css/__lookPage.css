@@ -236,14 +236,27 @@
   white-space: nowrap;
 }
 
+a.lookLink,
+a.lookLink:focus,
+a.lookLink:hover {
+  text-decoration: none;
+}
+
 .lookLink:hover {
   color: #fff;
   background: var(--orange);
+  text-decoration: none;
 }
 
 .lookLink_all {
   background: #f8f8f8;
   border: 1px solid #dedede;
+}
+
+.lookLink__current {
+  color: #fff;
+  background: var(--orange);
+  text-decoration: none;
 }
 
 /* lookCard in Catalog */
@@ -329,4 +342,14 @@
 
 .lookCard:hover .lookCard__inner img {
   transform: scale(1.02);
+}
+
+.lookPage__info {
+  padding: 30px 30px 20px;
+  margin: 5px 0 10px;
+  background: #f8f8f8;
+}
+
+.lookPage__info .content {
+  margin-bottom: 10px;
 }
