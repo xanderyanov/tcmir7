@@ -26,6 +26,11 @@
   .lookSlider {
     margin-bottom: 0;
     width: 30%;
+    /* width: 100%; */
+    flex: 1;
+    /* padding: 0 20px 0 0; */
+  }
+  .lookSlider_withPaddingRight {
     padding: 0 20px 0 0;
   }
   .lookVideo {
@@ -33,6 +38,19 @@
   }
   .lookVideo:after {
     margin-top: auto;
+  }
+  .lookSlider__buttons {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+
+  .lookVideo {
+    min-width: 50%;
+    margin: 0 auto;
+  }
+
+  .lookVideo:after {
+    margin-top: 60%;
   }
 }
 
@@ -46,7 +64,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .lookSlider__buttons {
+  .lookSlider_withPaddingRight .lookSlider__buttons {
     display: none;
   }
   .lookCard__area {
@@ -57,6 +75,8 @@
 @media only screen and (max-width: 600px) {
   .lookSlider {
     width: 40%;
+  }
+  .lookSlider_withPaddingRight {
     padding: 0 15px 0 0;
   }
   .lookVideo {
@@ -71,6 +91,9 @@
   .lookSlider {
     width: 100%;
     padding: 0 0 15px 0;
+  }
+  .lookSlider_withPaddingRight .lookSlider__buttons {
+    display: flex;
   }
   .lookVideo {
     width: 100%;

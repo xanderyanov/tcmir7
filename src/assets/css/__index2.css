@@ -900,14 +900,28 @@
   bottom: 10px;
   left: 10px;
   background: rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  background-position: center center;
-  transition: all 0.5s;
+  overflow: hidden;
 }
 
 .linkBox3__item:hover {
-  transform: scale(1.01);
   box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.08);
+}
+
+.linkBox3__itemImgCover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.linkBox3__item:hover .linkBox3__itemImgCover {
+  transform: scale(1.01);
 }
 
 .linkBox3__item span {
@@ -915,6 +929,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 10;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -924,6 +939,7 @@
   color: #fff;
   background: rgba(0, 0, 0, 0.45);
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .linkBox3__item:hover span {

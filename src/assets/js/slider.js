@@ -1,24 +1,260 @@
 $(function () {
-  var swiper = new Swiper(".lookSlider-container", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    speed: 600,
-    autoplay: {
-      delay: 70000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".lookSlider__right",
-      prevEl: ".lookSlider__left",
-    },
-    pagination: {
-      el: ".lookSlider-pagination",
-      clickable: true,
-    },
-    // mousewheel: true,
-    keyboard: true,
-  });
+
+  if($(".lookVideo").length){
+    console.log("есть видео");
+
+    let lookSliderOptions = {};
+
+    if ($(".lookSlider-container .lookSlider-slide").length == 1){
+      lookSliderOptions = {
+        slidesPerView: 1,
+        loop: false,
+        spaceBetween: 0,
+        speed: 600,
+        autoplay: {
+          delay: 70000,
+          disableOnInteraction: true,
+        },
+        keyboard: false,
+        
+      };
+      $(".lookSlider-container").addClass("lookSlider-container_1slide");
+      $(".lookSlider-wrapper").addClass("disabled");
+      $(".lookSlider__left").addClass("disabled");
+      $(".lookSlider__right").addClass("disabled");
+    }else{
+      lookSliderOptions = {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+        speed: 600,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".lookSlider__right",
+          prevEl: ".lookSlider__left",
+        },
+        pagination: {
+          el: ".lookSlider-pagination",
+          clickable: true,
+        },
+        keyboard: true,
+        
+      };
+      
+    }
+    var swiper = new Swiper(".lookSlider-container", lookSliderOptions);
+
+    $(".lookSlider").addClass("lookSlider_withPaddingRight");
+    
+  }
+  else{
+    let lookSliderOptions = {};
+
+    if ($(".lookSlider-container .lookSlider-slide").length >= 4) {
+      lookSliderOptions = {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+        speed: 600,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".lookSlider__right",
+          prevEl: ".lookSlider__left",
+        },
+        pagination: {
+          el: ".lookSlider-pagination",
+          clickable: true,
+        },
+        keyboard: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 1,
+          }
+        },
+      };
+    } else if ($(".lookSlider-container .lookSlider-slide").length == 3){
+      lookSliderOptions = {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+        speed: 600,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".lookSlider__right",
+          prevEl: ".lookSlider__left",
+        },
+        pagination: {
+          el: ".lookSlider-pagination",
+          clickable: true,
+        },
+        keyboard: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          375: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 1,
+          }
+        },
+      };
+    }
+    else if ($(".lookSlider-container .lookSlider-slide").length == 2){
+      lookSliderOptions = {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 0,
+        speed: 600,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".lookSlider__right",
+          prevEl: ".lookSlider__left",
+        },
+        pagination: {
+          el: ".lookSlider-pagination",
+          clickable: true,
+        },
+        // mousewheel: true,
+        keyboard: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 1,
+          }
+        },
+      };
+      $(".lookSlider-container").addClass("lookSlider-container_2slide");
+    }
+    else if ($(".lookSlider-container .lookSlider-slide").length == 1){
+      lookSliderOptions = {
+        slidesPerView: 1,
+        loop: false,
+        spaceBetween: 0,
+        speed: 600,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: true,
+        },
+        keyboard: false,
+        
+      };
+      $(".lookSlider-container").addClass("lookSlider-container_1slide");
+      $(".lookSlider-wrapper").addClass("disabled");
+      $(".lookSlider__left").addClass("disabled");
+      $(".lookSlider__right").addClass("disabled");
+    }
+    var swiper = new Swiper(".lookSlider-container", lookSliderOptions);
+  }
+
+  
+
+
+
+
+  // var swiper = new Swiper(".lookSlider-container", {
+  //   slidesPerView: 1,
+  //   loop: true,
+  //   spaceBetween: 0,
+  //   speed: 600,
+  //   autoplay: {
+  //     delay: 70000,
+  //     disableOnInteraction: true,
+  //   },
+  //   navigation: {
+  //     nextEl: ".lookSlider__right",
+  //     prevEl: ".lookSlider__left",
+  //   },
+  //   pagination: {
+  //     el: ".lookSlider-pagination",
+  //     clickable: true,
+  //   },
+  //   // mousewheel: true,
+  //   keyboard: true,
+  //   breakpoints: {
+  //     0: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 0,
+  //     },
+  //     375: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 10,
+  //     },
+  //     600: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 10,
+  //     },
+  //     768: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 10,
+  //     },
+  //     1024: {
+  //       slidesPerView: 1,
+  //     }
+  //   },
+  // });
 
   var swiper = new Swiper(".s2-container", {
     slidesPerView: 1,
