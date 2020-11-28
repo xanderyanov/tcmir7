@@ -1,4 +1,59 @@
 $(function () {
+
+  // var currentOffset = $('.lookLink__current').offset();
+  // console.log(currentOffset);
+
+  var scrollContainerWidth = $('.lookLinks__outer').outerWidth();
+  console.log(scrollContainerWidth);
+
+  var targetBlockWidth = $('.lookLink__current').outerWidth();
+  console.log(targetBlockWidth);
+
+  var currentOffset = $('.lookLink__current').offset();
+  console.log(currentOffset.left);
+
+  var allOffset = currentOffset.left + targetBlockWidth;
+  console.log(allOffset);
+
+  // if(scrollContainerWidth < allOffset){
+  //   var needScrollLeft = allOffset - scrollContainerWidth;
+  //   console.log(needScrollLeft);
+  //   $('.lookLinks__outer').scrollLeft(400);
+  // } 
+  
+
+  $('.lookLinks__outer').on("scroll", function () {
+    var b = $('.lookLink__current').offset();
+    console.log(b);
+  });
+
+  
+
+  
+
+  // $('.lookLinks__outer').scrollLeft(needScrollLeft);
+
+
+  // $('.lookLinks__outer').on("scroll", function () {
+  //   console.log("scroll");
+  // });
+  // $('.lookLinks__outer ').animate({
+  //  scrollLeft: $($anchor.attr('href')).offset().left
+   
+
+  //   }, 1000);
+
+
+  // $(".toTop").on("click", function () {
+  //   $("body,html").animate({ scrollTop: 0 }, 400);
+  //   return false;
+  // });
+
+
+
+
+
+
   $(".only_num").keydown(function (event) {
     // Разрешаем: backspace, delete, tab и escape
     if (
