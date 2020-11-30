@@ -1,54 +1,32 @@
 $(function () {
 
-  // var currentOffset = $('.lookLink__current').offset();
-  // console.log(currentOffset);
+  
+  setTimeout(function(){
+    var Outer = $('.lookLink__currentOuter');
+    var position = Outer.position();
+    var positionLeft = position.left;
+    console.log("Смещение активного " + positionLeft);
 
-  var scrollContainerWidth = $('.lookLinks__outer').outerWidth();
-  console.log(scrollContainerWidth);
+    var targetBlockWidth = Outer.outerWidth();
+    console.log("Ширина активного пункта " + targetBlockWidth);
 
-  var targetBlockWidth = $('.lookLink__current').outerWidth();
-  console.log(targetBlockWidth);
+    var targetLeft = positionLeft + targetBlockWidth;
+    console.log("Смещение правого края " + targetLeft);
 
-  var currentOffset = $('.lookLink__current').offset();
-  console.log(currentOffset.left);
+    var Parent=Outer.parent().parent();
+    var scrollContainerWidth = Parent.outerWidth();
+    console.log("Ширина области " + scrollContainerWidth);
 
-  var allOffset = currentOffset.left + targetBlockWidth;
-  console.log(allOffset);
-
-  // if(scrollContainerWidth < allOffset){
-  //   var needScrollLeft = allOffset - scrollContainerWidth;
-  //   console.log(needScrollLeft);
-  //   $('.lookLinks__outer').scrollLeft(400);
-  // } 
+    var allOffset = targetLeft - scrollContainerWidth;
+    console.log("надо сместить на " + allOffset + "px");
+    if(allOffset > 0) {
+      // Parent.scrollLeft(allOffset);
+      Parent.animate({ scrollLeft: allOffset }, 1000);
+    }
+  }, 500);
   
 
-  $('.lookLinks__outer').on("scroll", function () {
-    var b = $('.lookLink__current').offset();
-    console.log(b);
-  });
-
-  
-
-  
-
-  // $('.lookLinks__outer').scrollLeft(needScrollLeft);
-
-
-  // $('.lookLinks__outer').on("scroll", function () {
-  //   console.log("scroll");
-  // });
-  // $('.lookLinks__outer ').animate({
-  //  scrollLeft: $($anchor.attr('href')).offset().left
-   
-
-  //   }, 1000);
-
-
-  // $(".toTop").on("click", function () {
-  //   $("body,html").animate({ scrollTop: 0 }, 400);
-  //   return false;
-  // });
-
+    
 
 
 

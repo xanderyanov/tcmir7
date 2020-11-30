@@ -236,6 +236,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   /* padding: 0 5px 5px 5px; */
+  position: relative;
 }
 
 .lookLinks {
@@ -243,6 +244,11 @@
   /* flex-wrap: wrap; */
   /* margin: 0 -6px; */
   padding: 0;
+  position: relative;
+}
+
+.lookLink__outer {
+  padding: 7px;
 }
 
 .lookLink {
@@ -253,11 +259,12 @@
   padding: 6px 1rem;
   border-radius: 4px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
-  margin: 0.5rem;
+
   text-decoration: none;
   border: 1px solid transparent;
   transition: all 0.3s;
   white-space: nowrap;
+  /* box-sizing: border-box; */
 }
 
 a.lookLink,

@@ -26,6 +26,9 @@ mixin head
     meta(property='og:title' content=pageTitle)
     meta(property='og:description' content='[[*seodescription]]')
     meta(property='og:image' content='[[++assets_url]]img/og-img.jpg')
+
+    +scripts
+
     link(rel='stylesheet' href='assets/css/apps.css')
 
 mixin scripts
