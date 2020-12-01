@@ -39,6 +39,13 @@
   display: none;
 }
 
+.noSale__area {
+  padding: 10px;
+  font-size: 0.875rem;
+  color: #000;
+  background: var(--colorLightGrey);
+}
+
 .simpleReg__area {
   width: 100%;
   order: 95;

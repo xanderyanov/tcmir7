@@ -25,32 +25,26 @@
   }
   .lookSlider {
     margin-bottom: 0;
-    width: 30%;
-    /* width: 100%; */
+    /* width: 30%; */
+    width: auto;
     flex: 1;
-    /* padding: 0 20px 0 0; */
+    flex-grow: 1;
+    min-width: 0;
   }
   .lookSlider_withPaddingRight {
     padding: 0 20px 0 0;
   }
   .lookVideo {
-    width: 70%;
+    width: auto;
+    min-width: 60%;
+    margin: 0 auto;
   }
   .lookVideo:after {
-    margin-top: auto;
+    margin-top: 60%;
   }
   .lookSlider__buttons {
     justify-content: flex-end;
     padding-right: 10px;
-  }
-
-  .lookVideo {
-    min-width: 50%;
-    margin: 0 auto;
-  }
-
-  .lookVideo:after {
-    margin-top: 60%;
   }
 }
 

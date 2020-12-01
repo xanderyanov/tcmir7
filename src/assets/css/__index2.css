@@ -597,10 +597,18 @@
   transition: all 0.7s;
 }
 
+.firstPromo img {
+  display: block;
+  width: 100%;
+}
+
 .firstPromo_dt {
   display: flex;
 }
 .firstPromo_mb {
+  display: none;
+}
+.firstPromo_mb2 {
   display: none;
 }
 

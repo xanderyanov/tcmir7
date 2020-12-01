@@ -26,6 +26,9 @@
   .m2_catMenu__area {
     display: block;
   }
+  .m2_catMenu__area .hide_menuInBrand {
+    display: none;
+  }
   .m2_bottomMenu__area {
     display: block;
   }

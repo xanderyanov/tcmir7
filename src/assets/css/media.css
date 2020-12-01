@@ -40,6 +40,9 @@
   .toTop {
     bottom: 73px;
   }
+  .site__center_snow1 {
+    background: url(../img/snow/snowbg500.png);
+  }
 }
 
 @media only screen and (max-width: 600px) {

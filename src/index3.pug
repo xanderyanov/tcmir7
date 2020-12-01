@@ -23,16 +23,20 @@ body
 
   .site__header
     +siteHeader2
-  .site__center.site__center_fdc
+  .site__center.site__center_fdc.site__center_snow1
     .dubleSliders__area.p1280
       .dubleSliders__outer
         .dubleSliders
           .dubleSliders__small
             .firstPromo__outer
-              .firstPromo.firstPromo_dt(href="#" style="background-image: url(https://tcmir.ru/img/banners/Rinascimento_FW20.jpg)")
+              .firstPromo.firstPromo_dt(href="#" style="background-image: url(assets/img/banners/450x450.jpg)")
                 span.darkText Новые <br>коллекции <br> уже в продаже!
-              .firstPromo.firstPromo_mb(href="#" style="background-image: url(https://tcmir.ru/img/banners/Rinascimento_FW20.jpg)")
+              .firstPromo.firstPromo_mb(href="#")
+                img(src="assets/img/banners/700x100.jpg", alt="")
                 span.darkText Новые <br>коллекции <br> уже в продаже!
+              //- .firstPromo.firstPromo_mb2(href="#")
+                img(src="assets/img/banners/300x60.jpg", alt="")
+                //- span.darkText Новые <br>коллекции <br> уже в продаже!
           .dubleSliders__big
             +sliderMain1
     +best2slider

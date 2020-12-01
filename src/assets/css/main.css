@@ -20,6 +20,10 @@ body {
   position: relative;
 }
 
+.site__center_snow1 {
+  background: url(../img/snow/snowbg750.png);
+}
+
 .site__center_fdc {
   display: flex;
   flex-direction: column;

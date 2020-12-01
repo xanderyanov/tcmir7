@@ -145,7 +145,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #fff;
+  background: #e6e4e4;
   margin: 0 6px;
 }
 
@@ -314,9 +314,9 @@ a.lookLink:hover {
   display: block;
 }
 
-.lookCard__area_mb {
+/* .lookCard__area_mb {
   display: none;
-}
+} */
 
 .lookCard__outer {
   border: 1px solid var(--x1border);
