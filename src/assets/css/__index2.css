@@ -68,6 +68,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
 }
 
 .header2_searchForm {
@@ -1138,7 +1139,7 @@
 
 .about3__area {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
   order: 5;
 }
 

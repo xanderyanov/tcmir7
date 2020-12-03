@@ -13,6 +13,31 @@ $(function () {
   // });
   // }
   // leftMenuUlLi ();
+  if($('.lookLink__currentOuter').length){
+    setTimeout(function(){
+      var Outer = $('.lookLink__currentOuter');
+      var position = Outer.position();
+      var positionLeft = position.left;
+      console.log("Смещение активного " + positionLeft);
+
+      var targetBlockWidth = Outer.outerWidth();
+      console.log("Ширина активного пункта " + targetBlockWidth);
+
+      var targetLeft = positionLeft + targetBlockWidth;
+      console.log("Смещение правого края " + targetLeft);
+
+      var Parent=Outer.parent().parent();
+      var scrollContainerWidth = Parent.outerWidth();
+      console.log("Ширина области " + scrollContainerWidth);
+
+      var allOffset = targetLeft - scrollContainerWidth;
+      console.log("надо сместить на " + allOffset + "px");
+      if(allOffset > 0) {
+        // Parent.scrollLeft(allOffset);
+        Parent.animate({ scrollLeft: allOffset }, 1000);
+      }
+    }, 500);
+  }
 
   function leftMenuUlLi() {
     $(".collap").on("click", function () {

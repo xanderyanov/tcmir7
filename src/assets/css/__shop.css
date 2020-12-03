@@ -128,7 +128,7 @@
 
 .swiper-button-prevShop:hover,
 .swiper-button-nextShop:hover {
-  background: var(--redFill);
+  background: var(--orange);
 }
 
 .swiper-button-prevShop:hover i,
@@ -262,6 +262,7 @@
   padding: 0.625rem;
   border: 1px solid var(--x1border);
   transition: all 0.3s;
+  background: #fff;
 }
 
 .shop__brandsItemInner:hover {
@@ -370,7 +371,7 @@
 }
 
 .brandsCarousel__btn:hover {
-  background: var(--redFill);
+  background: var(--orange);
 }
 
 .brandsCarousel__btn i {
@@ -381,6 +382,10 @@
 
 .brandsCarousel__btn:hover i {
   color: #fff;
+}
+
+.swiper-button-disabled:hover i {
+  color: #362b23;
 }
 
 .brandsCarousel__btnPrev {
@@ -404,7 +409,7 @@
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background-color: var(--redFill);
+  background-color: var(--orange);
 }
 
 .shop__infoText {

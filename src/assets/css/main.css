@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: url(../img/snow/snowbg750.png);
 }
 
 .site__header {
@@ -20,9 +21,9 @@ body {
   position: relative;
 }
 
-.site__center_snow1 {
+/* .site__center_snow1 {
   background: url(../img/snow/snowbg750.png);
-}
+} */
 
 .site__center_fdc {
   display: flex;
@@ -147,4 +148,25 @@ body {
 .xScroll::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background-color: var(--orange);
+}
+
+.catalog {
+  background: #fff;
+}
+
+.tovarPage__topRight,
+.best2__item,
+.catalogMenu,
+.lookLinks__outer,
+.filtersBtn,
+.m2_catMenuItem,
+.newCollection__item,
+.about3__outer,
+.xBlock {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.catalogMenu,
+.about3__outer {
+  padding: 10px;
 }
