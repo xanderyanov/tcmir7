@@ -135,6 +135,12 @@
   .mainShopsBox__item {
     width: 33.333%;
   }
+  .shop__openMobileBtn {
+    display: flex;
+  }
+  .shop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {

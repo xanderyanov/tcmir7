@@ -2,6 +2,16 @@
   position: relative;
 }
 
+.shop__openMobileBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  background: var(--orange);
+  color: #fff;
+}
+
 .shop {
   padding: 10px 0 10px 0;
   display: flex;

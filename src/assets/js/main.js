@@ -1,6 +1,17 @@
 $(function () {
 
-  
+  function openShopInfo() {
+    $(".shop__openMobileBtn").on("click", function () {
+      if ($(this).hasClass("open")) {
+        $(this).removeClass("open");
+        $(this).closest(".shop__area").find(".shop").slideUp(300);
+      } else {
+        $(this).addClass("open");
+        $(this).closest(".shop__area").find(".shop").slideDown(300);
+      }
+    });
+  }
+  openShopInfo();
 
   
 
