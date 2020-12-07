@@ -7,17 +7,7 @@ mixin m2_header
           input.m2_search__input(type='text', name='', value='', placeholder='Поиск по названию товара')
           button.m2_search__btn(type='submit')
             i.icon-search1
-    .m2_topMenu__area
-      .m2_topMenu__outer
-        ul.m2_topMenu
-          li.active
-            a(href="#") Женщинам
-          li
-            a(href="#") Мужчинам
-          li
-            a(href="#") Детям
-          li
-            a(href="#") Красота
+    +m2_topMenu
 
 mixin m2_catMenu
   .m2_catMenu__area

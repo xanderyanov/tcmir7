@@ -11,6 +11,9 @@ include __pagination
 include __textInContent
 include __footer
 include __scripts
+include __aCatalog
+
+include __breadcrumbs
 
 <!DOCTYPE html>
 html(lang="ru-RU")
@@ -18,11 +21,13 @@ html(lang="ru-RU")
 body
 
   .site__header
+    +aCatalog
     +siteHeader2
 
   .site__center
-    .title1.w1
-      h1= pageTitle
+    +fake-breadcrumbs_inBrand
+    //- .title1.w1
+    //-   h1= pageTitle
     //- include __breadcrumbs
     +shop
     .catalogPage__outer.w0
@@ -31,7 +36,8 @@ body
       //-   span 785
       .catalogPage.w1
         +adaptiveFilters
-        +leftMenuTreePath
+        //- +leftMenuTreePath
+        +leftMenuUlLi
         .catalog__outer
           +filtersBtnsLine
           +filtersArea
