@@ -1353,6 +1353,23 @@ $(function () {
     }
   });
 
+  // $(".catalogFilter1__itemTitleBtn span").on("click", function () {
+  //   $(this).closest(".catalogFilter1__item").find(".catalogFilter1__itemTitleBtn").addClass("active");
+  //   $(this).closest(".catalogFilter1__item").find('.discontResetBtn').addClass("active").show();
+    
+  //   $('.aFilterBoxDiscountBtn').addClass("active");
+  //   $('.aFilterBoxDiscountBtn__close').addClass("active").show();
+  // });
+  // $(".discontResetBtn").on("click", function () {
+  //     $(this).removeClass("active").hide();
+  //     $(this).closest(".catalogFilter1__item").find(".catalogFilter1__itemTitleBtn").removeClass("active");
+      
+  //     $('.aFilterBoxDiscountBtn').removeClass("active");
+  //     $('.aFilterBoxDiscountBtn__close').removeClass("active").hide();
+  // });
+
+
+
   //скрипт визуального добавления атрибута checked для чекбокса обычного
   // if ($(".filterBox__checkbox").length) {
   //сам выбор
@@ -1530,6 +1547,25 @@ $(function () {
     $(".overlay2").hide();
   });
 
+
+
+  // $(".aFilterBoxDiscountBtn__title").on("click", function () {
+  //   $(this).closest(".aFilterBoxDiscountBtn").addClass("active");
+  //   $(this).closest(".aFilterBoxDiscountBtn").find('.aFilterBoxDiscountBtn__close').addClass("active").show();
+  
+  //   $(".catalogFilter1__itemTitleBtn").addClass("active");
+  //   $('.discontResetBtn').addClass("active").show();
+  // });
+
+  // $(".aFilterBoxDiscountBtn__close").on("click", function () {
+  //     $(this).removeClass("active").hide();
+  //     $(this).closest(".aFilterBoxDiscountBtn").removeClass("active");
+
+  //     $(".catalogFilter1__itemTitleBtn").removeClass("active");
+  //   $('.discontResetBtn').removeClass("active").hide();
+  // });
+
+
   ////////////////////////////////////////////////////////////
 
   // $(".aFilterBoxEnterBtn").on("click", function () {
@@ -1610,8 +1646,8 @@ $(function () {
 
   // sizeToPrice
 
-  $(".sizeToPrice__selector").find(".sizeToPrice__selectorItem:first-child").addClass("active");
-  $(".sizeToPrice__result").find(".sizeToPrice__resultItem:first-child").addClass("active");
+  //$(".sizeToPrice__selector").find(".sizeToPrice__selectorItem:first-child").addClass("active");
+  //$(".sizeToPrice__result").find(".sizeToPrice__resultItem:first-child").addClass("active");
 
   $(".sizeToPrice__selector").on("click", ".sizeToPrice__selectorItem:not(.active)", function () {
     $(this)

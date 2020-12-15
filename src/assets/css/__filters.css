@@ -140,6 +140,49 @@
   z-index: -1;
 }
 
+.catalogFilter1__itemTitleBtn {
+  padding: 0.3125rem 0.5rem 0.3125rem 0.5rem;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.catalogFilter1__itemTitleBtn.active {
+  border-bottom: 2px solid var(--lmDark);
+}
+
+.catalogFilter1__itemTitleBtn span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.discontResetBtn {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: none;
+}
+
+.discontResetBtn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/i/close1.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .filtersBtnsLine__area {
   width: 100%;
   padding: 5px 0 5px;

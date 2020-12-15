@@ -28,6 +28,10 @@ mixin filtersArea
             span Выбор цвета
           .catalogFilter1__itemContent
             +filterCheckbox_color
+        .catalogFilter1__item
+          .catalogFilter1__itemTitleBtn
+            span Товар со скидкой
+            .discontResetBtn
         .catalogFilter1__item.catalogFilter1__item_allReset
           .resetAllFiltersBtn
             span Очистить фильтры
@@ -302,6 +306,9 @@ mixin adaptiveFilters
                 .aFilterBox__Reset Очистить выбор
                 .aFilterBoxEnterBtn
                   span Применить
+        .aFilterBoxDiscountBtn
+          .aFilterBoxDiscountBtn__title Товары со скидкой
+          .aFilterBoxDiscountBtn__close Сбросить
       .aFilter__footer
         .aFilter__footerReset Сбросить
         .aFilter__footerEnter Показать

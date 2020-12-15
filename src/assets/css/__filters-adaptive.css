@@ -221,6 +221,36 @@
   background: var(--x1grey);
 }
 
+.aFilterBoxDiscountBtn {
+  position: relative;
+  border-bottom: 1px solid var(--x1border);
+  display: flex;
+  align-items: center;
+}
+
+.aFilterBoxDiscountBtn.active {
+  background: var(--orange);
+}
+
+.aFilterBoxDiscountBtn__title {
+  padding: 10px;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: var(--tColor);
+}
+
+.aFilterBoxDiscountBtn.active .aFilterBoxDiscountBtn__title {
+  color: #fff;
+}
+
+.aFilterBoxDiscountBtn__close {
+  font-size: 0.75rem;
+  margin-left: auto;
+  display: none;
+  padding-right: 10px;
+  color: #fff;
+}
+
 .aFilter__footer {
   width: 100%;
   padding: 10px;
