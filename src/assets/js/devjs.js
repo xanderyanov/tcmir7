@@ -1,4 +1,43 @@
 $(function () {
+
+  //кнопка фильтрации скидки в адаптиве с синхронизацией с десктопом
+  $(".aFilterBoxDiscountBtn__title").on("click", function () {
+    $(this).closest(".aFilterBoxDiscountBtn").addClass("active");
+    $(this).closest(".aFilterBoxDiscountBtn").find('.aFilterBoxDiscountBtn__close').addClass("active").show();
+  
+    $(".catalogFilter1__itemTitleBtn").addClass("active");
+    $('.discontResetBtn').addClass("active").show();
+  });
+
+  $(".aFilterBoxDiscountBtn__close").on("click", function () {
+      $(this).removeClass("active").hide();
+      $(this).closest(".aFilterBoxDiscountBtn").removeClass("active");
+
+      $(".catalogFilter1__itemTitleBtn").removeClass("active");
+    $('.discontResetBtn').removeClass("active").hide();
+  });
+
+//кнопка фильтрации скидки на десктопе с синхронизацией в мобиле
+  $(".catalogFilter1__itemTitleBtn span").on("click", function () {
+    $(this).closest(".catalogFilter1__item").find(".catalogFilter1__itemTitleBtn").addClass("active");
+    $(this).closest(".catalogFilter1__item").find('.discontResetBtn').addClass("active").show();
+    
+    $('.aFilterBoxDiscountBtn').addClass("active");
+    $('.aFilterBoxDiscountBtn__close').addClass("active").show();
+  });
+  $(".discontResetBtn").on("click", function () {
+      $(this).removeClass("active").hide();
+      $(this).closest(".catalogFilter1__item").find(".catalogFilter1__itemTitleBtn").removeClass("active");
+      
+      $('.aFilterBoxDiscountBtn').removeClass("active");
+      $('.aFilterBoxDiscountBtn__close').removeClass("active").hide();
+  });
+
+
+
+
+
+
   // function leftMenuUlLi () {
   //   $(".collap").on("click", function () {
   //     var $this = $(this);

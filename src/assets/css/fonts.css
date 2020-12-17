@@ -1,9 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?1x9wrb");
-  src: url("../fonts/icomoon.eot?1x9wrb#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?1x9wrb") format("truetype"), url("../fonts/icomoon.woff?1x9wrb") format("woff"),
-    url("../fonts/icomoon.svg?1x9wrb#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?gtp3sj");
+  src: url("../fonts/icomoon.eot?gtp3sj#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?gtp3sj") format("truetype"),
+    url("../fonts/icomoon.woff?gtp3sj") format("woff"),
+    url("../fonts/icomoon.svg?gtp3sj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +26,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-percentage3:before {
+  content: "\e956";
+}
+.icon-coupon:before {
+  content: "\e957";
+}
+.icon-discount-voucher:before {
+  content: "\e959";
+}
+.icon-percentage:before {
+  content: "\e95a";
+}
+.icon-percentage2:before {
+  content: "\e95b";
+}
+.icon-shopping-bag:before {
+  content: "\e95c";
+}
 .icon-down3:before {
   content: "\e954";
 }
