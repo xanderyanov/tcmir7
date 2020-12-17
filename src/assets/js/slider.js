@@ -77,7 +77,7 @@ $(function () {
             slidesPerView: 1,
             spaceBetween: 0,
           },
-          375: {
+          414: {
             slidesPerView: 2,
             spaceBetween: 10,
           },
@@ -119,10 +119,10 @@ $(function () {
             spaceBetween: 0,
           },
           320: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 1,
+            spaceBetween: 0,
           },
-          375: {
+          414: {
             slidesPerView: 3,
             spaceBetween: 5,
           },
@@ -166,10 +166,10 @@ $(function () {
             spaceBetween: 0,
           },
           320: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 1,
+            spaceBetween: 0,
           },
-          375: {
+          414: {
             slidesPerView: 2,
             spaceBetween: 5,
           },
