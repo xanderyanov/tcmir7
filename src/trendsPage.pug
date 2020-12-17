@@ -1,0 +1,55 @@
+- var pageTitle = 'Страница каталога ноябрь 2020'
+
+include __const
+include __index2
+include __brandsPage2
+include __header
+include __footer
+include __breadcrumbs
+include __m2_catalog
+include __brand
+include __shopTab
+include __adaptiveMenuArs
+
+include __filters
+include __leftMenu
+include __m2_catalog
+include __aCatalog
+include __pagination
+
+include assets/chunks/__loader/__loader
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+  .site__header
+    +aCatalog
+    +siteHeader2
+
+  .site__center
+    +m2_topMenu
+    +m2_catMenu
+    //- .title1.w1
+    //-   h1 Одежда
+    
+    +m2_category
+    +m2_innerCategory
+    //- include __breadcrumbs
+    .catalogPage__outer.w0
+      .catalogPage.w1
+        +adaptiveFilters
+        +leftMenuUlLi
+        .catalog__outer
+          +filtersBtnsLine2
+          +filtersArea
+          +catalogArea
+          +pagiantion
+            
+
+  
+
+
+  +siteFooter2
+
+  +scripts

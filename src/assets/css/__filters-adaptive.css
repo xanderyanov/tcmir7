@@ -251,6 +251,10 @@
   color: #fff;
 }
 
+.aFilterBoxDiscountBtn.active .aFilterBoxDiscountBtn__close {
+  display: block;
+}
+
 .aFilter__footer {
   width: 100%;
   padding: 10px;

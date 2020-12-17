@@ -169,6 +169,10 @@
   display: none;
 }
 
+#discountFilterBtnDt.active .discontResetBtn {
+  display: block;
+}
+
 .discontResetBtn:after {
   content: "";
   position: absolute;
