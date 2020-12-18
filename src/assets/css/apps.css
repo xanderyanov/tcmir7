@@ -141,5 +141,8 @@
 @import "__lookPage.css";
 @import "__lookPage-media.css";
 
+@import "__trendsPage.css";
+@import "__trendsPage-media.css";
+
 @import "main.css";
 @import "media.css";

@@ -126,6 +126,56 @@
       "img2": "assets/img/tovar/001.jpeg"
     }
   ],
+  "looks": [
+    {
+      "title": "Косметика Babor",
+      "img1": "assets/img/looks/01.jpg"
+    },
+    {
+      "title": "Зима: уход за кожей и волосами",
+      "img1": "assets/img/looks/02.jpg"
+    },
+    {
+      "title": "Новогодние образы: будь разной",
+      "img1": "assets/img/looks/03.jpg"
+    },
+    {
+      "title": "Подарки для него",
+      "img1": "assets/img/looks/05.jpg"
+    },
+    {
+      "title": "Новогодний макияж",
+      "img1": "assets/img/looks/05.jpg"
+    },
+    {
+      "title": "Анекс-тур: в теплые края!",
+      "img1": "assets/img/looks/06.jpg"
+    },
+    {
+      "title": "Новогодние образы: белый бык 2021",
+      "img1": "assets/img/looks/07.jpg"
+    },
+    {
+      "title": "Подарки для неё",
+      "img1": "assets/img/looks/08.jpg"
+    },
+    {
+      "title": "Пижамная вечеринка",
+      "img1": "assets/img/looks/09.jpg"
+    },
+    {
+      "title": "Выбор стилиста: Rinascimento",
+      "img1": "assets/img/looks/10.jpg"
+    },
+    {
+      "title": "Будь в форме",
+      "img1": "assets/img/looks/11.jpg"
+    },
+    {
+      "title": "Тренд: экокожа",
+      "img1": "assets/img/looks/12.jpg"
+    }
+  ],
   "newCollections": [
     {
       "id": "321321321",

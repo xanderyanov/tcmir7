@@ -123,7 +123,7 @@ $(function () {
             spaceBetween: 0,
           },
           414: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 5,
           },
           600: {

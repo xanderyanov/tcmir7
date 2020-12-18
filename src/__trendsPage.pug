@@ -1,0 +1,85 @@
+mixin catalogAreaAllLooks  
+  //- импорт из data.json (подключается через gulp task)
+  .catalog
+    each item in looks
+      .trendCard__area(id=item.id)
+        .trendCard__outer
+          a.trendCard(href='#')
+            .trendCard__inner
+              img(src!=item.img1, alt='')
+              .trendCard__btn!= item.title
+
+mixin tags
+  .tags__area
+    .tags__outer
+      .title2 
+        h2 Популярные #Теги
+      .tags
+        .tag__outer
+          a.tag(href="#") Осеньзима
+        .tag__outer
+          a.tag(href="#") Светитсолнышко
+        .tag__outer
+          a.tag(href="#") МыВместе
+        .tag__outer
+          a.tag(href="#") СпортСпортСпорт
+        .tag__outer
+          a.tag(href="#") ДождикНеПомеха
+        .tag__outer
+          a.tag(href="#") ЗолотаяОсень
+        .tag__outer
+          a.tag(href="#") ЯблокиНаСнегу
+        .tag__outer
+          a.tag(href="#") Бруталити
+        .tag__outer
+          a.tag(href="#") МужскаяКлассика
+        .tag__outer
+          a.tag(href="#") УдачныеВыходные
+        .tag__outer
+          a.tag(href="#") СемейныйШоппинг
+        .tag__outer
+          a.tag(href="#") ДетиИВзрослые
+        .tag__outer
+          a.tag(href="#") ОбувьНаЛюбуюПогоду
+        .tag__outer
+          a.tag(href="#") Тепло
+        .tag__outer
+          a.tag(href="#") ЗимняяСказка
+        .tag__outer
+          a.tag(href="#") ТвойЛучшийОбраз
+        .tag__outer
+          a.tag(href="#") Осеньзима
+        .tag__outer
+          a.tag(href="#") Светитсолнышко
+        .tag__outer
+          a.tag(href="#") МыВместе
+        .tag__outer
+          a.tag(href="#") СпортСпортСпорт
+        .tag__outer
+          a.tag(href="#") ДождикНеПомеха
+        .tag__outer
+          a.tag(href="#") ЗолотаяОсень
+        .tag__outer
+          a.tag(href="#") ЯблокиНаСнегу
+        .tag__outer
+          a.tag(href="#") Бруталити
+        .tag__outer
+          a.tag(href="#") МужскаяКлассика
+        .tag__outer
+          a.tag(href="#") УдачныеВыходные
+        .tag__outer
+          a.tag(href="#") СемейныйШоппинг
+        .tag__outer
+          a.tag(href="#") ДетиИВзрослые
+        .tag__outer
+          a.tag(href="#") ОбувьНаЛюбуюПогоду
+        .tag__outer
+          a.tag(href="#") Тепло
+        .tag__outer
+          a.tag(href="#") ЗимняяСказка
+        .tag__outer
+          a.tag(href="#") ТвойЛучшийОбраз
+      .tag__moreOpen 
+        .tag__moreOpen_open Показать все
+        .tag__moreOpen_close Свернуть все
+      

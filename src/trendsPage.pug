@@ -1,4 +1,4 @@
-- var pageTitle = 'Страница каталога ноябрь 2020'
+- var pageTitle = 'Страница Трендов'
 
 include __const
 include __index2
@@ -19,6 +19,8 @@ include __pagination
 
 include assets/chunks/__loader/__loader
 
+include __trendsPage.pug
+
 <!DOCTYPE html>
 html(lang="ru-RU")
   +head
@@ -28,23 +30,22 @@ body
     +siteHeader2
 
   .site__center
-    +m2_topMenu
-    +m2_catMenu
-    //- .title1.w1
-    //-   h1 Одежда
-    
-    +m2_category
-    +m2_innerCategory
-    //- include __breadcrumbs
     .catalogPage__outer.w0
+      +fake-breadcrumbs_inBrand
       .catalogPage.w1
+
         +adaptiveFilters
-        +leftMenuUlLi
+        nav.catalogMenu__outer
+          +leftMenuUlLi
+          //- +tags
         .catalog__outer
-          +filtersBtnsLine2
-          +filtersArea
-          +catalogArea
-          +pagiantion
+          +tags
+          .title2 
+            h2 Будь в тренде
+          +catalogAreaAllLooks
+          .title2 
+            h2 Наши подборки
+          +catalogAreaAllLooks
             
 
   
