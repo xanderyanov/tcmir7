@@ -1,0 +1,60 @@
+- var pageTitle = '#ЗимняяСказка'
+
+include __const
+include __index2
+include __brandsPage2
+include __header
+include __footer
+include __breadcrumbs
+include __m2_catalog
+include __brand
+include __shopTab
+include __adaptiveMenuArs
+
+include __filters
+include __leftMenu
+include __m2_catalog
+include __aCatalog
+include __pagination
+
+include assets/chunks/__loader/__loader
+
+include __trendsPage.pug
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+  .site__header
+    +aCatalog
+    +siteHeader2
+
+  .site__center
+    .catalogPage__outer.w0
+      +fake-breadcrumbs_inBrand
+      .catalogPage.w1
+
+        +adaptiveFilters
+        nav.catalogMenu__outer
+          +leftMenuUlLi
+          +tags
+        .catalog__outer
+          //- +tags
+          .title2 
+            h2 Луки
+          +catalogAreaAllLooks
+          .title2 
+            h2 Наши подборки
+          +catalogAreaAllLooks
+          .title2 
+            h2 Рекомендуемые товары
+          +catalogArea
+          +pagiantion
+            
+
+  
+
+
+  +siteFooter2
+
+  +scripts

@@ -1,18 +1,17 @@
 $(function () {
 
   function tagOpen() {
-    $('.tags__outer:visible').addClass('visible');
     $(".tag__moreOpen").on("click", function () {
       if ($(this).hasClass("open")) {
         $(this).removeClass("open");
         $(this).children(".tag__moreOpen_open").show();
         $(this).children(".tag__moreOpen_close").hide();
-        $(this).closest(".tags__outer").find(".tag__outer").slideUp(300);
+        $(this).closest(".tags__outer").find(".tag__outerSecond").slideUp(300);
       } else {
         $(this).addClass("open");
         $(this).children(".tag__moreOpen_open").hide();
         $(this).children(".tag__moreOpen_close").show();
-        $(this).closest(".tags__outer").find(".tag__outer").slideDown(300);
+        $(this).closest(".tags__outer").find(".tag__outerSecond").slideDown(300);
       }
     });
   }

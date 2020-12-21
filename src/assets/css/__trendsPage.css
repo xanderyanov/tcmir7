@@ -85,19 +85,11 @@
   padding: 5px;
   display: none;
 }
-.tag__outer:nth-child(1),
-.tag__outer:nth-child(2),
-.tag__outer:nth-child(3),
-.tag__outer:nth-child(4),
-.tag__outer:nth-child(5),
-.tag__outer:nth-child(6),
-.tag__outer:nth-child(7),
-.tag__outer:nth-child(8),
-.tag__outer:nth-child(9),
-.tag__outer:nth-child(10),
-.tag__outer:nth-child(11),
-.tag__outer:nth-child(12) {
+.tag__outerFirst {
   display: block;
+}
+.tag__outerSecond {
+  display: none;
 }
 
 .catalogMenu__outer .tag__outer {
