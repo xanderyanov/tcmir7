@@ -132,10 +132,17 @@ mixin siteHeader2
         .header2__buttons
           .headerRightLi.openShops_dt(href="#") Магазины
           .login2__area
+            //- .login2__item
+            //-   a(href="#", title="Войти")
+            //-     i.icon-enter
             .login2__item
-              a(href="#") Войти
-            .login2__item
-              a(href="#") Регистрация
+              a(href="#", title="Вход / Регистрация")
+                i.icon-profile
+          //- .login2__area
+          //-   .login2__item
+          //-     a(href="#") Войти
+          //-   .login2__item
+          //-     a(href="#") Регистрация
           .buttons2__area
             .buttons2__item.header2__search_jsEvent
               i.icon-search2

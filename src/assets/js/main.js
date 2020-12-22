@@ -277,7 +277,7 @@ $(function () {
 
   //allBrandMobile
   $(".aBrandOpenBtn, .openBrands_dt").on("click", function (e) {
-    e.preventDefault;
+    e.preventDefault();
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $("body").removeClass("stop");
@@ -289,6 +289,11 @@ $(function () {
       $(".aBrands__overlay").show();
       $(".aBrands__area").show();
     }
+    $(".menuButton1__areaJS").removeClass("open");
+    $(".menuButton1").removeClass("open");
+    $(".orangeHeader__area").removeClass("orangeHeader__area_fixed");
+    $(".orangeHeader__areaFake2").css({ height: "0" });
+    $(".upBox__area").slideUp(200);
   });
   $(".aBrands__overlay").on("click", function (e) {
     e.preventDefault;
@@ -328,7 +333,7 @@ $(function () {
   // end brandMobile
 
   $(".aShopOpenBtn, .openShops_dt").on("click", function (e) {
-    e.preventDefault;
+    e.preventDefault();
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $("body").removeClass("stop");

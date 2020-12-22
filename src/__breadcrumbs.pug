@@ -30,6 +30,16 @@ mixin fake-breadcrumbs_inBrand
         .brandTitle
           h1= pageTitle
 
+mixin fake-breadcrumbs_inOneTagPage
+  .breadcrumbs__area.w0
+    .breadcrumbs.w1
+      .fakeBreadcrumbs
+        .backBtn
+          i.icon-arrow-left2
+          span Все тренды
+        .brandTitle
+          h1= pageTitle
+
 mixin fake-breadcrumbs_onlyBackBtn
   .breadcrumbs__area.w0
     .breadcrumbs.w1
