@@ -27,7 +27,7 @@ mixin filtersArea
           .catalogFilter1__itemTitle
             span Выбор цвета
           .catalogFilter1__itemContent
-            +filterCheckbox_color
+            +filterCheckbox_colorNew
         .catalogFilter1__item
           .catalogFilter1__itemTitleBtn
             span Товар со скидкой
@@ -109,25 +109,32 @@ mixin filterCheckbox_brand
     .filterBox__content
       .xcheckbox
         input#checkbox_11(type='checkbox', value='1')
-        label(for='checkbox_11') Adidas
+        label(for='checkbox_11') 
+          span Adidas
       .xcheckbox
         input#checkbox_22(type='checkbox', value='2')
-        label(for='checkbox_22') Nike
+        label(for='checkbox_22') 
+          span Nike
       .xcheckbox
         input#checkbox_33(type='checkbox', value='3')
-        label(for='checkbox_33') Guinot
+        label(for='checkbox_33') 
+          span Guinot
       .xcheckbox
         input#checkbox_44(type='checkbox', value='4')
-        label(for='checkbox_44') Sony
+        label(for='checkbox_44') 
+          span Sony
       .xcheckbox
         input#checkbox_55(type='checkbox', value='5')
-        label(for='checkbox_55') Apple
+        label(for='checkbox_55') 
+          span Apple
       .xcheckbox
         input#checkbox_66(type='checkbox', value='6')
-        label(for='checkbox_66') Puma
+        label(for='checkbox_66') 
+          span Puma
       .xcheckbox
         input#checkbox_77(type='checkbox', value='7')
-        label(for='checkbox_77') Большевичка
+        label(for='checkbox_77') 
+         span Большевичка
     .filter__apply
       .filter__checkboxReset 
         span Очистить выбор
@@ -191,6 +198,37 @@ mixin filterCheckbox_color
         span Применить
 
 
+mixin filterCheckbox_colorNew
+  .filterBox.filterBox__checkbox
+    .filterBox__title Выбор Цвета:
+    .filterBox__content
+      .xcheckbox
+        input#checkbox_111(type='checkbox', value='1')
+        label(for='checkbox_111') 
+          span.colorLabel(style="background: #000000")
+          | Черный
+      .xcheckbox
+        input#checkbox_222(type='checkbox', value='2')
+        label.colorCheckLabel(for='checkbox_222') 
+          span.colorLabel(style="background: #ffffff")
+          | Белый
+      .xcheckbox
+        input#checkbox_333(type='checkbox', value='3')
+        label.colorCheckLabel(for='checkbox_333')
+          span.colorLabel(style="background: #ff0000")
+          | Красный
+      .xcheckbox
+        input#checkbox_444(type='checkbox', value='4')
+        label.colorCheckLabel(for='checkbox_444')
+          span.colorLabel(style="background: #00ff00")
+          | Зеленый
+    .filter__apply
+      .filter__checkboxReset 
+        span Очистить выбор
+      .filterEnterBtn
+        span Применить
+
+
 
 
 
@@ -248,26 +286,25 @@ mixin adaptiveFilters
             .aFilterBox__innerContent
               .aFilterBox__chooseArea
                 .xcheckbox
-                  input#checkbox_21(type='checkbox', value='21', data-val="filter")
-                  label(for='checkbox_21') Красный
+                  input#checkbox_111(type='checkbox', value='1')
+                  label.colorCheckLabel(for='checkbox_111') 
+                    span.colorLabel(style="background: #000000")
+                    span Черный
                 .xcheckbox
-                  input#checkbox_22(type='checkbox', value='22', data-val="filter")
-                  label(for='checkbox_22') Белый
+                  input#checkbox_222(type='checkbox', value='2')
+                  label.colorCheckLabel(for='checkbox_222') 
+                    span.colorLabel(style="background: #ffffff")
+                    span Белый
                 .xcheckbox
-                  input#checkbox_23(type='checkbox', value='23', data-val="filter")
-                  label(for='checkbox_23') Зеленый
+                  input#checkbox_333(type='checkbox', value='3')
+                  label.colorCheckLabel(for='checkbox_333')
+                    span.colorLabel(style="background: #ff0000")
+                    span Красный
                 .xcheckbox
-                  input#checkbox_24(type='checkbox', value='24', data-val="filter")
-                  label(for='checkbox_24') Ситий
-                .xcheckbox
-                  input#checkbox_25(type='checkbox', value='25', data-val="filter")
-                  label(for='checkbox_25') Золотой
-                .xcheckbox
-                  input#checkbox_26(type='checkbox', value='26', data-val="filter")
-                  label(for='checkbox_26') Черный
-                .xcheckbox
-                  input#checkbox_27(type='checkbox', value='27', data-val="filter")
-                  label(for='checkbox_27') Желтый
+                  input#checkbox_444(type='checkbox', value='4')
+                  label.colorCheckLabel(for='checkbox_444')
+                    span.colorLabel(style="background: #00ff00")
+                    span Зеленый
               .aFilterBox__btns
                 .aFilterBox__Reset Очистить выбор
                 .aFilterBoxEnterBtn
