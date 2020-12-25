@@ -19,7 +19,7 @@ include __leftMenu
 include __aCatalog
 include __pagination
 
-
+include __trendsPage.pug
 
 
 <!DOCTYPE html>
@@ -30,7 +30,8 @@ body
     +siteHeader2
 
   .site__center.site__center_fdc
-    +fake-breadcrumbs_inBrand
+    //- +fake-breadcrumbs_inBrand
+    +fake-breadcrumbs_inOneTagPage
     +lookLinks
     .lookPage__area.p1280
       .lookPage__outer
@@ -38,13 +39,16 @@ body
           .lookPage__left.clearfix
             +lookSlider
             +lookVideo
+            .dtonly
+              +tags
           .lookPage__right
             .lookPage__info
               .content
                 p Создайте гармоничный образ из самых трендовых вещей сезона.
                 p Всё самое модно сразу
             +catalogArea
-
+            .mbonly
+              +tags
 
     
   +siteFooter2

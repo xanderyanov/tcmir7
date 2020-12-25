@@ -41,6 +41,12 @@
   .m2_catalogArea {
     display: block;
   }
+  .mbonly {
+    display: block;
+  }
+  .dtonly {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

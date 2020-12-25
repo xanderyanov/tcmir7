@@ -503,3 +503,19 @@ a.m2_innerCategory__item:hover {
   color: #fff;
   font-size: 1.25rem;
 }
+
+.mbonly {
+  display: none;
+}
+.dtonly {
+  display: block;
+}
+.mbonly .menu21__Outer {
+  line-height: 2.4;
+}
+.mbonly .menu21__Outer a {
+  white-space: nowrap;
+  /* text-transform: uppercase; */
+  color: #777;
+  padding: 4px;
+}
