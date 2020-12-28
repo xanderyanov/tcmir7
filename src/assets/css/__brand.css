@@ -151,6 +151,8 @@
 .aBrandsTabs__titles {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
 .aBrandsTabs__area {
@@ -172,7 +174,7 @@
 .aBrandsTabs__title {
   text-decoration: none;
   padding: 5px 15px;
-  margin-right: 2px;
+  margin: 1px;
   background: var(--colorLightGrey);
   color: #000;
   border-radius: 4px;

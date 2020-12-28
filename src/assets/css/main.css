@@ -147,6 +147,11 @@ body {
   margin-bottom: 10px;
 }
 
+.xScroll {
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+}
+
 .xScroll::-webkit-scrollbar-track {
   border-radius: 8px;
   background-color: var(--colorLightGrey);
