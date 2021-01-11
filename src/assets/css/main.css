@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: url(../img/snow/snowbg750.png);
+  /* background: url(../img/snow/snowbg750.png); */
 }
 
 .site__header {
