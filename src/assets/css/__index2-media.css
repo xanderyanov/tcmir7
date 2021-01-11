@@ -242,13 +242,13 @@
   .linkBox3 {
     padding: 20px 0 20px;
   }
-  .firstPromo_mb {
+  /* .firstPromo_mb {
     height: 100px;
-  }
-  .firstPromo_mb img {
+  } */
+  /* .firstPromo_mb img {
     object-fit: cover;
     width: auto;
-  }
+  } */
 }
 
 @media only screen and (max-width: 480px) {
@@ -297,12 +297,12 @@
   .about2__content {
     padding: 0;
   }
-  .firstPromo_mb {
+  /* .firstPromo_mb {
     height: 80px;
   }
   .firstPromo_mb img {
     height: 80px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 400px) {
