@@ -337,6 +337,10 @@ a.lookLink:hover {
   position: relative;
 }
 
+.lookCard__inner_left {
+  position: relative;
+}
+
 .lookCard__inner_bg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -354,6 +358,11 @@ a.lookLink:hover {
   position: relative;
   transition: all 0.5s;
   object-fit: cover;
+}
+
+.lookCard__inner_left img {
+  display: block;
+  width: 100%;
 }
 
 .lookCard__buyBtn {
