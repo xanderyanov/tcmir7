@@ -183,8 +183,8 @@ mixin catalogArea
     .lookCard__area.lookCard__area_mb
       .lookCard__outer
         a.lookCard(href="")
-          .lookCard__inner
-            img(src="assets/img/look/salvatini-4-1200-1200-2.jpg", alt="")
+          .lookCard__inner.lookCard__inner_bg(style="background-image: url(assets/img/look/salvatini-4-1200-1200-2.jpg)")
+            //- img(src="assets/img/look/salvatini-4-1200-1200-2.jpg", alt="")
             .lookCard__buyBtn Рекомендуем
     each item in tovars
       .tovarCard__area(id=item.id)

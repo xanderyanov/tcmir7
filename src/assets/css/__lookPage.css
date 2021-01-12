@@ -337,6 +337,17 @@ a.lookLink:hover {
   position: relative;
 }
 
+.lookCard__inner_bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .lookCard__inner img {
   display: block;
   width: 100%;
@@ -352,11 +363,11 @@ a.lookLink:hover {
   left: 20%;
   top: 50%;
   margin-top: -20px;
-  background: var(--orange);
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--orange);
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s;
@@ -373,6 +384,11 @@ a.lookLink:hover {
 
 .lookCard:hover .lookCard__inner img {
   transform: scale(1.02);
+}
+
+.lookCard:hover .lookCard__buyBtn {
+  background: var(--orange);
+  color: #fff;
 }
 
 .lookPage__info {
