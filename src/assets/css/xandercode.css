@@ -102,6 +102,10 @@ a.hover {
   display: table;
 }
 
+.clearfix::before {
+  display: none;
+}
+
 .h20 {
   height: 1.25rem;
   width: 100%;

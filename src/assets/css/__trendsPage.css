@@ -21,7 +21,7 @@
 }
 
 .trendCard__inner {
-  display: flex;
+  /* display: flex; */
   height: 100%;
   position: relative;
 }
