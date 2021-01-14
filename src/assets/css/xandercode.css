@@ -147,8 +147,18 @@ select:-webkit-autofill:focus {
 .tovarCard__imgImg {
   /* image-rendering: optimizeSpeed;
   image-rendering: -moz-crisp-edges; */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: optimize-contrast;
+  /* image-rendering: -webkit-optimize-contrast; */
+  /* image-rendering: optimize-contrast; */
   /* image-rendering: pixelated; */
   -ms-interpolation-mode: nearest-neighbor;
+
+  image-rendering: -webkit-optimize-contrast; /* Safari 6, UC Browser 9.9*/
+
+  image-rendering: -webkit-crisp-edges; /* Safari 7+*/
+
+  image-rendering: -moz-crisp-edges; /* Firefox 3.6+*/
+
+  image-rendering: -o-crisp-edges; /* Opera 12*/
+
+  image-rendering: auto; /* Chrome 41+ and Opera 26+*/
 }

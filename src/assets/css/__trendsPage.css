@@ -67,6 +67,62 @@
   transform: scale(1.02);
 }
 
+.xTrendCard__area {
+  width: 25%;
+  padding: 5px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.xTrendCard__outer {
+  position: relative;
+  height: 0;
+  border: none;
+  padding-top: 133%;
+}
+
+.xTrendCard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.xTrendCard__btn {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(255, 255, 255, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+
+.xTrendCard:hover .xTrendCard__btn {
+  opacity: 1;
+  background: var(--orange);
+  color: #fff;
+}
+
 .tags__area {
   width: 100%;
   background: #fff;

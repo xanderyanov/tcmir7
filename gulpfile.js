@@ -127,13 +127,17 @@ gulp.task("fonts", function () {
   return gulp.src("src/assets/fonts/**/*.*").pipe(gulp.dest("build/assets/fonts"));
 });
 
+gulp.task("icomoon", function () {
+  return gulp.src("src/assets/icomoon/**/*.*").pipe(gulp.dest("build/assets/icomoon"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
 
 gulp.task(
   "build",
-  gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "sliderJs", "myJs", "devjs", "fonts"))
+  gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "sliderJs", "myJs", "devjs", "fonts", "icomoon"))
 );
 
 gulp.task("watch", function () {

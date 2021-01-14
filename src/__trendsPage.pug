@@ -1,3 +1,14 @@
+mixin catalogAreaAllLooksBGcover  
+  //- импорт из data.json (подключается через gulp task)
+  .catalog
+    each item in looks
+      .xTrendCard__area(id=item.id)
+        .xTrendCard__outer
+          a.xTrendCard(href='#', style='background-image: url(' + item.img1 + ');')
+            .trendCard__inner()
+              //- img(src!=item.img1, alt='')
+            .xTrendCard__btn!= item.title
+
 mixin catalogAreaAllLooks  
   //- импорт из data.json (подключается через gulp task)
   .catalog
