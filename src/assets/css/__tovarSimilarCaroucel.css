@@ -1,0 +1,142 @@
+.tovarSimilarCaroucel__area {
+  width: 100%;
+  order: 1;
+}
+
+.tovarSimilarCaroucel__outer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.tovarSimilarCaroucel__title {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tovarSimilarCaroucel__title img {
+  width: 100%;
+  display: block;
+}
+
+.tovarSimilarCaroucel__title span {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+  z-index: 10; */
+  color: var(--text2);
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.tovarSimilarCaroucel__title span:last-child {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+  z-index: 10; */
+  color: var(--text2);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.625rem;
+}
+
+.tovarSimilarCaroucel {
+  width: 100%;
+  padding: 10px 0 30px;
+  position: relative;
+}
+
+.best2 {
+  display: flex;
+  /* align-items: center; */
+}
+
+.tsc1-slide {
+  height: auto;
+}
+
+.tsc1-container {
+  position: relative;
+  padding: 1rem 0 2rem;
+}
+
+.tsc1__left,
+.tsc1__right {
+  position: absolute;
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -1.9375rem;
+  background: #fff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tsc1__left:hover,
+.tsc1__right:hover {
+  background: var(--orange);
+}
+
+.tsc1__left:focus,
+.tsc1__right:focus {
+  border: none;
+  outline: none;
+}
+
+.tsc1__left.disabled,
+.tsc1__right.disabled {
+  display: none;
+}
+
+.tsc1__left {
+  left: -1.9375rem;
+}
+
+.tsc1__right {
+  right: -1.9375rem;
+}
+
+.tsc1__left i,
+.tsc1__right i {
+  font-size: 1.5rem;
+  color: var(--text2);
+  transition: all 0.3s;
+}
+
+.tsc1__left:hover i,
+.tsc1__right:hover i {
+  color: #fff;
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled:hover {
+  background: #fff;
+}
+.swiper-button-disabled i {
+  color: #ddd;
+}
+.swiper-button-disabled:hover i {
+  color: #ddd;
+  background: #fff;
+}

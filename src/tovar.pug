@@ -1,5 +1,6 @@
 - var pageTitle = 'Страница товара'
 
+include __const
 include __head
 include __header
 include __breadcrumbs
@@ -7,6 +8,8 @@ include __shop
 include __tovar
 include __tovar-slider
 //- include __tovar-info
+include assets/chunks/__best/__best
+include __index2
 include __tovarArsTab
 include __textInContent
 include __footer
@@ -32,6 +35,7 @@ body
             +tovarInfo
             //- +sizeToPrice
         //- +tovarArsTab
+    +tovarSimilarCaroucel
     +textInContent
 
 

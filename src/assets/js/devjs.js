@@ -119,4 +119,60 @@ $(function () {
       $(this).closest(".filterBox").find(".xcheckbox").removeClass("checked");
     });
   }
+
+
+  let optionstsc1 = {};
+  if ($(".tsc1-container .tsc1-slide").length) {
+    options = {
+      slidesPerView: 6,
+      loop: false,
+      spaceBetween: 0,
+      speed: 600,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".tsc1__right",
+        prevEl: ".tsc1__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        400: {
+          slidesPerView: 3,
+        },
+        600: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
+    };
+  } 
+  else {
+    options = {
+      slidesPerView: 6,
+      loop: false,
+      autoplay: false,
+    };
+    $(".tsc1-wrapper").addClass("disabled");
+    $(".tsc1__left").addClass("disabled");
+    $(".tsc1__right").addClass("disabled");
+  }
+  var swiper = new Swiper(".tsc1-container", options);
+
+
+
+
+
+
+
 });

@@ -283,7 +283,7 @@ $(function () {
     spaceBetween: 0,
     speed: 600,
     autoplay: {
-      delay: 177000,
+      delay: 7000,
       disableOnInteraction: true,
     },
     navigation: {

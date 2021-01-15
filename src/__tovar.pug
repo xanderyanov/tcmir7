@@ -248,4 +248,30 @@ mixin sizeToPrice
           td 
 
     
+mixin tovarSimilarCaroucel
+  .tovarSimilarCaroucel__area.p1280
+    .tovarSimilarCaroucel__outer
+      .tovarSimilarCaroucel__title
+        //- img(src="assets/img/index2/best2titlebg2.jpg", alt="")
+        h2 С этим товаром покупают
+        //- span Выбор наших стилистов
+      .tovarSimilarCaroucel
+        .swiper-container.tsc1-container
+          .swiper-wrapper.tsc1-wrapper
+            .swiper-slide.tsc1-slide
+              +best2-1
+            .swiper-slide.tsc1-slide
+              +best2-2
+            .swiper-slide.tsc1-slide
+              +best2-3
+            .swiper-slide.tsc1-slide
+              +best2-4
+            //- .swiper-slide.tsc1-slide
+            //-   +best2-5
+            //- .swiper-slide.tsc1-slide
+            //-   +best2-6
+        .tsc1__left
+          i.icon-arr-left1
+        .tsc1__right
+          i.icon-arr-right1
 
