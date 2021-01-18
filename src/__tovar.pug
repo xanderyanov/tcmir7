@@ -110,9 +110,9 @@ mixin tovarInfo
     //-   a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
     //-     span Купить
 
-    +rezerv
+    //- +rezerv
 
-    +simpleReg
+    //- +simpleReg
 
     .tovarDescTab__area
       .tovarDescTab__areaTitle О товаре:
@@ -270,8 +270,36 @@ mixin tovarSimilarCaroucel
             //-   +best2-5
             //- .swiper-slide.tsc1-slide
             //-   +best2-6
-        .tsc1__left
+        .tsc1__left.tovarSimilarCaroucel__left
           i.icon-arr-left1
-        .tsc1__right
+        .tsc1__right.tovarSimilarCaroucel__right
+          i.icon-arr-right1
+
+
+mixin tovarSimilarCaroucel2
+  .tovarSimilarCaroucel__area.p1280
+    .tovarSimilarCaroucel__outer
+      .tovarSimilarCaroucel__title
+        //- img(src="assets/img/index2/best2titlebg2.jpg", alt="")
+        h2 Похожие товары
+        //- span Выбор наших стилистов
+      .tovarSimilarCaroucel
+        .swiper-container.tsc2-container
+          .swiper-wrapper.tsc2-wrapper
+            .swiper-slide.tsc2-slide
+              +best2-1
+            .swiper-slide.tsc2-slide
+              +best2-2
+            .swiper-slide.tsc2-slide
+              +best2-3
+            .swiper-slide.tsc2-slide
+              +best2-4
+            .swiper-slide.tsc2-slide
+              +best2-5
+            .swiper-slide.tsc2-slide
+              +best2-6
+        .tsc2__left.tovarSimilarCaroucel__left
+          i.icon-arr-left1
+        .tsc2__right.tovarSimilarCaroucel__right
           i.icon-arr-right1
 

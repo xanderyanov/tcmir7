@@ -75,8 +75,8 @@
   padding: 1rem 0 2rem;
 }
 
-.tsc1__left,
-.tsc1__right {
+.tovarSimilarCaroucel__left,
+.tovarSimilarCaroucel__right {
   position: absolute;
   width: 3.875rem;
   height: 3.875rem;
@@ -93,39 +93,39 @@
   transition: all 0.3s;
 }
 
-.tsc1__left:hover,
-.tsc1__right:hover {
+.tovarSimilarCaroucel__left:hover,
+.tovarSimilarCaroucel__right:hover {
   background: var(--orange);
 }
 
-.tsc1__left:focus,
-.tsc1__right:focus {
+.tovarSimilarCaroucel__left:focus,
+.tovarSimilarCaroucel__right:focus {
   border: none;
   outline: none;
 }
 
-.tsc1__left.disabled,
-.tsc1__right.disabled {
+.tovarSimilarCaroucel__left.disabled,
+.tovarSimilarCaroucel__right.disabled {
   display: none;
 }
 
-.tsc1__left {
+.tovarSimilarCaroucel__left {
   left: -1.9375rem;
 }
 
-.tsc1__right {
+.tovarSimilarCaroucel__right {
   right: -1.9375rem;
 }
 
-.tsc1__left i,
-.tsc1__right i {
+.tovarSimilarCaroucel__left i,
+.tovarSimilarCaroucel__right i {
   font-size: 1.5rem;
   color: var(--text2);
   transition: all 0.3s;
 }
 
-.tsc1__left:hover i,
-.tsc1__right:hover i {
+.tovarSimilarCaroucel__left:hover i,
+.tovarSimilarCaroucel__right:hover i {
   color: #fff;
 }
 
@@ -139,4 +139,8 @@
 .swiper-button-disabled:hover i {
   color: #ddd;
   background: #fff;
+}
+
+.swiper-button-lock {
+  display: none;
 }

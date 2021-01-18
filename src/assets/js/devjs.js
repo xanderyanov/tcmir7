@@ -123,7 +123,7 @@ $(function () {
 
   let optionstsc1 = {};
   if ($(".tsc1-container .tsc1-slide").length) {
-    options = {
+    optionstsc1 = {
       slidesPerView: 6,
       loop: false,
       spaceBetween: 0,
@@ -157,20 +157,46 @@ $(function () {
       },
     };
   } 
-  else {
-    options = {
+  var swiper = new Swiper(".tsc1-container", optionstsc1);
+
+
+  let optionstsc2 = {};
+  if ($(".tsc2-container .tsc2-slide").length) {
+    optionstsc2 = {
       slidesPerView: 6,
       loop: false,
-      autoplay: false,
+      spaceBetween: 0,
+      speed: 600,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".tsc2__right",
+        prevEl: ".tsc2__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        400: {
+          slidesPerView: 3,
+        },
+        600: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
     };
-    $(".tsc1-wrapper").addClass("disabled");
-    $(".tsc1__left").addClass("disabled");
-    $(".tsc1__right").addClass("disabled");
   }
-  var swiper = new Swiper(".tsc1-container", options);
-
-
-
+  var swiper = new Swiper(".tsc2-container", optionstsc2);
 
 
 
