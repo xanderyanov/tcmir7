@@ -146,7 +146,7 @@ a.tovarCard {
   display: flex;
   align-items: center;
   /* overflow: hidden; */
-  height: 100%;
+  /* height: 100%; */
   justify-content: center;
 }
 

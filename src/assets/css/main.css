@@ -141,7 +141,7 @@ body {
 }
 
 .deliveryInfo {
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   color: var(--x1greyDark);
   line-height: 1.4;
   margin-bottom: 10px;
