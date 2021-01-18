@@ -1,6 +1,7 @@
 .tovarSimilarCaroucel__area {
   width: 100%;
   order: 1;
+  padding: 0 30px;
 }
 
 .tovarSimilarCaroucel__outer {
@@ -11,7 +12,7 @@
 
 .tovarSimilarCaroucel__title {
   width: 100%;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -57,7 +58,7 @@
 
 .tovarSimilarCaroucel {
   width: 100%;
-  padding: 10px 0 30px;
+  /* padding: 10px 0 30px; */
   position: relative;
 }
 
@@ -72,7 +73,7 @@
 
 .tsc1-container {
   position: relative;
-  padding: 1rem 0 2rem;
+  /* padding: 1rem 0 2rem; */
 }
 
 .tovarSimilarCaroucel__left,
