@@ -162,3 +162,7 @@ select:-webkit-autofill:focus {
 
   image-rendering: auto; /* Chrome 41+ and Opera 26+*/
 }
+
+.hidden {
+  display: none;
+}

@@ -40,6 +40,19 @@
     margin: 10px 0 0 0;
     text-align: center;
   }
+  .tabSize__window {
+    transform: translate3d(0, -50%, 0);
+    left: 5%;
+    width: 90%;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .tabSize__windowInner {
+    max-width: 100%;
+    overflow: auto;
+  }
+  .tabSize__window table {
+    min-width: 500px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

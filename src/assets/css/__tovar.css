@@ -646,7 +646,8 @@
   justify-content: center;
 }
 
-.tabSizeOpen a {
+.tabSizeOpen a,
+.tabSizeOpen span {
   font-size: 0.875rem;
   font-weight: 700;
   cursor: pointer;
@@ -656,7 +657,8 @@
   text-decoration: none;
 }
 
-.tabSizeOpen a:hover {
+.tabSizeOpen a:hover,
+.tabSizeOpen span:hover {
   color: var(--orange);
 }
 
@@ -666,7 +668,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 505;
+  z-index: 2700;
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -677,10 +679,14 @@
   left: 50%;
   top: 50%;
   background: #fff;
-  z-index: 506;
+  z-index: 2701;
   padding: 3rem 2rem 2rem 2rem;
   border-radius: 1rem;
   display: none;
+}
+
+.tabSize__windowInner {
+  width: 100%;
 }
 
 .tabSize__windowClose {

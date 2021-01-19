@@ -62,6 +62,7 @@ mixin tovarInfo
     
 
     +sizeToPrice
+    +addCartBtnInTovar
 
 
     //- .tovar__priceArea
@@ -93,12 +94,12 @@ mixin tovarInfo
         a(href="#", title="12321")
           img(src="assets/img/difcolor/02.jpg", alt="")
     
-    .callAction__areaInTovar
-      .callActionArea
-        .callActionArea__left
-          a.callActionBtnGoToShop(href="") Все товары продавца
-        .callActionArea__right
-          +callActionBtn
+    //- .callAction__areaInTovar
+    //-   .callActionArea
+    //-     .callActionArea__left
+    //-       a.callActionBtnGoToShop(href="") Все товары продавца
+    //-     .callActionArea__right
+    //-       +callActionBtn
           //- +callActionBtnDiscount
 
 
@@ -190,62 +191,62 @@ mixin sizeToPrice
             .sizeToPrice__selectorItem
               span!= item.size
     .tabSizeOpen
-      a(href="#") Таблица соответствия размеров
-    
+      span Таблица соответствия размеров
     .tabSize__overlay
     .tabSize__window
       .tabSize__windowClose
         i.icon-close1
-      table
-        tr
-          td Размер
-          td XS
-          td S
-          td M
-          td L
-          td XL
-        tr
-          td Российские размеры
-          td 40-42
-          td 42-44
-          td 44-46
-          td 46-48
-          td 48
-        tr
-          td Обхват груди в см
-          td 80-84
-          td 84-88
-          td 88-92
-          td 92-96
-          td 96
-        tr
-          td Обхват талии в см
-          td 60-64
-          td 64-68
-          td 68-72
-          td 72-76
-          td 76
-        tr
-          td Обхват бёдер в см
-          td 88-92
-          td 92-96
-          td 96-100
-          td 100-104
-          td 104
-        tr
-          td Длина рукава в см
-          td 60-61
-          td 61-62
-          td 62-63
-          td 63-64
-          td 
-        tr
-          td Длина брюк в см
-          td 96
-          td 97
-          td 98
-          td 99
-          td 
+      .tabSize__windowInner
+        table
+          tr
+            td Размер
+            td XS
+            td S
+            td M
+            td L
+            td XL
+          tr
+            td Российские размеры
+            td 40-42
+            td 42-44
+            td 44-46
+            td 46-48
+            td 48
+          tr
+            td Обхват груди в см
+            td 80-84
+            td 84-88
+            td 88-92
+            td 92-96
+            td 96
+          tr
+            td Обхват талии в см
+            td 60-64
+            td 64-68
+            td 68-72
+            td 72-76
+            td 76
+          tr
+            td Обхват бёдер в см
+            td 88-92
+            td 92-96
+            td 96-100
+            td 100-104
+            td 104
+          tr
+            td Длина рукава в см
+            td 60-61
+            td 61-62
+            td 62-63
+            td 63-64
+            td 
+          tr
+            td Длина брюк в см
+            td 96
+            td 97
+            td 98
+            td 99
+            td 
 
     
 mixin tovarSimilarCaroucel
@@ -303,3 +304,11 @@ mixin tovarSimilarCaroucel2
         .tsc2__right.tovarSimilarCaroucel__right
           i.icon-arr-right1
 
+mixin addCartBtnInTovar
+  .rezerv__area
+    span#purchaseBtn.plus_tab Добавить в корзину
+  .rezerv__area.hidden
+    button.rezervBtn.rezervNo Зарезервировать
+    button.rezervBtn.rezervWait.hidden Ожидаем подтверждения резерва
+    button.rezervBtn.rezervYes.hidden Зарезервировано
+    button.rezervBtn.rezervCant.hidden Резервировать больше нельзя, уже есть 3 товара

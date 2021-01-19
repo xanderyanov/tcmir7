@@ -146,17 +146,15 @@ $(function () {
           slidesPerView: 3,
         },
         600: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        920: {
-          slidesPerView: 3,
-        },
-        1200: {
           slidesPerView: 4,
         },
+        768: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      
       },
     };
   } 
