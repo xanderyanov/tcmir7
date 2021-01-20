@@ -101,6 +101,10 @@
   .orderDetails__title h1 {
     font-size: 1.375rem;
   }
+
+  /***************************************************/
+
+  /***************************************************/
 }
 
 @media only screen and (max-width: 600px) {
@@ -147,4 +151,47 @@
 }
 
 @media only screen and (max-width: 320px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion-tabs {
+    border: none;
+    position: relative;
+  }
+  .accordion-tabs li.tab-head-cont {
+    display: inline;
+  }
+  .accordion-tabs li.tab-head-cont:last-child a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .accordion-tabs li.tab-head-cont a {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    /* border-top: 0; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .accordion-tabs li.tab-head-cont a.is-active {
+    background-color: #fff;
+    border: 1px solid var(--x1grey);
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+  }
+  .accordion-tabs li.tab-head-cont section {
+    border-bottom-left-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+    border: 1px solid var(--x1grey);
+    float: left;
+    left: 0;
+    padding: 0.75em 0.809em;
+  }
+  .accordion-tabs li.tab-head-cont section p {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+  }
 }

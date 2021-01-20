@@ -1,3 +1,29 @@
+mixin cabinet2
+  .cabinet2__area.w0
+    .cabinet2__outer.w1
+      .title1.title1_bgw
+        h1= pageTitle
+      .cab2__tabsArea
+        ul.cab2__tabs
+          li.cab2__tab
+            a.cab2__tabTitle.active(href='#')
+              i.icon-clipboard
+              span Мои заказы
+            section
+              +order2
+          li.cab2__tab
+            a.cab2__tabTitle(href='#')
+              i.icon-avatar1
+              span Профиль
+            section
+              +profile
+          li.cab2__tab
+            a.cab2__tabTitle(href='#')
+              i.icon-avatar1
+              span Корзина
+            section
+              +profile
+      
 mixin cabinet1
   .cabinet1__area.w0
     .cabinet1__outer.w1
@@ -45,10 +71,81 @@ mixin cabinet1
                 span Профиль
               .cabTab__itemContent 
                 +profile
-            .cabTab__item
-              a.cabTab__title_mobile(href="#")
-                i.icon-cart1
-                span Корзина
+            //- .cabTab__item
+            //-   a.cabTab__title_mobile(href="#")
+            //-     i.icon-cart1
+            //-     span Корзина
+
+mixin order2
+  .order2__area
+    .order2__outer
+      .order2__item
+        a.order2(href="#")
+          .order2__left
+            .order2Title
+              .order2Date 20-01-2021 16:59
+              .order2Price 4 950.00 ₽
+            .order2Id 000748
+            .order2Status Ожидает оплаты
+          .order2__right
+            .order2Thumbs
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/001.jpeg)")
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/002.jpeg)")
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/003.jpeg)")
+            //- .order2Thumbs__more + еще
+      .order2__item
+        a.order2(href="#")
+          .order2__left
+            .order2Title
+              .order2Date 20-01-2021 16:59
+              .order2Price 4 950.00 ₽
+            .order2Id 000748
+            .order2Status Ожидает оплаты
+          .order2__right
+            .order2Thumbs
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/004.jpeg)")
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/005.jpeg)")
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/006.jpeg)")
+              //- .order2Thumbs__itemArea
+              //-   .order2Thumbs__itemOuter
+              //-     .order2Thumbs__item(style="background-image: url(assets/img/tovar/010.jpeg)")
+              //- .order2Thumbs__itemArea
+              //-   .order2Thumbs__itemOuter
+              //-     .order2Thumbs__item(style="background-image: url(assets/img/tovar/011.jpeg)")
+            .order2Thumbs__more + еще
+      .order2__item
+        a.order2(href="#")
+          .order2__left
+            .order2Title
+              .order2Date 20-01-2021 16:59
+              .order2Price 4 950.00 ₽
+            .order2Id 000748
+            .order2Status Ожидает оплаты
+          .order2__right
+            .order2Thumbs
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/007.jpeg)")
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/008.jpeg)")
+              .order2Thumbs__itemArea
+                .order2Thumbs__itemOuter
+                  .order2Thumbs__item(style="background-image: url(assets/img/tovar/009.jpeg)")
+            //- .order2Thumbs__more + еще
+
 
 
 mixin order

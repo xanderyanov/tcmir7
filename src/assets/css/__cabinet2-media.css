@@ -1,0 +1,83 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  /* .order2Thumbs__itemArea {
+    width: 16.666%;
+  } */
+  .order2__left {
+    width: 40%;
+  }
+  .order2__right {
+    width: 60%;
+  }
+  .order2Title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .cab2__tab section {
+    float: none;
+  }
+  .cab2__tab {
+    display: block;
+  }
+  .cab2__tab a {
+    display: flex;
+    margin: 5px 0 5px 0;
+  }
+  .order2 {
+    flex-direction: column;
+  }
+  .order2__left {
+    width: 100%;
+  }
+  .order2__right {
+    width: 100%;
+  }
+  .order2Thumbs {
+    justify-content: center;
+  }
+  .order2Title {
+    flex-direction: row;
+    align-items: center;
+  }
+  .order2Price {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .order2__item {
+    width: 100%;
+  }
+  /* .order2Thumbs__itemArea {
+    width: 10%;
+  } */
+}
+
+@media only screen and (max-width: 480px) {
+  /* .order2Thumbs__itemArea {
+    width: 16.666%;
+  } */
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

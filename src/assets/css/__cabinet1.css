@@ -431,3 +431,71 @@
 .profil__exit i {
   font-size: 1.5rem;
 }
+
+/******************************************************************/
+.container-tab {
+  position: relative;
+  padding: 0 5px;
+}
+/* TABS */
+.accordion-tabs {
+  *zoom: 1;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 0.1875em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  padding-left: 0;
+}
+.accordion-tabs:before,
+.accordion-tabs:after {
+  content: " ";
+  display: table;
+}
+.accordion-tabs:after {
+  clear: both;
+}
+.accordion-tabs li {
+  list-style: none;
+}
+
+.accordion-tabs li.tab-head-cont:first-child a {
+  margin-left: 20px;
+}
+
+.accordion-tabs li.tab-head-cont:first-child a {
+  /* border-top-left-radius: 0.1875em;
+  border-top-right-radius: 0.1875em; */
+  /* border-top: 0; */
+}
+.accordion-tabs li.tab-head-cont:last-child a {
+  border-bottom-left-radius: 0.1875em;
+  border-bottom-right-radius: 0.1875em;
+}
+.accordion-tabs li.tab-head-cont a {
+  text-decoration: none;
+  border: 1px solid var(--x1grey);
+  /* color: #888888; */
+  color: #333333;
+  display: block;
+  padding: 10px 20px;
+}
+.accordion-tabs li.tab-head-cont a:hover {
+  color: #000000;
+}
+.accordion-tabs li.tab-head-cont a:focus {
+  outline: none;
+}
+.accordion-tabs li.tab-head-cont a.is-active {
+  background-color: #fff;
+  border-bottom: 0;
+  color: #333333;
+}
+.accordion-tabs li.tab-head-cont section {
+  padding: 1.5em 1.618em;
+  background: #fff;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+/*****************************************************************/
