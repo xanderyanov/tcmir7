@@ -166,3 +166,19 @@ select:-webkit-autofill:focus {
 .hidden {
   display: none;
 }
+
+.valign-content {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  zoom: 1;
+}
+.valign-helper {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+  /*zoom: 1;*/
+}

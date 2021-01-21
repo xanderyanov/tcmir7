@@ -99,6 +99,12 @@ a.cab2__tabTitle {
   color: #000;
 }
 
+a.order2,
+a.order2:hover,
+a.order2:focus {
+  text-decoration: none;
+}
+
 .order2:hover {
   background: var(--colorLightGrey);
 }
@@ -190,4 +196,5 @@ a.cab2__tabTitle {
   background-repeat: no-repeat;
   border: 1px solid #eee;
   border-radius: 4px;
+  background: #fff;
 }

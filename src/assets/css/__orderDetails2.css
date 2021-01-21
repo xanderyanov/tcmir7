@@ -1,0 +1,129 @@
+.orderDetails2__area {
+  padding: 20px 0;
+  background: var(--colorLightGrey);
+}
+
+.orderDetails2__outer {
+  background: #fff;
+  padding: 20px;
+}
+
+.orderDetails2__titleOuter {
+  display: flex;
+  border-bottom: 2px solid var(--colorLightGrey);
+}
+
+.orderDetails2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.orderDetails2__itemOuter {
+  width: 20%;
+  padding: 10px;
+}
+
+a.orderDetails2__item,
+a.orderDetails2__item:hover,
+.a.orderDetails2__item:focus {
+  text-decoration: none;
+}
+
+.orderDetails2__itemImgOuter {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 133%;
+  margin-bottom: 10px;
+}
+
+.orderDetails2__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--x1border);
+  height: 100%;
+}
+
+.orderDetails2__itemImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.orderDetails2__itemImg:before {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+}
+
+.orderDetails2__itemImg img {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  zoom: 1;
+  width: 100%;
+}
+
+.orderDetails2__brand {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.orderDetails2__title {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.orderDetails2__id {
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.orderDetails2__size {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.orderDetails2__priceArea {
+  display: flex;
+  margin-top: auto;
+}
+
+.orderDetails2__oldPrice {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.orderDetails2__price {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.orderDetails2__discount {
+  margin-left: auto;
+  line-height: 1.5rem;
+  padding: 0 5px;
+  background: var(--orange);
+  color: #fff;
+}

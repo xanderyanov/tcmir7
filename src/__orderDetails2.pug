@@ -1,0 +1,153 @@
+mixin orderDetails2
+  .orderDetails2__area.w0
+    .orderDetails2__outer.w1
+      .orderDetails2__titleOuter
+        .orderDetails2__title
+          h1 Заказ 20-01-2021 16:45
+      .orderDetails2
+        .orderDetails2__itemOuter
+          a.orderDetails2__item(href="")
+            .orderDetails2__itemImgOuter
+              .orderDetails2__itemImg
+                img(src="assets/img/tovar6/001.jpg", alt="")
+            .orderDetails2__brand Большевичка
+            .orderDetails2__title Костюм для вечеринки
+            .orderDetails2__id Артикул: 2328866
+            .orderDetails2__size Размер: М
+            .orderDetails2__priceArea
+              .orderDetails2__oldPrice 10000 ₽
+              .orderDetails2__price 9000 ₽
+              .orderDetails2__discount 10%
+        .orderDetails2__itemOuter
+          a.orderDetails2__item(href="")
+            .orderDetails2__itemImgOuter
+              .orderDetails2__itemImg
+                img(src="assets/img/tovar6/002.jpg", alt="")
+            .orderDetails2__brand Большевичка
+            .orderDetails2__title Костюм
+            .orderDetails2__id Артикул: 2328866
+            .orderDetails2__size Размер: М
+            .orderDetails2__priceArea
+              .orderDetails2__oldPrice 10000 ₽
+              .orderDetails2__price 9000 ₽
+              .orderDetails2__discount 10%
+        .orderDetails2__itemOuter
+          a.orderDetails2__item(href="")
+            .orderDetails2__itemImgOuter
+              .orderDetails2__itemImg
+                img(src="assets/img/tovar6/003.jpg", alt="")
+            .orderDetails2__brand Большевичка
+            .orderDetails2__title Костюм для вечеринки
+            .orderDetails2__id Артикул: 2328866
+            .orderDetails2__size Размер: М
+            .orderDetails2__priceArea
+              .orderDetails2__oldPrice 10000 ₽
+              .orderDetails2__price 9000 ₽
+              .orderDetails2__discount 10%
+        .orderDetails2__itemOuter
+          a.orderDetails2__item(href="")
+            .orderDetails2__itemImgOuter
+              .orderDetails2__itemImg
+                img(src="assets/img/tovar6/004.jpg", alt="")
+            .orderDetails2__brand Большевичка
+            .orderDetails2__title Костюм для вечеринки
+            .orderDetails2__id Артикул: 2328866
+            .orderDetails2__size Размер: М
+            .orderDetails2__priceArea
+              .orderDetails2__oldPrice 10000 ₽
+              .orderDetails2__price 9000 ₽
+              .orderDetails2__discount 10%
+
+
+
+
+
+
+mixin orderDetails
+  .orderDetails__area.w0
+    .orderDetails__outer.w1
+      .orderDetails__title
+        h1 Заказ 000010 от 2020-08-10 17:57:08
+      .orderDetails
+        .orderDetails__item
+          .orderDetails__itemTitle Состояние:
+          .orderDetails__itemInfo Подтвержден модератором
+        .orderDetails__item
+          .orderDetails__itemTitle Сумма:
+          .orderDetails__itemInfo 
+            strong 4169 р
+        .orderDetails__item
+          .orderDetails__itemTitle Состав заказа:
+          .orderDetails__itemInfo
+            +orderDetailsTab
+            
+            //- +cart
+        .orderDetails__item
+          .orderDetails__itemTitle Контактное лицо:
+          .orderDetails__itemInfo Пупкин Василий
+        .orderDetails__item
+          .orderDetails__itemTitle Контактный телефон:
+          .orderDetails__itemInfo +7 927 310 88 10
+        .orderDetails__item
+          .orderDetails__itemTitle Email:
+          .orderDetails__itemInfo vasilypupkin@tcmir.ru
+        .orderDetails__item
+          .orderDetails__itemTitle Действия:
+          .orderDetails__itemInfo 
+            .orderDetails__itemInfoVariants
+              +orderDetails__itemActions
+            .orderDetails__itemInfoVariants
+              +orderDetails__itemActions2
+
+
+mixin orderDetails__itemActions
+  .orderDetails__itemActions
+    .orderDetails__itemActionsText Какой-то заголовок для действия, если нужно вставить текст
+    form.orderDetails__itemActionsForm(action="", method="post")
+      span Вы также можете:
+      input.order__action_color(type="submit", value="Оплатить заказ")
+
+mixin orderDetails__itemActions2
+  .orderDetails__itemActions
+    //- .orderDetails__itemActionsText Какой-то заголовок для действия, если нужно вставить текст
+    form.orderDetails__itemActionsForm(action="", method="post")
+      span Вы также можете:
+      input(type="submit", value="Редактировать заказ")
+        
+
+mixin orderDetailsTab
+  .orderDetailsTab
+    table
+      tr
+        //- th
+        th(colspan="2") Наименование
+        th.text-right 
+          span.dt Цена за единицу
+          span.mb Цена за ед.
+        th.text-right 
+          span.dt Количество
+          span.mb Кол-во
+        th.text-right Сумма
+      tr
+        td 
+          img(src="assets/img/tovar/001.jpeg", alt="")
+        td 21211332 Название товара
+        td.text-right 5000 р/шт
+        td.text-right 1 шт
+        td.text-right 5000 р
+      tr
+        td 
+          img(src="assets/img/tovar/002.jpeg", alt="")
+        td 21211334 Название товара 2
+        td.text-right 6000 р/шт
+        td.text-right 2 шт
+        td.text-right 12000 р
+      tr
+        td 
+          img(src="assets/img/tovar/003.jpeg", alt="")
+        td 21211335 Название товара 3
+        td.text-right 7000 р/шт
+        td.text-right 1 шт
+        td.text-right 7000 р
+
+
