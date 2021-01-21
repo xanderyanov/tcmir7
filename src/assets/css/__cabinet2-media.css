@@ -48,13 +48,19 @@
   }
   .order2__right {
     width: 100%;
+    padding-top: 10px;
   }
+
   .order2Thumbs {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .order2Title {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
+  }
+  .order2Date {
+    margin: 0;
   }
   .order2Price {
     margin-left: auto;
@@ -74,6 +80,21 @@
   /* .order2Thumbs__itemArea {
     width: 16.666%;
   } */
+  .order2Title {
+    margin-bottom: 10px;
+  }
+  .order2Thumbs__itemArea {
+    width: 25%;
+  }
+  .order2Title {
+    margin-bottom: 5px;
+  }
+  .order2Id {
+    margin-bottom: 5px;
+  }
+  .order2__right {
+    padding-top: 5px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

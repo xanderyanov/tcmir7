@@ -51,6 +51,9 @@
   .m1_mainBtn {
     height: 60px;
   }
+  .m2_bottomMenu__outer {
+    padding: 10px 0 20px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

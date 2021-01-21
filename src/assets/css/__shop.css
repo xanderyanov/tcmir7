@@ -442,15 +442,28 @@
 .shop__igArea {
   width: 100%;
   display: flex;
+  align-items: center;
   /* justify-content: center; */
 }
 
-.shop__igArea a {
+.shop__igArea a.shopIg {
   margin-right: 20px;
   text-decoration: none;
 }
 
-.shopIg {
+.shop__igArea a.goToSite {
+  text-decoration: none;
+  display: flex;
+  padding: 5px 20px;
+  background: var(--x1greySuperLight);
+  color: #000;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+.shop__igArea a.goToSite:hover {
+  background: var(--orange);
+  color: #fff;
 }
 
 .newCollection__area {
