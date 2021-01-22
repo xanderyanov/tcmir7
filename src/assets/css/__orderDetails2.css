@@ -1,6 +1,6 @@
 .orderDetails2__area {
   padding: 0 0 20px;
-  background: var(--colorLightGrey);
+  background: #f8f8f8;
 }
 
 .orderDetails2__outer {
@@ -25,6 +25,11 @@
 }
 .orderDetails2__mainTitle h1 {
   margin: 0;
+}
+.orderDetails2__mainTitle span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .orderDetails2__mainTitleStatus {
