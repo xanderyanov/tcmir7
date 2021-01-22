@@ -93,9 +93,10 @@ mixin orderDetails2
             span <strong>Комментарий:</strong> Lorem ipsum dolor sit amet ipsum dolor sit amet.
           .orderDetailsInfo3
             .orderDetailsInfo__price Сумма заказа:   6800 ₽
-            .orderDetails2__btn.orderDetails2__btn_btn1 Оплатить картой
-            .orderDetails2__btn.orderDetails2__btn_btn2 Редактировать заказ
-              //- h3 Сумма заказа: 
+            form.orderDetails2__form(action="", metod="post")
+              input.orderDetails2__btn.orderDetails2__btn_btn1(type="submit", value="Оплатить картой")
+            form.orderDetails2__form(action="", metod="post")
+              input.orderDetails2__btn.orderDetails2__btn_btn2(type="submit", value="Редактировать заказ") 
 
 
 
