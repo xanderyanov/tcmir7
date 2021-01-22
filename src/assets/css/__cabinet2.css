@@ -179,17 +179,18 @@ a.order2:focus {
 
 .order2Thumbs__itemOuter {
   position: relative;
-  height: 0;
+  /* height: 0; */
   border: none;
-  padding-top: 133%;
+  /* padding-top: 133%; */
+  height: 100%;
 }
 
 .order2Thumbs__item {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
   display: block;
   /* background-position: center center;
   background-size: cover; */
@@ -197,8 +198,11 @@ a.order2:focus {
   border: 1px solid #eee;
   border-radius: 4px;
   background: #fff;
+  overflow: hidden;
+  height: 100%;
 }
 .order2Thumbs__item::before {
+  content: "";
   display: -moz-inline-box;
   display: inline-block;
   vertical-align: middle;

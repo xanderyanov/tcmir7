@@ -74,8 +74,25 @@
   /* .order2Thumbs__itemArea {
     width: 10%;
   } */
-  .order2Thumbs__itemArea {
+  /* .order2Thumbs__itemArea {
     width: 33.333%;
+  } */
+  .order2 {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .order2__right {
+    padding: 0;
+  }
+  .order2Title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order2Price {
+    margin: 0;
+  }
+  .order2Thumbs {
+    justify-content: flex-end;
   }
 }
 
@@ -86,9 +103,9 @@
   .order2Title {
     margin-bottom: 10px;
   }
-  .order2Thumbs__itemArea {
+  /* .order2Thumbs__itemArea {
     width: 25%;
-  }
+  } */
   .order2Title {
     margin-bottom: 5px;
   }
