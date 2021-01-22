@@ -140,6 +140,9 @@
   .orderDetails2__btn {
     margin-top: 10px;
   }
+  .order2 {
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

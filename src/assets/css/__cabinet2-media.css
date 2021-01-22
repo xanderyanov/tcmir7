@@ -74,6 +74,9 @@
   /* .order2Thumbs__itemArea {
     width: 10%;
   } */
+  .order2Thumbs__itemArea {
+    width: 33.333%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
