@@ -69,7 +69,7 @@
     padding: 1rem 0 2rem;
   }
   .linkBox3 {
-    padding: 20px 0 30px;
+    padding: 10px 0 0;
   }
   .firstPromo span {
     font-size: 1.5rem;
@@ -240,7 +240,7 @@
     padding-top: 100%;
   }
   .linkBox3 {
-    padding: 20px 0 20px;
+    padding: 10px 0 0;
   }
   /* .firstPromo_mb {
     height: 100px;
@@ -267,10 +267,10 @@
     font-size: 1.25rem;
   }
   .linkBox3 {
-    padding: 20px 5px 20px;
+    padding: 10px 5px 0;
   }
   .linkBox3__itemWrapper:after {
-    padding-top: 60%;
+    padding-top: 85%;
   }
   .linkBox3__item {
     top: 5px;

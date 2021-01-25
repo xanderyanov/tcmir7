@@ -48,6 +48,12 @@
     height: 3rem;
     margin-top: -1.5rem;
   }
+  .best2__title {
+    margin-top: 1rem;
+  }
+  .best2-container {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -55,7 +61,7 @@
 
 @media only screen and (max-width: 400px) {
   .best2slider {
-    padding: 10px 0 1rem;
+    padding: 10px 0 0;
   }
   .best2__left,
   .best2__right {

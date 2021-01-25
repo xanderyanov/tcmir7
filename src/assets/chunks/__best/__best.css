@@ -1,6 +1,6 @@
 .best2slider__area {
   width: 100%;
-  order: 1;
+  order: 2;
 }
 
 .best2slider__outer {
@@ -57,7 +57,7 @@
 
 .best2slider {
   width: 100%;
-  padding: 10px 0 30px;
+  padding: 10px 0 0;
   position: relative;
 }
 
@@ -163,7 +163,7 @@
 
 .best2-container {
   position: relative;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 1rem;
 }
 
 .best2__left,

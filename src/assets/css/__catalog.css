@@ -9,6 +9,7 @@
 
 .catalog__outer {
   width: 80%;
+  /* padding-bottom: 2rem; */
 }
 
 .catalog__outer_fav {
@@ -20,6 +21,7 @@
   flex-wrap: wrap;
   min-width: 100%;
   margin: 0 -5px;
+  padding-bottom: 3rem;
 }
 
 .catalog__bottomText {
@@ -150,12 +152,21 @@ a.tovarCard {
   justify-content: center;
 }
 
+.tovarCard__img:before {
+  position: relative;
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .tovarCard__imgBox {
 }
 
 .tovarCard__imgImg {
   width: 100%;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   z-index: 10;
   position: relative;
 }

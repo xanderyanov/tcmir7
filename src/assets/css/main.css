@@ -93,6 +93,17 @@ body {
   margin: 10px auto 0;
 }
 
+.title2_center {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.title2 span {
+  color: var(--text2);
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
 .title2 h2,
 .title2 h3 {
   margin: 0;

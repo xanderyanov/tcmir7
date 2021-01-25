@@ -19,9 +19,9 @@
   .orderDetails2__itemOuter {
     width: 25%;
   }
-  .orderDetails2__btn {
+  /* .orderDetails2__btn {
     width: 90%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 920px) {
@@ -39,8 +39,16 @@
   .orderDetailsInfo3 {
     width: 100%;
     order: 1;
+    padding: 0;
   }
   .orderDetails2__btn {
+    width: 100%;
+  }
+
+  .orderDetails2__orderText {
+    width: 100%;
+  }
+  form.orderDetails2__form {
     width: 100%;
   }
 }
@@ -89,6 +97,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  form.orderDetails2__form {
+    margin: 10px 0 0 0;
+  }
+
   .orderDetailsTab table tr th span.dt {
     display: none;
   }
@@ -136,9 +148,6 @@
   }
   .orderDetails2__priceArea {
     margin: 0;
-  }
-  .orderDetails2__btn {
-    margin-top: 10px;
   }
   .order2 {
     padding: 10px;
