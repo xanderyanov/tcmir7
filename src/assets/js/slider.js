@@ -1,4 +1,104 @@
+var mySwiperInShopPage;
+var brandsCarousel;
+
+function openShopInfo() {
+      if ($(this).hasClass("open")) {
+          $(this).removeClass("open");
+          $(this).closest(".shop__area").find(".shop").slideUp(300);
+      } else {
+          $(this).addClass("open");
+          $(this).closest(".shop__area").find(".shop").slideDown(300);
+          if (typeof mySwiperInShopPage !== "undefined") mySwiperInShopPage.update();
+          if (typeof brandsCarousel !== "undefined") brandsCarousel.update();
+      }
+}
+
 $(function () {
+  $(".shop__openMobileBtn").on("click", openShopInfo);
+  // слайдер на странице магазина
+  if ($(".swiper-container_shop").length) {
+    mySwiperInShopPage = new Swiper(".swiper-container_shop", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-nextShop",
+          prevEl: ".swiper-button-prevShop",
+        },
+        on: {
+          init: function () {
+              console.log("mySwiperInShopPage initialized");
+          },
+          slideChange: function () {
+          },
+        },
+    });
+    $(".swiper-container_shop").on("mouseenter", function () {
+      mySwiperInShopPage.autoplay.stop();
+      console.log("swiper autoplay stop");
+    });
+    $(".swiper-container_shop").on("mouseleave", function () {
+        mySwiperInShopPage.autoplay.start();
+        console.log("swiper autoplay start again");
+    });
+
+  }
+
+  // карусель брендов-
+    if ($(".brandsCarousel-container1").length) {
+        brandsCarousel = new Swiper(".brandsCarousel-container1", {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: false,
+            loopFillGroupWithBlank: false,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                prevEl: ".brandsCarousel__btnPrev",
+                nextEl: ".brandsCarousel__btnNext",
+            },
+            breakpoints: {
+                1141: {
+                    slidesPerView: 5,
+                    spaceBetween: 0,
+                },
+                921: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+                769: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                481: {
+                    slidesPerView: 5,
+                    spaceBetween: 0,
+                },
+                401: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+                321: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+            },
+        });
+        $(".brandsCarousel").on("mouseenter", function () {
+          brandsCarousel.autoplay.stop();
+          console.log("brandsCarousel autoplay stop");
+        });
+        $(".brandsCarousel").on("mouseleave", function () {
+          brandsCarousel.autoplay.start();
+          console.log("brandsCarousel autoplay start again");
+        });
+    }
 
   if($(".lookVideo").length){
     console.log("есть видео");

@@ -99,18 +99,20 @@ a.backBtnLink {
   line-height: 1.2;
   text-decoration: none;
   display: flex;
+  align-items: center;
   position: relative;
+  padding: 10px 0;
 }
 
 a.backBtnLink i {
   color: #000;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-right: 10px;
 }
 
 a.backBtnLink span {
   color: #000;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 a.backBtnLink:hover i,

@@ -79,7 +79,7 @@
   } */
   .order2 {
     flex-direction: row;
-    padding: 10px;
+    padding: 5px 10px;
   }
   .order2__right {
     padding: 0;
@@ -93,6 +93,9 @@
   }
   .order2Thumbs {
     justify-content: flex-end;
+  }
+  .order2__item {
+    padding: 5px 10px;
   }
 }
 

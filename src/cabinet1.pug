@@ -5,6 +5,8 @@ include __header
 include __cabinet1
 include __cart
 include __footer
+include __m2_catalog
+include __aCatalog
 
 <!DOCTYPE html>
 html(lang="ru-RU")
@@ -12,15 +14,14 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header
+    +aCatalog
+    +siteHeader2
 
   .site__center
     //- +cabinet1
     +cabinet2
- 
   .site__footer
-    
-    +footer
+    +siteFooter2
 
 
   +scripts

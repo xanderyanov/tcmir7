@@ -149,9 +149,9 @@
   .orderDetails2__priceArea {
     margin: 0;
   }
-  .order2 {
+  /* .order2 {
     padding: 10px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 400px) {
