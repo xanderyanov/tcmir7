@@ -71,6 +71,38 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .tCard__area {
+    width: 33.333%;
+  }
+  .tCard__info2 {
+    position: relative;
+    display: block;
+  }
+  .tCard__info2inner {
+    display: block;
+    margin: 0;
+    border: none;
+    padding: 5px 0 0;
+    box-shadow: none;
+  }
+
+  .tCard__area:hover .tCard__areaBorder {
+    border: 1px solid var(--x1border);
+  }
+  .tCard__area:hover .tCard__info2:before {
+    display: none;
+  }
+  .tCard__area:hover .tCard__info2 {
+    border: none;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .tCard__area:hover .tCard__info2 {
+    box-shadow: none;
+  }
+
   .m2_topMenu__outer {
     padding: 0 10px;
   }
@@ -157,6 +189,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .tCard__area {
+    width: 50%;
+  }
   .catalog {
     justify-content: center;
   }
@@ -188,6 +223,9 @@
 
 @media only screen and (max-width: 320px) {
   .tovarCard__area {
+    width: 90%;
+  }
+  .tCard__area {
     width: 90%;
   }
 }

@@ -303,6 +303,44 @@
   .firstPromo_mb img {
     height: 80px;
   } */
+
+  .linkBox3__itemWrapper_5 {
+    width: 100%;
+  }
+
+  .linkBox3__itemWrapper_5:after {
+    padding-top: 30%;
+  }
+  .linkBox3__itemWrapper_6 {
+    width: 100%;
+  }
+  .linkBox3__itemOuter_6 {
+    padding: 5px;
+  }
+  .linkBox3__itemWrapper_6:after {
+    padding-top: 40%;
+  }
+  /* .linkBox3__itemOuter_6 {
+    padding: 5px;
+  }
+  .linkBox6__about {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .linkBox6__aboutLeft {
+    width: 100%;
+    height: 20%;
+  }
+  .linkBox6__aboutRight {
+    width: 100%;
+    height: 80%;
+  }
+  .linkBox6__aboutLeftInfo ul {
+    display: none;
+  }
+  .linkBox6__aboutLeftInfoTitle {
+    margin: 0;
+  } */
 }
 
 @media only screen and (max-width: 400px) {

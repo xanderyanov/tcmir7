@@ -177,9 +177,64 @@ mixin m2_innerCategory
   //- .m2_innerCategory__arrow
   //-   i.icon-left-and-right-arrows
 
+
+mixin catalogArea2  
+  .catalog
+    .lookCard__area.lookCard__area_mb
+      .lookCard__outer
+        a.lookCard(href="")
+          .lookCard__inner.lookCard__inner_bg(style="background-image: url(assets/img/look/salvatini-4-1200-1200-2.jpg)")
+            .lookCard__buyBtnBottom Название лука или подборки
+    each item in tovars
+      .tCard__area
+        a.tCard__areaBorder(href="")
+          .tCard__imgArea
+            .tCard__img
+              img.tImg1(src!=item.img1, alt='')
+              img.tImg2(src!=item.img2, alt='')
+              //- if item.discount
+              //-   .tCard__discount!=item.discount
+          .tCard__info1
+            .tCard__priceArea
+              .tCard__oldPrice!= item.oldPrice 
+                | ₽
+              .tCard__price.tCard__price_red!= item.price 
+                | ₽
+            .tCard__titleArea
+              span.tCard__brand!= item.content
+              span.tCard__separator /
+              span.tCard__title!= item.title
+          .tCard__info2
+            .tCard__info2inner
+              .tCard__sizeArea
+                span.tCard__sizeTitle Размеры:
+                span.tCard__sizeInfo L, XL, XXL
+              .tCard__more Подробнее...
+
 mixin catalogArea  
   //- импорт из data.json (подключается через gulp task)
   .catalog
+    .tCard__area
+      .tCard__areaBorder
+        .tCard__imgArea
+          .tCard__img
+            img.tImg1(src="assets/img/tovar6/002.jpg", alt="")
+            img.tImg2(src="assets/img/tovar/007.jpeg", alt="")
+        .tCard__info1
+          .tCard__priceArea
+            .tCard__oldPrice 3500 ₽
+            .tCard__price.tCard__price_red 3000 ₽
+          .tCard__titleArea
+            span.tCard__brand Adidas
+            span.tCard__separator /
+            span.tCard__title Двубортное спортивное пальто
+        .tCard__info2
+          .tCard__info2inner
+            .tCard__sizeArea
+              span.tCard__sizeTitle Размеры:
+              span.tCard__sizeInfo L, XL, XXL
+            .tCard__more Подробнее...
+
     .lookCard__area.lookCard__area_mb
       .lookCard__outer
         a.lookCard(href="")

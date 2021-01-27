@@ -986,6 +986,58 @@
   background: rgba(0, 0, 0, 0.65);
 }
 
+.linkBox6__about {
+  display: flex;
+  height: 100%;
+  border: 2px solid var(--x1border);
+  padding: 20px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.linkBox6__aboutLeft {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.linkBox6__aboutRight {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.linkBox6__aboutLeftInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.linkBox6__aboutLeftInfoTitle {
+  color: var(--text2);
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.linkBox6__aboutLeftInfo ul {
+  list-style: none;
+}
+
+.linkBox6__aboutCover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s;
+  z-index: 5;
+  cursor: pointer;
+}
+
 /* //////////////////// */
 
 .best3_area {
