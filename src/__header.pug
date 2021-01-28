@@ -12,6 +12,10 @@ mixin siteHeader2
         .topLine2__item
           i.icon-phone
           a(href="tel:+78452759933") +7 (8452) 75 99 33
+        a.topLine2__item.topLine2__item_cur(href="#")
+          i.icon-avatar1
+          span Вход / Регистрация
+          //- span Александр
   +orangeHeader
   .header2__area.p1280
     .header2__searchArea
@@ -124,20 +128,21 @@ mixin siteHeader2
             li
               a(href="#") Красота
             li
-              a.openBrands_dt(href="#") Бренды
+              a.openBrands_dt(href="#") Тренды
         .logo2
           a(href="#")
             img(src="assets/img/logo8801000mir.svg", alt="")
 
         .header2__buttons
           .headerRightLi.openShops_dt(href="#") Магазины
-          .login2__area
+          .headerRightLi.openShops_dt(href="#") Бренды
+          //- .login2__area
             //- .login2__item
             //-   a(href="#", title="Войти")
             //-     i.icon-enter
-            .login2__item
-              a(href="#", title="Вход / Регистрация")
-                i.icon-avatar1
+            //- .login2__item
+            //-   a(href="#", title="Вход / Регистрация")
+            //-     i.icon-avatar1
           //- .login2__area
           //-   .login2__item
           //-     a(href="#") Войти

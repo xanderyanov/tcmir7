@@ -19,6 +19,10 @@
 .topLine2__item {
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+.topLine2__item_cur {
+  cursor: pointer;
 }
 
 .topLine2__item i {
@@ -856,7 +860,7 @@
 
 .linkBox3__area {
   width: 100%;
-  order: 1;
+  order: 2;
 }
 
 .linkBox3__outer {

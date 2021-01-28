@@ -6,10 +6,10 @@ mixin cabinet2
       .cab2__tabsArea
         ul.cab2__tabs
           li.cab2__tab
-            a.cab2__tabTitle(href='#')
+            a.cab2__tabTitle.active(href='#')
               i.icon-clipboard
               span Мои заказы
-            section
+            section.open
               +order2
           li.cab2__tab
             a.cab2__tabTitle(href='#')
