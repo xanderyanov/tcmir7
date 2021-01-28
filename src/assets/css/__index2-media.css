@@ -22,6 +22,9 @@
     flex-direction: row;
     width: 50%;
   }
+  .linkBox3 {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -89,9 +92,21 @@
   .about2__right {
     width: 40%;
   }
+  .linkBox6__aboutLeft {
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
+  .linkBox6__aboutLeft {
+    width: 50%;
+  }
+  .linkBox6__aboutRight {
+    width: 50%;
+  }
+  .linkBox6__aboutLeftInfoTitle {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -172,6 +187,22 @@
   a.videoLink_mb {
     display: flex;
   }
+  .linkBox6__aboutLeft {
+    width: 60%;
+  }
+  .linkBox6__aboutRight {
+    width: 40%;
+  }
+  .linkBox6__aboutLeftInfoTitle {
+    font-size: 1.5rem;
+  }
+  .linkBox3__itemWrapper_5:after {
+    padding-top: 50%;
+  }
+
+  .linkBox3__itemWrapper_6:after {
+    padding-top: 50%;
+  }
 }
 @media screen and (orientation: portrait) and (max-device-width: 768px) {
   .fancybox-iframe {
@@ -249,6 +280,16 @@
     object-fit: cover;
     width: auto;
   } */
+  .linkBox3__itemWrapper_5:after {
+    padding-top: 60%;
+  }
+
+  .linkBox3__itemWrapper_6:after {
+    padding-top: 60%;
+  }
+  .linkBox6__aboutLeftInfoTitle {
+    font-size: 1.375rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -340,6 +381,45 @@
   }
   .linkBox6__aboutLeftInfoTitle {
     margin: 0;
+  } */
+  /*************************************************/
+  /**************************************************/
+  /************************************************/
+  /* главная страница новая на адаптиве */
+  /* .linkBox3__itemWrapper_5 {
+    display: none;
+  }
+  .linkBox6__aboutLeft {
+    width: 40%;
+  }
+  .linkBox6__aboutRight {
+    width: 60%;
+  }
+  .linkBox3__itemWrapper_6:after {
+    padding-top: 32%;
+  }
+  .linkBox3__itemWrapper_1:after,
+  .linkBox3__itemWrapper_2:after,
+  .linkBox3__itemWrapper_3:after,
+  .linkBox3__itemWrapper_4:after {
+    padding-top: 60%;
+  }
+  .linkBox3__itemImgCover {
+    background-position: center top;
+  }
+
+  .linkBox6__about {
+    padding: 10px;
+  }
+  .linkBox6__aboutLeft {
+    padding: 0 10px 0 0;
+  }
+  .linkBox6__aboutLeftInfoTitle {
+    margin-bottom: 5px;
+  }
+  .linkBox6__aboutLeftInfo li {
+    font-size: 0.875rem;
+    line-height: 1.3rem;
   } */
 }
 

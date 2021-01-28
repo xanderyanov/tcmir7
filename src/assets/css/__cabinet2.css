@@ -67,8 +67,9 @@ a.cab2__tabTitle {
   overflow: hidden;
 }
 
-.cab2__tab section.open {
+.cab2__tab section.openSection {
   z-index: 100;
+  /* display: block; */
 }
 
 .order2__area {
