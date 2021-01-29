@@ -54,14 +54,23 @@
   .best2-container {
     padding: 0;
   }
+  .best2__title span:last-child {
+    margin-top: 0.3125rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .best2__itemTitle {
+    margin-bottom: 5px;
+  }
+  .best2__itemInfo {
+    margin-bottom: 5px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .best2slider {
-    padding: 10px 0 0;
+    padding: 0;
   }
   .best2__left,
   .best2__right {

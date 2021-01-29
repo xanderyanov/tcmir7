@@ -1,8 +1,12 @@
 mixin cabinet2
   .cabinet2__area.w0
     .cabinet2__outer.w1
-      .title1.title1_bgw
+      .title1.title1_bgw.title_flex
         h1= pageTitle
+        a.profil2__exit(href="", title="Выйти")
+          
+          span Выйти
+          i.icon-exit
       .cab2__tabsArea
         ul.cab2__tabs
           li.cab2__tab
@@ -16,7 +20,7 @@ mixin cabinet2
               i.icon-avatar1
               span Профиль
             section
-              +profile
+              +profile2
 
       
 mixin cabinet1
@@ -293,8 +297,33 @@ mixin profile
               span Телефон:
               span 8-927-310-88-10
             .profil__correctBtn Изменить данные
-        .profil__exitArea
+        //- .profil__exitArea
           a.profil__exit(href="", title="Выйти")
             i.icon-exit
 
 
+mixin profile2
+  .profile2__area
+    .profile2__outer
+      .profile2
+        .profile2__row
+          .profile2__rowTitle Имя:
+          .profile2__rowContent Иванов Иван Иванович
+          .profile2__rowContentCorect 
+            span Изменить
+            i.icon-pencil
+        .profile2__row
+          .profile2__rowTitle Телефон:
+          .profile2__rowContent +7 (927) 310-88-10
+          .profile2__rowContentCorect 
+            span Изменить
+            i.icon-pencil
+        .profile2__row
+          .profile2__rowTitle Email:
+          .profile2__rowContent pokupatel@tcmir.ru
+          .profile2__rowContentCorect 
+            span Изменить
+            i.icon-pencil
+        .profile2__row
+          .profile2__rowTitle Аккаунт создан:
+          .profile2__rowContent 18.08.2020

@@ -21,6 +21,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .profile2__rowTitle {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -64,6 +67,9 @@
   }
   .order2Price {
     margin-left: auto;
+  }
+  .profile2__rowTitle {
+    width: 30%;
   }
 }
 
@@ -117,6 +123,13 @@
   }
   .order2__right {
     padding-top: 5px;
+  }
+  .profile2__rowContentCorect span {
+    display: none;
+  }
+
+  .profile2__rowContentCorect i {
+    display: block;
   }
 }
 

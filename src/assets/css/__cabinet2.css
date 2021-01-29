@@ -218,3 +218,86 @@ a.order2:focus {
   zoom: 1;
   width: 100%;
 }
+
+.profil2__exit {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.profil2__exit:hover,
+.profil2__exit:focus {
+  text-decoration: none;
+}
+
+.profil2__exit i {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.profil2__exit:hover i {
+  color: var(--orange);
+}
+
+a.profil2__exit span {
+  color: #000;
+  font-size: 0.875rem;
+  margin: 0 10px 0 0;
+}
+a.profil2__exit:hover span {
+  color: var(--orange);
+}
+
+/*******************/
+.profile2__area {
+  width: 100%;
+}
+
+.profile2__outer {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.profile2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile2__row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile2__row:nth-child(odd) {
+  /* background: #000; */
+  background: var(--colorLightGrey);
+}
+
+.profile2__rowTitle {
+  width: 20%;
+  font-size: 1.125rem;
+  color: #000;
+}
+
+.profile2__rowContent {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.profile2__rowContentCorect {
+  margin-left: auto;
+}
+
+.profile2__rowContentCorect span {
+  color: #000;
+  font-size: 0.875rem;
+}
+
+.profile2__rowContentCorect i {
+  color: #000;
+  font-size: 1rem;
+  display: none;
+}

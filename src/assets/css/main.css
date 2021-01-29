@@ -62,7 +62,7 @@ body {
 }
 
 .title1 {
-  padding: 0.5rem 0.625rem;
+  padding: 0.5rem 0;
   background: var(--x1greySuperLight);
   display: flex;
   align-items: baseline;
@@ -70,6 +70,12 @@ body {
 }
 .title1_bgw {
   background: transparent;
+}
+
+.title_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title1 h1,
