@@ -1,8 +1,17 @@
-.cart2__area {
-  width: 100%;
+.cart2__pageArea {
+  padding: 0 0 20px;
+  background: #f8f8f8;
 }
-.cart2__outer {
+.cart2__pageOuter {
+  background: #fff;
+  padding: 40px;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cart2__area {
+  padding: 20px 0 0;
 }
 
 .cart2 {
@@ -57,6 +66,7 @@
 .cart2__header {
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 
 .cart2__header div {
@@ -69,6 +79,7 @@
   margin-bottom: 10px;
   position: relative;
   border-bottom: 2px solid #e5e5e5;
+  padding: 0 0 10px;
 }
 .cart2__item:last-child {
   border-bottom: none;
@@ -92,18 +103,18 @@ a.cart2title {
 
 .cart2title span {
   font-size: 1.25rem;
+  line-height: 1.4;
   /* color: var(--blueLink); */
   color: #000;
 }
 
-.cart2title span:first-child {
+/* .cart2title span:first-child {
   font-size: 0.875rem;
-  /* color: var(--blueLink); */
   color: #000;
-}
+} */
 
 .cart2title span:last-child {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #a6a6a6;
 }
 
@@ -168,4 +179,81 @@ a.cart2title {
   color: #000;
   line-height: 1.4;
   margin-top: 20px;
+}
+
+.number {
+  display: flex;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.number_inTabArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number_inTab {
+  margin: 0 auto;
+  border: none;
+}
+
+.number i {
+  font-size: 0.875rem;
+}
+
+.number button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #a6a6a6;
+  cursor: pointer;
+  outline: none;
+  color: var(--redFillhover);
+  font-size: 1.125rem;
+  font-weight: 400;
+  background: transparent;
+}
+
+.number input {
+  display: flex;
+  text-align: center;
+  border: none;
+  outline: none;
+  /* border-top: 2px solid #a6a6a6;
+  border-bottom: 2px solid #a6a6a6; */
+  color: var(--redFillhover);
+  font-size: 1.125rem;
+  font-weight: 700;
+  width: 80px;
+  background: transparent;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+.number_inTab {
+  width: auto;
+}
+
+.number_inTab span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 2px solid #a6a6a6;
+  background: #f8f8f8;
+  cursor: pointer;
+  outline: none;
+  color: var(--redFillhover);
+  font-size: 2rem;
+  font-weight: 400;
+  /* background: transparent; */
+}
+
+.number_inTab input {
+  width: 40px;
 }

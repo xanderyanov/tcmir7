@@ -328,7 +328,7 @@ mixin cart2
         .cart2__item
           .cart2col1
             a.cart2img(href="")
-                img(src="assets/img/tovar/001.jpeg", alt="")
+                img(src="assets/img/tovar6/001.jpg", alt="")
           .cart2colWrapper
             .cart2col2
               a(href="#").cart2title
@@ -343,20 +343,24 @@ mixin cart2
             //-     span.cart2Price 10000 Р/шт
             .cart2col5
               .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
-                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') 
+                  i.icon-minus7
                 input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
-                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество')
+                  i.icon-plus7
             .cart2col6
               .cart2__itemPriceArea
                 span.cart2OldPrice 12000 Р/шт
                 span.cart2Discount 15%
                 span.cart2Price 10000 Р/шт
           .cart2col7
-            img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+            span
+              //- img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+              i.icon-remove7.tdl-control.delete-svg(data-wareid='xxx', data-change='Z', title="Удалить")
         .cart2__item
           .cart2col1
             a.cart2img(href="")
-                img(src="assets/img/tovar/001.jpeg", alt="")
+                img(src="assets/img/tovar6/001.jpg", alt="")
           .cart2colWrapper
             .cart2col2
               a(href="#").cart2title
@@ -371,13 +375,17 @@ mixin cart2
             //-     span.cart2Price 10000 Р/шт
             .cart2col5
               .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
-                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') 
+                  i.icon-minus7
                 input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
-                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+                span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество')
+                  i.icon-plus7
             .cart2col6
               .cart2__itemPriceArea
                 span.cart2OldPrice 12000 Р/шт
                 span.cart2Discount 15%
                 span.cart2Price 10000 Р/шт
           .cart2col7
-            img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+            span
+              //- img(src="assets/img/delete24.svg", alt="", data-wareid='xxx', data-change='Z', title="Удалить").tdl-control.delete-svg
+              i.icon-remove7.tdl-control.delete-svg(data-wareid='xxx', data-change='Z', title="Удалить")
