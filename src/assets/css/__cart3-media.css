@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .dt {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cart3__pageOuter {
+    padding: 20px;
+  }
+  .cart3__item {
+    align-items: stretch;
+  }
+  .cart3info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 20px;
+  }
+
+  a.cart3title {
+    width: 100%;
+    padding: 0 0 10px;
+    order: 1;
+  }
+  .cart3title__desc {
+    width: 100%;
+    padding: 0 0 10px;
+    order: 2;
+  }
+  .cart3__itemPriceArea {
+    width: 100%;
+    padding: 0 0 10px;
+    order: 3;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .cart3OldPrice {
+    margin: 0 10px 0 0;
+  }
+
+  .cart3__itemButtons {
+    width: 100%;
+    padding: 0;
+    order: 4;
+    margin-top: auto;
+    display: flex;
+  }
+  .number {
+    justify-content: flex-start;
+  }
+  .cart3__itemButtonsDel {
+    position: relative;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+}
+
+@media only screen and (max-width: 840px) {
+}
+
+@media only screen and (max-width: 820px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .cart3__pageOuter {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cart3img img {
+    max-width: 150px;
+  }
+  .cart3info {
+    padding: 0 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cart3img img {
+    max-width: 130px;
+  }
+  a.cart3title {
+    padding: 0 0 5px;
+  }
+  .cart3title__desc {
+    padding: 0 0 5px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .cart3img img {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}

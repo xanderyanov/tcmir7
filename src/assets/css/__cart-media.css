@@ -201,9 +201,9 @@
     order: 8;
   }
 
-  .orderCart__total span {
+  /* .orderCart__total span {
     font-size: 0.875rem;
-  }
+  } */
   .orderForm__wrapper {
     width: 100%;
   }
