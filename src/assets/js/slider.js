@@ -14,6 +14,98 @@ function openShopInfo() {
 }
 
 $(function () {
+
+  //-START Сладйре похожих товаров на странице VARIANTS
+
+  let optionstsc1 = {};
+  if ($(".tsc1-container .tsc1-slide").length) {
+    optionstsc1 = {
+      slidesPerView: 6,
+      loop: false,
+      spaceBetween: 0,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".tsc1__right",
+        prevEl: ".tsc1__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        400: {
+          slidesPerView: 3,
+        },
+        600: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      
+      },
+    };
+  } 
+  var swiper = new Swiper(".tsc1-container", optionstsc1);
+
+
+  let optionstsc2 = {};
+  if ($(".tsc2-container .tsc2-slide").length) {
+    optionstsc2 = {
+      slidesPerView: 6,
+      loop: false,
+      spaceBetween: 0,
+      speed: 600,
+      autoplay: {
+        delay: 15000,
+        disableOnInteraction: true,
+      },
+      navigation: {
+        nextEl: ".tsc2__right",
+        prevEl: ".tsc2__left",
+      },
+      keyboard: true,
+      watchOverflow: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        400: {
+          slidesPerView: 3,
+        },
+        600: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
+    };
+  }
+  var swiper = new Swiper(".tsc2-container", optionstsc2);
+
+  //-END Сдайдеры похожих товаров
+
+
+
+
+
+
+
+
+
+
   $(".shop__openMobileBtn").on("click", openShopInfo);
   // слайдер на странице магазина
   if ($(".swiper-container_shop").length) {
