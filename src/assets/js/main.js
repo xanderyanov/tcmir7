@@ -17,16 +17,6 @@ $(function () {
     }
     tagOpen();
 
-
-
-
-
-
-
-
-
-
-
     $(".only_num").keydown(function (event) {
         // Разрешаем: backspace, delete, tab и escape
         if (
