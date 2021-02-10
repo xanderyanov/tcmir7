@@ -64,6 +64,9 @@
   .lookCard__area {
     width: 33.333%;
   }
+  .lookPage {
+    padding-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {

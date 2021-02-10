@@ -1612,67 +1612,19 @@ $(function () {
             }
         });
     }
+    function bottomIndentForMbMenu() {
+        let bmIndent = $(".m2_bottomMenu__area").outerHeight();
+        let buyBtnIndent = $(".rezerv__area").outerHeight();
+        let allBottomIndent = bmIndent+buyBtnIndent; 
+        if ($(window).width() <= 1080) {
+            $(".m2_bottomMenu__areaFake").css({ height: allBottomIndent });
+            $(".rezerv__area").css({ bottom: bmIndent });
+        }
+    }
+    $(window).on("resize", bottomIndentForMbMenu);
+    bottomIndentForMbMenu();
 
-    // установливаем обработчик события resize
-    $(window).on("resize", function () {
-        var bm = $(".m2_bottomMenu__area").outerHeight();
-        $(".m2_bottomMenu__areaFake").css({ height: bm });
-        $(".rezerv__area").css({ bottom: bm });
 
-        // if ($(window).width() <= 1080) {
-        //   $(".cabTab__itemContent").hide();
-        //   $(".cabTab__item.active .cabTab__itemContent").show();
-
-        //   $(".cabTab__title_mobile").on("click", function (e) {
-        //     e.stopPropagation();
-        //     $(".cabTab__itemContent").slideUp();
-        //     if ($(this).parent().hasClass("active")) {
-        //       $(".cabTab__item").removeClass("active");
-        //       $(this).parent().find(".cabTab__itemContent").slideUp();
-        //     } else {
-        //       $(".cabTab__item").removeClass("active");
-        //       $(this).parent().addClass("active");
-        //       $(this).parent().find(".cabTab__itemContent").slideDown();
-        //     }
-        //   });
-        // } else {
-        //   $(".cabTab__itemContent").show();
-        //   $(".cabTabHeader").each(function (i) {
-        //     var storage = localStorage.getItem("tab", i);
-        //     console.log(storage);
-        //     if (storage) {
-        //       $(this)
-        //         .find(".cabTab__title")
-        //         .removeClass("active")
-        //         .eq(storage)
-        //         .addClass("active")
-        //         .closest(".cabTab")
-        //         .find(".cabTab__item")
-        //         .removeClass("active")
-        //         .eq(storage)
-        //         .addClass("active");
-        //     }
-        //   });
-
-        //   $(".cabTabHeader").on("click", ".cabTab__title:not(.active)", function () {
-        //     $(this)
-        //       .addClass("active")
-        //       .siblings()
-        //       .removeClass("active")
-        //       .closest(".cabTab")
-        //       .find(".cabTab__item")
-        //       .removeClass("active")
-        //       .eq($(this).index())
-        //       .addClass("active");
-        //     var ulIndex = $(".cabTab__title").index($(this).parents(".cabTabHeader"));
-        //     console.log(ulIndex);
-        //     localStorage.removeItem("tab");
-        //     localStorage.setItem("tab", $(this).index());
-        //   });
-        // }
-    });
-
-    $(window).resize();
 
     $(".order__itemTovarsListTitle").on("click", function () {
         $(this).closest(".order__itemTovarsList").find(".order__itemTovarsListInfo").slideToggle();
