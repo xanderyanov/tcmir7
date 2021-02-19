@@ -38,7 +38,7 @@ $(function () {
         0: {
           slidesPerView: 2,
         },
-        400: {
+        480: {
           slidesPerView: 3,
         },
         600: {
@@ -78,7 +78,7 @@ $(function () {
         0: {
           slidesPerView: 2,
         },
-        400: {
+        480: {
           slidesPerView: 3,
         },
         600: {

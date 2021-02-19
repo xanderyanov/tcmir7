@@ -61,7 +61,6 @@ h6 {
 
 .content_less p {
   font-size: 0.875rem;
-  color: var(--tColor);
   line-height: 1.4;
 }
 
@@ -255,4 +254,10 @@ strong {
 .content_small li {
   font-size: 0.875rem;
   line-height: 1.4;
+}
+
+.content_less ul li {
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0;
 }

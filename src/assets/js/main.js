@@ -1,5 +1,6 @@
 $(function () {
 
+
     function tagOpen() {
         $(".tag__moreOpen").on("click", function () {
             if ($(this).hasClass("open")) {
