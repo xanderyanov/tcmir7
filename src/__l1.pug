@@ -1,13 +1,31 @@
 mixin l1 
   .l1__area
-    .lbox__area1
-      .lbox1
-      .lbox2 
-      .lbox3
-      .lbox4
-    .lbox__area2
-      .lbox5
-      .lbox6
+    .l1__outer
+      .lbox__area1
+        .lbox1
+          +lbox1 
+        .lbox2(style="background-image: url(assets/img/l1-shops.jpg)") 
+          a.lbox2__link(href="") 
+            span Магазины
+        .lbox3
+        .lbox4
+      .lbox__area2
+        .lbox5
+        .lbox6
+
+
+mixin lbox1 
+  .lbox1__wrapper 
+    .lbox1__name 
+      .lbox1__nameTop Торговый комплекс
+      .lbox1__nameH1
+        h1 Мир Онлайн
+    .lbox1__600 Торговый комплекс МИР более 10 лет радует жителей Саратова качественным европейским шопингом.
+    .lbox1__400 Теперь товары торгового комплекса можно купить в официальном интернет-магазине и заказать курьерскую доставку (доставляем компанией СДЭК) или оформить самовывоз (пункт выдачи находится на 1 этаже торгового комплекса МИР).
+    a.lbox1__link(hnref="")
+      img(src="assets/img/1.svg", alt="")
+      span Каталог
+
       
 
 

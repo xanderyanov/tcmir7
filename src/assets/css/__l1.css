@@ -1,8 +1,14 @@
 .l1__area {
-  height: 100vh;
-  width: 70%;
+  width: 100%;
+  background: var(--l1-dark);
   position: relative;
   z-index: 1;
+}
+
+.l1__outer {
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
   background: #e7e7e7;
   display: flex;
   margin: 0 auto;
@@ -22,7 +28,11 @@
 .lbox1 {
   width: 100%;
   height: 65vh;
-  background: #000;
+  background-color: var(--l1-dark);
+  background-image: url(../img/l1-1.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
 }
 
 .lbox2 {
@@ -49,4 +59,125 @@
   width: 100%;
   height: 30vh;
   background: rgb(138, 167, 116);
+}
+
+.lbox1__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.lbox1__name {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.lbox1__nameTop {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--l1-white);
+}
+
+.lbox1__nameH1 h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: var(--l1-red);
+  margin-bottom: 44px;
+}
+
+.lbox1__600 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--l1-white);
+  margin-bottom: 10px;
+  width: 53%;
+}
+
+.lbox1__400 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--l1-white);
+  width: 53%;
+  margin-bottom: 60px;
+}
+
+.lbox1__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 63px;
+  bottom: 64px;
+  cursor: pointer;
+}
+
+.lbox1__link img {
+  margin: 0 30px 0 0;
+}
+
+.lbox1__link span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--l1-red);
+  transition: all 0.3s;
+}
+
+.lbox1__link:hover span {
+  color: var(--l1-white);
+}
+
+.lbox2 {
+  position: relative;
+  background-size: cover;
+}
+
+.lbox2__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.lbox2__link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: all 0.3s;
+}
+.lbox2__link:hover:before {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.lbox2__link span {
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.lbox2__link:hover span {
+  color: var(--l1-red);
 }
