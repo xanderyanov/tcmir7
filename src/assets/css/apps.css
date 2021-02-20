@@ -153,5 +153,11 @@
 
 @import "__tovarSimilarCaroucel.css";
 
+@import "__l1_header.css";
+@import "__l1_header-media.css";
+
+@import "__l1.css";
+@import "__l1-media.css";
+
 @import "main.css";
 @import "media.css";

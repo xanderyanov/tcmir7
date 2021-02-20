@@ -33,6 +33,10 @@
   /* --header: rgba(255, 51, 0, 1); */
   --header: rgba(255, 255, 255, 1);
   --lmDark: #404040;
+
+  --l1-dark: #141414;
+  --l1-red: #ff3300;
+  --l1-white: #f2f2f2;
 }
 
 .w0 {

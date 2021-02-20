@@ -1,0 +1,52 @@
+.l1__area {
+  height: 100vh;
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  background: #e7e7e7;
+  display: flex;
+  margin: 0 auto;
+}
+
+.lbox__area1 {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lbox__area2 {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lbox1 {
+  width: 100%;
+  height: 65vh;
+  background: #000;
+}
+
+.lbox2 {
+  width: 40%;
+  height: 35vh;
+  background: rgb(150, 147, 147);
+}
+.lbox3 {
+  width: 30%;
+  height: 35vh;
+  background: rgb(219, 166, 166);
+}
+.lbox4 {
+  width: 30%;
+  height: 35vh;
+  background: var(--l1-red);
+}
+.lbox5 {
+  width: 100%;
+  height: 70vh;
+  background: rgb(125, 133, 206);
+}
+.lbox6 {
+  width: 100%;
+  height: 30vh;
+  background: rgb(138, 167, 116);
+}
