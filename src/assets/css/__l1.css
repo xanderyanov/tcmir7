@@ -12,6 +12,7 @@
   background: #e7e7e7;
   display: flex;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .lbox__area1 {
@@ -32,33 +33,35 @@
   background-image: url(../img/l1-1.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .lbox2 {
   width: 40%;
   height: 35vh;
-  background: rgb(150, 147, 147);
+  background: #fff;
 }
 .lbox3 {
   width: 30%;
   height: 35vh;
-  background: rgb(219, 166, 166);
+  background: var(--l1-dark);
 }
 .lbox4 {
   width: 30%;
   height: 35vh;
   background: var(--l1-red);
+  position: relative;
 }
 .lbox5 {
   width: 100%;
   height: 70vh;
-  background: rgb(125, 133, 206);
+  position: relative;
 }
 .lbox6 {
   width: 100%;
   height: 30vh;
-  background: rgb(138, 167, 116);
+  /* background: rgb(138, 167, 116); */
+  background: #000;
 }
 
 .lbox1__wrapper {
@@ -138,9 +141,13 @@
   color: var(--l1-white);
 }
 
-.lbox2 {
+.lbox2,
+.lbox3,
+.lbox6 {
   position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .lbox2__link {
@@ -167,6 +174,10 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
+.lbox2__link i {
+  display: none;
+}
+
 .lbox2__link span {
   position: absolute;
   left: 30px;
@@ -181,3 +192,111 @@
 .lbox2__link:hover span {
   color: var(--l1-red);
 }
+
+.lbox4__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  background: var(--l1-red);
+  padding: 50px 30px;
+}
+
+.lbox4__link span {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  transition: all 0.3s;
+  padding-right: 30px;
+}
+
+/*START Слайдер 1 на странице лендинга*/
+.lbox5slider__area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.swiper-container_lbox5slider {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.swiper-slide_lbox5slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide_lbox5slider img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-button-prevlbox5slider,
+.swiper-button-nextlbox5slider {
+  background: rgba(0, 0, 0, 1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: auto;
+  bottom: 0;
+  margin: 0;
+  transform: none;
+}
+
+.swiper-button-prevlbox5slider {
+  left: 0;
+}
+.swiper-button-nextlbox5slider {
+  left: 60px;
+}
+.swiper-button-nextlbox5slider:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  left: 0;
+  background: var(--colorDarkGrey);
+}
+
+.swiper-button-prevlbox5slider i,
+.swiper-button-nextlbox5slider i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.swiper-button-prevlbox5slider:hover,
+.swiper-button-nextlbox5slider:hover {
+  /* background: var(--orange); */
+}
+
+.swiper-button-prevlbox5slider:hover i,
+.swiper-button-nextlbox5slider:hover i {
+  color: var(--l1-red);
+}
+
+/*END Слайдер 1 на странице лендинга*/

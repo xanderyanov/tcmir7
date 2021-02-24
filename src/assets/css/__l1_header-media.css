@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1440px) {
+  .l1_header__area {
+    padding: 10px;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
 }
 
@@ -8,6 +14,15 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .l1_header__menu {
+    display: none;
+  }
+  .l1_header__left {
+    width: 20%;
+  }
+  .l1_header__right {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -17,15 +32,27 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .l1_topItem {
+    margin: 0 0 0 20px;
+  }
+  .l1_topItem i {
+    margin-right: 5px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .l1_topItem span {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .l1_header__area {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {

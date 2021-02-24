@@ -6,12 +6,22 @@ mixin l1
           +lbox1 
         .lbox2(style="background-image: url(assets/img/l1-shops.jpg)") 
           a.lbox2__link(href="") 
+            i.icon-cart1
             span Магазины
-        .lbox3
+        .lbox3(style="background-image: url(assets/img/landing/l1-serv.jpg)") 
+          a.lbox2__link(href="") 
+            i.icon-smile
+            span Услуги
         .lbox4
+          a.lbox4__link(href="") 
+            span Схема торгового комплекса
       .lbox__area2
         .lbox5
-        .lbox6
+          +lbox5slider
+        .lbox6(style="background-image: url(assets/img/landing/l1-actions.jpg)") 
+          a.lbox2__link(href="") 
+            i.icon-fire
+            span Акции
 
 
 mixin lbox1 
@@ -25,6 +35,27 @@ mixin lbox1
     a.lbox1__link(hnref="")
       img(src="assets/img/1.svg", alt="")
       span Каталог
+
+mixin lbox5slider
+  .lbox5slider__area
+    .swiper-container.swiper-container_lbox5slider
+      .swiper-wrapper
+        .swiper-slide.swiper-slide_lbox5slider(style='background-image: url(assets/img/landing/l1slider01.jpg);')
+        .swiper-slide.swiper-slide_lbox5slider(style='background-image: url(assets/img/landing/l1slider01.jpg);')
+        .swiper-slide.swiper-slide_lbox5slider(style='background-image: url(assets/img/landing/l1slider01.jpg);')
+      .swiper-pagination.swiper-button-prev.swiper-button-prevlbox5slider
+        i.icon-arr-left1
+      .swiper-pagination.swiper-button-next.swiper-button-nextlbox5slider
+        i.icon-arr-right1
+
+
+
+mixin l1mbMenu 
+  .l1mbMenu__area 
+    .l1mbMenu
+      .l1mbMenu__item
+        i.
+        span Каталог
 
       
 

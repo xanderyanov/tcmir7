@@ -77,6 +77,16 @@
   /* padding: 1rem 0 2rem; */
 }
 
+.tsc1-wrapper,
+.tsc2-wrapper {
+  align-items: stretch;
+  padding: 0 0 10px 0;
+}
+.tsc1-slide,
+.tsc2-slide {
+  height: auto;
+}
+
 .tovarSimilarCaroucel__left,
 .tovarSimilarCaroucel__right {
   position: absolute;

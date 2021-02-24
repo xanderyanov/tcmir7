@@ -664,4 +664,42 @@ $(function () {
   //     },
   //   },
   // });
+
+
+// слайдер на странице магазина
+if ($(".swiper-container_lbox5slider").length) {
+  mySwiperInShopPage = new Swiper(".swiper-container_lbox5slider", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-nextlbox5slider",
+        prevEl: ".swiper-button-prevlbox5slider",
+      },
+      on: {
+        init: function () {
+            console.log("mySwiperInlbox5sliderPage initialized");
+        },
+        slideChange: function () {
+        },
+      },
+  });
+  $(".swiper-container_lbox5slider").on("mouseenter", function () {
+    mySwiperInShopPage.autoplay.stop();
+    console.log("swiper autoplay stop");
+  });
+  $(".swiper-container_lbox5slider").on("mouseleave", function () {
+      mySwiperInShopPage.autoplay.start();
+      console.log("swiper autoplay start again");
+  });
+
+}
+
+
+
+
+
 });
