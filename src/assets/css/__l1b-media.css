@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1440px) {
+  .l1actions {
+    margin: 0;
+  }
+}
+@media screen and (orientation: landscape) and (max-device-width: 1440px) {
+}
+
+@media only screen and (max-width: 1280px) {
+  .l1actionsItem__info {
+    padding: 30px 20px;
+  }
+  .l1actionsItem__title {
+    font-size: 18px;
+    line-height: 1.2;
+    min-height: 44px;
+    margin-bottom: 15px;
+  }
+  .l1actionsItem__desc {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 1280px) {
+}
+
+@media only screen and (max-width: 1140px) {
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 1140px) {
+}
+
+@media only screen and (max-width: 1080px) {
+  .l1actions {
+    margin: 0 5px;
+  }
+  .l1actionsItem__outer {
+    padding: 10px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 1080px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 1024px) {
+}
+
+@media only screen and (max-width: 920px) {
+  .l1actionsItem__outer {
+    padding: 15px;
+    width: 50%;
+  }
+  /* .l1actionsItem {
+    flex-direction: row;
+    border: 1px solid #edf0f0;
+  }
+  .l1actionsItem__img {
+    width: 50%;
+  }
+  .l1actionsItem__info {
+    width: 50%;
+    padding: 20px 10px;
+    border: none;
+  }
+  .l1actionsItem__flag {
+    top: auto;
+    bottom: 0;
+  } */
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 920px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  /* .l1actionsItem {
+    flex-direction: column;
+    border: 1px solid #edf0f0;
+  }
+  .l1actionsItem__img {
+    width: 100%;
+  }
+  .l1actionsItem__info {
+    width: 100%;
+    padding: 20px 10px;
+    border: 1px solid #edf0f0;
+    border-top: none;
+  }
+  .l1actionsItem__flag {
+    top: 0;
+    bottom: auto;
+  } */
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 600px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .l1actionsItem__outer {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 480px) {
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 400px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 320px) {
+}

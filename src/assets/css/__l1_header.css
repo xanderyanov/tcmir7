@@ -1,7 +1,7 @@
 .l1_header__area {
   background: var(--l1-dark);
   padding: 10px 34px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -94,6 +94,7 @@
   margin: 0 0 0 34px;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .l1_topItem i {
@@ -106,28 +107,4 @@
   font-size: 14px;
   line-height: 20px;
   color: #fff;
-}
-.l1_topItem a {
-  font-size: 14px;
-  line-height: 20px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-}
-
-.l1_topItem a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: var(--l1-white);
-  left: 0;
-  bottom: -5px;
-  transition: all 0.3s;
-  opacity: 0;
-}
-
-.l1_topItem a:hover:after {
-  width: 100%;
-  opacity: 1;
 }

@@ -77,6 +77,7 @@
   display: flex;
   flex-direction: column;
   width: 60%;
+  margin-bottom: 44px;
 }
 
 .lbox1__nameTop {
@@ -94,7 +95,6 @@
   line-height: 78px;
   text-transform: uppercase;
   color: var(--l1-red);
-  margin-bottom: 44px;
 }
 
 .lbox1__600 {
@@ -201,7 +201,6 @@
   left: 0;
   text-decoration: none;
   background: var(--l1-red);
-  padding: 50px 30px;
 }
 
 .lbox4__link span {
@@ -287,11 +286,6 @@
 .swiper-button-nextlbox5slider i {
   color: #fff;
   font-size: 16px;
-}
-
-.swiper-button-prevlbox5slider:hover,
-.swiper-button-nextlbox5slider:hover {
-  /* background: var(--orange); */
 }
 
 .swiper-button-prevlbox5slider:hover i,
