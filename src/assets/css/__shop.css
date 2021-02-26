@@ -405,6 +405,17 @@
   right: 0;
 }
 
+.brandsCarousel__btn .swiper-button-disabled,
+.brandsCarousel__btn .swiper-button-disabled:hover {
+  background: #fff;
+}
+.brandsCarousel__btn .swiper-button-disabled i {
+  color: #ddd;
+}
+.brandsCarousel__btn .swiper-button-disabled:hover i {
+  color: #ddd;
+}
+
 .brandsCarousel-pagination1 {
   bottom: 30px !important;
 }

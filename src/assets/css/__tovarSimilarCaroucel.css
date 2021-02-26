@@ -150,7 +150,7 @@
 }
 .swiper-button-disabled:hover i {
   color: #ddd;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .swiper-button-lock {
