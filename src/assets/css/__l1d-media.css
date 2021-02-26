@@ -1,17 +1,12 @@
 @media only screen and (max-width: 1440px) {
-  .l1cServ {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+  .l1tabs {
+    padding: 0 15px;
   }
 }
 @media screen and (orientation: landscape) and (max-device-width: 1440px) {
 }
 
 @media only screen and (max-width: 1280px) {
-  .l1cServ__ItemOuter {
-    width: 20%;
-  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1280px) {
@@ -24,27 +19,45 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  .l1cServ__ItemOuter {
-    padding: 10px;
-  }
-  .l1cServ__ItemInfo {
-    padding: 20px;
-  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1080px) {
 }
 
 @media only screen and (max-width: 1024px) {
+  .l1tabsTabs__title {
+    font-size: 16px;
+    line-height: 1;
+    color: var(--l1-dark);
+    background: var(--colorLightGrey);
+    margin: 0 3px 3px 0;
+    padding: 10px 20px;
+  }
+  .l1tabsTabs__title:last-child {
+    margin: 0 3px 3px 0;
+  }
+  .l1tabs__title {
+    border-bottom: none;
+  }
+  .l1tabsTabs__title.active:after {
+    display: none;
+  }
+  .l1tabsTabs__title.active {
+    background: var(--l1-red);
+    color: #fff;
+  }
+  .l1tabsBrands__itemOuter {
+    width: 16.666%;
+  }
+  .l1tabs__azItemOuter {
+    width: 25%;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1024px) {
 }
 
 @media only screen and (max-width: 920px) {
-  .l1cServ__ItemOuter {
-    width: 25%;
-  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 920px) {
@@ -57,7 +70,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .l1cServ__ItemOuter {
+  .l1tabsTabs__title {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .l1tabsBrands__itemOuter {
+    width: 20%;
+  }
+  .l1tabs__azItemOuter {
     width: 33.333%;
   }
 }
@@ -66,8 +86,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .l1cServ__ItemInfo {
-    padding: 10px;
+  .l1tabsBrands__itemOuter {
+    width: 25%;
   }
 }
 
@@ -75,7 +95,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .l1cServ__ItemOuter {
+  .l1tabsBrands__itemOuter {
+    width: 33.333%;
+  }
+  .l1tabs__azItemOuter {
     width: 50%;
   }
 }

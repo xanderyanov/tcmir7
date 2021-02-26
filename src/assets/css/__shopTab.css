@@ -166,7 +166,7 @@
 .aShopsTabs__title {
   text-decoration: none;
   padding: 5px 15px;
-  margin-right: 2px;
+  margin: 0 2px 2px 0;
   background: var(--colorLightGrey);
   color: #000;
   border-radius: 4px;

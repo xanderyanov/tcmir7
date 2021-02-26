@@ -165,6 +165,62 @@ $(function () {
         }
     });
 
+    $(".l1tabsTabs__title").on("click", function (e) {
+        e.preventDefault();
+        var tabNumber;
+        if (!$(this).hasClass("active")) {
+            tabNumber = $(this).data("tab");
+            $(".l1tabsTabs__title").removeClass("active");
+            $(".l1tabsTabs__widget").hide().removeClass("active");
+            $(this).addClass("active");
+            $(".l1tabsTabs__widgets")
+                .find("[data-widget='" + tabNumber + "']")
+                .fadeIn(400)
+                .addClass("active");
+        }
+    });
+
+    $(".l1tabsBrands__item").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // if ($(this).hasClass("active")) {
+        //     $(this).removeClass("active");
+        //     $("body").removeClass("stop");
+        //     $(".l1tabsBrands__itemBoxOuter").hide();
+        //     $(".l1tabsTabs__overlay").hide();
+        //  } else {
+            $(this).addClass("active");
+            $("body").addClass("stop");
+            $(".l1tabsBrands__itemBoxOuter").show();
+            $(".l1tabsTabs__overlay").show();
+        // }
+        console.log('click');
+    });
+    $(".l1tabsTabs__overlay").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // $(".l1tabsBrands__item").removeClass("active");
+        $("body").removeClass("stop");
+        $(".l1tabsTabs__overlay").hide();
+        $(".l1tabsBrands__itemBoxOuter").hide();
+    });
+
+    $(".l1tabsBrands__itemBox").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $(".l1tabs__close").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // $(".l1tabsBrands__item").removeClass("active");
+        $("body").removeClass("stop");
+        $(".l1tabsTabs__overlay").hide();
+        $(".l1tabsBrands__itemBoxOuter").hide();
+    });
+
+
+
     // товарные слайдеры на главной
     var mySwiper1;
     if ($(".septSlider1__outer").length) {
