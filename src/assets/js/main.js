@@ -1,5 +1,14 @@
 $(function () {
 
+	//прокрутка к якорям на лендинге
+	$("a.l1scrollto").on("click", function () {
+		let elementClick = $(this).attr("href");
+		let destination = $(elementClick).offset().top;
+		let l1headerHeight = $(".l1_header__area").outerHeight();
+		$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
+		return false;
+	}); 
+
 
     function tagOpen() {
         $(".tag__moreOpen").on("click", function () {
@@ -179,6 +188,21 @@ $(function () {
                 .addClass("active");
         }
     });
+
+		$(".l1mapTabs__title").on("click", function (e) {
+			e.preventDefault();
+			var tabNumber;
+			if (!$(this).hasClass("active")) {
+					tabNumber = $(this).data("tab");
+					$(".l1mapTabs__title").removeClass("active");
+					$(".l1mapTabs__widget").hide().removeClass("active");
+					$(this).addClass("active");
+					$(".l1mapTabs__widgets")
+							.find("[data-widget='" + tabNumber + "']")
+							.fadeIn(400)
+							.addClass("active");
+			}
+		});
 
     $(".l1tabsBrands__item").on("click", function (e) {
         e.preventDefault();

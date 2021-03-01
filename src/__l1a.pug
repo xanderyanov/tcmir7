@@ -5,24 +5,23 @@ mixin l1a
         .lbox1
           +lbox1 
         .lbox2(style="background-image: url(assets/img/l1-shops.jpg)") 
-          a.lbox2__link(href="") 
+          a.lbox2__link.l1scrollto(href="#l1mag") 
             i.icon-cart1
             span Магазины
         .lbox3(style="background-image: url(assets/img/landing/l1-serv.jpg)") 
-          a.lbox2__link(href="") 
+          a.lbox2__link.l1scrollto(href="#l1serv") 
             i.icon-smile
             span Услуги
         .lbox4
-          a.lbox4__link(href="") 
+          a.lbox4__link.l1scrollto(href="#l1map") 
             span Схема торгового комплекса
       .lbox__area2
         .lbox5
           +lbox5slider
         .lbox6(style="background-image: url(assets/img/landing/l1-actions.jpg)") 
-          a.lbox2__link(href="") 
+          a.lbox2__link.l1scrollto(href="#l1action") 
             i.icon-fire
             span Акции
-
 
 mixin lbox1 
   .lbox1__wrapper 

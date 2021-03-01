@@ -1,0 +1,26 @@
+.l1map__area {
+  width: 100%;
+  background: var(--l1-dark);
+}
+
+.l1map__outer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.l1map {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l1mapTabs__widget {
+  display: none;
+}
+.l1mapTabs__widget.active {
+  display: block;
+}
+
+.l1mapTabsArea {
+}

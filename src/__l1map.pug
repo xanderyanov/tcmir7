@@ -1,0 +1,27 @@
+mixin l1mapTitle 
+  .l1bTitle__area#l1map
+    .l1bTitle
+      h2 Схема торгового комплекса
+
+mixin l1map
+  .l1map__area 
+    .l1map__outer
+      .l1map 
+        .l1mapTabsArea
+          .l1mapTabsArea__titles 
+            a.l1mapTabs__title.active(href="#" data-tab='1') 1 этаж
+            a.l1mapTabs__title(href="#" data-tab='2') 2 этаж
+          .l1mapTabs__widgets
+            .l1mapTabs__widget.active(data-widget='1')
+              img(src="assets/img/schema/skhema1.svg", alt="")
+            .l1mapTabs__widget(data-widget='2')
+              img(src="assets/img/shop2/nebrosko1.jpg", alt="")
+        .l1mapCategoryArea
+          .l1mapCategory
+            a.l1mapCategory__item(href="") Одежда
+            a.l1mapCategory__item(href="") Обувь
+            a.l1mapCategory__item(href="") Аксессуары
+            a.l1mapCategory__item(href="") Косметика
+            a.l1mapCategory__item(href="") Дом
+            a.l1mapCategory__item(href="") Услуги
+          
