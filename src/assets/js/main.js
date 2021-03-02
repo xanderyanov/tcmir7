@@ -1,13 +1,57 @@
+//START прокрутка к якорям на лендинге - функция сама
+var DenyScroll = false;
+function l1ScrollTo() {
+    if (DenyScroll) return;
+    $this = $(this);
+    $('.l1__menu li').removeClass('active');
+    let elementClick = $(this).attr("href");
+    if ($this.hasClass("l1scrolltoBtn")) {
+        let topMenuElement = $(".l1__menu li").find("[data-anchor='" + elementClick + "']")
+        topMenuElement.parent('li').addClass('active');
+    } else {
+        $this.parent('li').addClass('active');
+    }
+    let destination = $(elementClick).offset().top;
+    let l1headerHeight = $(".l1_header__area").outerHeight();
+    DenyScroll = true;
+    $("html:not(:animated),body:not(:animated)").animate(
+        { scrollTop: destination - 0 },
+        { 
+            complete: function() { DenyScroll = false; },
+            duration: 1100
+        });
+    return false;
+}
+//END прокрутка к якорям на лендинге - функция сама
+
+
 $(function () {
 
-	//прокрутка к якорям на лендинге
-	$("a.l1scrollto").on("click", function () {
-		let elementClick = $(this).attr("href");
-		let destination = $(elementClick).offset().top;
-		let l1headerHeight = $(".l1_header__area").outerHeight();
-		$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
-		return false;
-	}); 
+	//прокрутка к якорям на лендинге через функцию
+	$("a.l1scrolltoTopMenu").on("click", l1ScrollTo); 
+    $("a.l1scrolltoBtn").on("click", l1ScrollTo);
+
+    
+    
+    
+    $(".toTop").hide();
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 0) {
+            $(".toTop").fadeIn();
+        } else {
+            $(".toTop").fadeOut();
+        }
+    });
+    $(".toTop").on("click", function () {
+        $("body,html").animate({ scrollTop: 0 }, 400);
+        if($('.l1__menu')){
+            $('.l1__menu li').removeClass('active');
+            $('.l1__menu li:first-child').addClass('active');
+        }
+        return false;
+    });
+
+
 
 
     function tagOpen() {
@@ -1552,18 +1596,7 @@ $(function () {
         });
     }
 
-    $(".toTop").hide();
-    $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 0) {
-            $(".toTop").fadeIn();
-        } else {
-            $(".toTop").fadeOut();
-        }
-    });
-    $(".toTop").on("click", function () {
-        $("body,html").animate({ scrollTop: 0 }, 400);
-        return false;
-    });
+
 
     // sizeToPrice
 

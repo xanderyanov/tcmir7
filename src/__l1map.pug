@@ -13,15 +13,21 @@ mixin l1map
             a.l1mapTabs__title(href="#" data-tab='2') 2 этаж
           .l1mapTabs__widgets
             .l1mapTabs__widget.active(data-widget='1')
-              img(src="assets/img/schema/skhema1.svg", alt="")
+              img(src="assets/img/schema/first floor.svg", alt="")
             .l1mapTabs__widget(data-widget='2')
-              img(src="assets/img/shop2/nebrosko1.jpg", alt="")
+              img(src="assets/img/schema/second floor.svg", alt="")
         .l1mapCategoryArea
           .l1mapCategory
-            a.l1mapCategory__item(href="") Одежда
-            a.l1mapCategory__item(href="") Обувь
-            a.l1mapCategory__item(href="") Аксессуары
-            a.l1mapCategory__item(href="") Косметика
-            a.l1mapCategory__item(href="") Дом
-            a.l1mapCategory__item(href="") Услуги
+            .l1mapCategory__itemOuter
+              a.l1mapCategory__item(href="") Одежда
+            .l1mapCategory__itemOuter
+              a.l1mapCategory__item.active(href="") Обувь
+            .l1mapCategory__itemOuter
+              a.l1mapCategory__item(href="") Аксессуары
+            .l1mapCategory__itemOuter
+              a.l1mapCategory__item(href="") Косметика
+            .l1mapCategory__itemOuter
+              a.l1mapCategory__item(href="") Дом
+            .l1mapCategory__itemOuter
+              a.l1mapCategory__item(href="") Услуги
           

@@ -77,7 +77,6 @@
   opacity: 0;
 }
 
-.l1__menu li a:hover:after,
 .l1__menu li.active a:after {
   width: 100%;
   opacity: 1;

@@ -8,16 +8,16 @@ mixin l1_header
               img(src="assets/img/logo8801000.svg", alt="")
           nav.l1_header__menu
             ul.l1__menu 
-              li
-                a(href="#") Про Мир
-              li
-                a(href="#") Акции
               li.active
-                a(href="#") Схема ТК
+                a.l1scrolltoTopMenu(href="#l1top", data-anchor="#l1top") Про Мир
               li
-                a(href="#") Магазины
+                a.l1scrolltoTopMenu(href="#l1action", data-anchor="#l1action") Акции
               li
-                a(href="#") Услуги
+                a.l1scrolltoTopMenu(href="#l1map", data-anchor="#l1map") Схема ТК
+              li
+                a.l1scrolltoTopMenu(href="#l1mag", data-anchor="#l1mag") Магазины
+              li
+                a.l1scrolltoTopMenu(href="#l1serv", data-anchor="#l1serv") Услуги
         .l1_header__right
           a.l1_topItem(href="")  
             i.icon-marker1
