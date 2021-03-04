@@ -117,6 +117,12 @@
   .l1redmoreAll {
     margin: 40px auto 0;
   }
+  .l1bTitle {
+    height: 120px;
+  }
+  .l1bTitle h2 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 600px) {
@@ -142,6 +148,13 @@
   }
   .l1actionsItem__desc {
     margin-bottom: 10px;
+  }
+  .l1bTitle {
+    height: auto;
+    padding: 30px 10px 10px;
+  }
+  .l1bTitle h2 {
+    font-size: 26px;
   }
 }
 
