@@ -28,6 +28,14 @@
   display: block;
 }
 
+.l1mapTabs__widget svg {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+
 .l1mapTabsArea {
   width: 75%;
   display: flex;
