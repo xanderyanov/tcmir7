@@ -33,7 +33,7 @@
   height: auto;
   display: inline-block;
   transform-origin: center center;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
 }
 
 .l1mapTabsArea {
@@ -109,6 +109,7 @@
   padding: 0 0 20px 0;
   color: #e0e0e0;
   position: relative;
+  cursor: pointer;
 }
 
 .l1mapCategory__item.active {

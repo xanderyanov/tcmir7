@@ -258,6 +258,25 @@
   color: var(--l1-dark);
 }
 
+.l1tabsBrands__itemBoxInfoTitleText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--l1-dark);
+}
+
+.l1tabsBrands__itemBoxInfoTitleTextLink {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--l1-dark);
+  text-decoration: none;
+}
+
+.l1tabsBrands__itemBoxInfoTitleTextLink:hover {
+  text-decoration: underline;
+}
+
 .l1tabsBrands__itemBoxText {
   font-size: 14px;
   line-height: 1.3;

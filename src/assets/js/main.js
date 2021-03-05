@@ -248,38 +248,27 @@ $(function () {
 			}
 		});
 
+    // $(".l1tabsBrands__itemBox").on("click", function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // });
     $(".l1tabsBrands__item").on("click", function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         e.stopPropagation();
-        // if ($(this).hasClass("active")) {
-        //     $(this).removeClass("active");
-        //     $("body").removeClass("stop");
-        //     $(".l1tabsBrands__itemBoxOuter").hide();
-        //     $(".l1tabsTabs__overlay").hide();
-        //  } else {
-            $(this).addClass("active");
-            $("body").addClass("stop");
-            $(".l1tabsBrands__itemBoxOuter").show();
-            $(".l1tabsTabs__overlay").show();
-        // }
-        console.log('click');
+        $(this).addClass("active");
+        $("body").addClass("stop");
+        $(".l1tabsBrands__itemBoxOuter").show();
+        $(".l1tabsTabs__overlay").show();
     });
     $(".l1tabsTabs__overlay").on("click", function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         e.stopPropagation();
-        // $(".l1tabsBrands__item").removeClass("active");
         $("body").removeClass("stop");
         $(".l1tabsTabs__overlay").hide();
         $(".l1tabsBrands__itemBoxOuter").hide();
     });
-
-    $(".l1tabsBrands__itemBox").on("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-    });
-
     $(".l1tabs__close").on("click", function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         e.stopPropagation();
         // $(".l1tabsBrands__item").removeClass("active");
         $("body").removeClass("stop");
@@ -420,7 +409,7 @@ $(function () {
         $(".aBrands__area_mb").css({ bottom: m2_menuHeight2 });
     }
 
-    $(window).resize(function () {
+    $(window).on("resize",function () {
         if ($(window).width() <= 1080) {
             let m2_menuHeight2 = $(".m2_bottomMenu__area").outerHeight();
             $(".aBrands__area_mb").css({ bottom: m2_menuHeight2 });
