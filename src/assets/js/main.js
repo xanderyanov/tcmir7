@@ -248,10 +248,10 @@ $(function () {
 			}
 		});
 
-    // $(".l1tabsBrands__itemBox").on("click", function (e) {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    // });
+    $(".l1tabsBrands__itemBoxOuter").on("click", function (e) {
+        // e.preventDefault();
+        e.stopPropagation();
+    });
     $(".l1tabsBrands__item").on("click", function (e) {
         // e.preventDefault();
         e.stopPropagation();
@@ -260,22 +260,27 @@ $(function () {
         $(".l1tabsBrands__itemBoxOuter").show();
         $(".l1tabsTabs__overlay").show();
     });
-    $(".l1tabsTabs__overlay").on("click", function (e) {
-        // e.preventDefault();
-        e.stopPropagation();
-        $("body").removeClass("stop");
-        $(".l1tabsTabs__overlay").hide();
-        $(".l1tabsBrands__itemBoxOuter").hide();
-    });
-    $(".l1tabs__close").on("click", function (e) {
-        // e.preventDefault();
-        e.stopPropagation();
-        // $(".l1tabsBrands__item").removeClass("active");
-        $("body").removeClass("stop");
-        $(".l1tabsTabs__overlay").hide();
-        $(".l1tabsBrands__itemBoxOuter").hide();
-    });
+    // $(".l1tabsTabs__overlay").on("click", function (e) {
+    //     // e.preventDefault();
+    //     // e.stopPropagation();
+    //     $("body").removeClass("stop");
+    //     $(".l1tabsTabs__overlay").hide();
+    //     $(".l1tabsBrands__itemBoxOuter").hide();
+    // });
+    // $(".l1tabs__close").on("click", function (e) {
+    //     // e.preventDefault();
+    //     e.stopPropagation();
+    //     // $(".l1tabsBrands__item").removeClass("active");
+    //     $("body").removeClass("stop");
+    //     $(".l1tabsTabs__overlay").hide();
+    //     $(".l1tabsBrands__itemBoxOuter").hide();
+    // });
 
+
+    $(".l1mapCategory__item").on("click", function(e){
+        $(".l1mapCategory__item").removeClass("active");
+        $(this).addClass("active");
+    })
 
 
     // товарные слайдеры на главной

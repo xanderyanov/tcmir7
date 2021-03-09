@@ -177,6 +177,7 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--l1-dark);
+  cursor: pointer;
 }
 
 .l1tabs__azItem:hover,
@@ -217,6 +218,7 @@
   left: 50%;
   top: 50%; */
   z-index: 2750;
+  position: relative;
 }
 
 .l1tabsBrands__itemBox {
