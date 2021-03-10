@@ -107,10 +107,25 @@
 @media only screen and (max-width: 400px) {
 }
 
+@media only screen and (max-width: 414px) {
+  .l1mapTabsArea {
+    width: 90%;
+  }
+  .l1mapCategory__itemOuter {
+    margin: 0 10px 5px 0;
+  }
+}
+
 @media screen and (orientation: landscape) and (max-device-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {
+  .l1mapCategoryArea {
+    padding: 0;
+  }
+  .l1mapCategory__item {
+    font-size: 12px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 320px) {

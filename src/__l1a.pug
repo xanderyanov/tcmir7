@@ -4,23 +4,28 @@ mixin l1a
       .lbox__area1
         .lbox1
           +lbox1 
+        .lbox1a
+          a.lbox1a__link(hnref="")
+            img(src="assets/img/1.svg", alt="")
+            span Каталог
         .lbox2(style="background-image: url(assets/img/l1-shops.jpg)") 
           a.lbox2__link.l1scrolltoBtn(href="#l1mag") 
-            i.icon-cart1
+            i.icon-l1-shop
             span Магазины
         .lbox3(style="background-image: url(assets/img/landing/l1-serv.jpg)") 
           a.lbox2__link.l1scrolltoBtn(href="#l1serv") 
-            i.icon-smile
+            i.icon-l1-serv
             span Услуги
         .lbox4
           a.lbox4__link.l1scrolltoBtn(href="#l1map") 
+            i.icon-l1-tc
             span Схема торгового комплекса
       .lbox__area2
         .lbox5
           +lbox5slider
         .lbox6(style="background-image: url(assets/img/landing/l1-actions.jpg)") 
           a.lbox2__link.l1scrolltoBtn(href="#l1action") 
-            i.icon-fire
+            i.icon-l1-action
             span Акции
 
 mixin lbox1 
@@ -31,9 +36,7 @@ mixin lbox1
         h1 Мир Онлайн
     .lbox1__600 Торговый комплекс МИР более 10 лет радует жителей Саратова качественным европейским шопингом.
     .lbox1__400 Теперь товары торгового комплекса можно купить в официальном интернет-магазине и заказать курьерскую доставку (доставляем компанией СДЭК) или оформить самовывоз (пункт выдачи находится на 1 этаже торгового комплекса МИР).
-    a.lbox1__link(hnref="")
-      img(src="assets/img/1.svg", alt="")
-      span Каталог
+    
 
 mixin lbox5slider
   .lbox5slider__area
@@ -53,7 +56,6 @@ mixin l1mbMenu
   .l1mbMenu__area 
     .l1mbMenu
       .l1mbMenu__item
-        i.
         span Каталог
 
       

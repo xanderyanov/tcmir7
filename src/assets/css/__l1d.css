@@ -128,7 +128,7 @@
 
 .l1tabs__az {
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -153,7 +153,7 @@
 
 .l1tabs__azLetterBoxContent {
   /* border-left: 2px solid var(--x1greyLight); */
-  margin: 5px 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   width: 95%;
@@ -255,16 +255,27 @@
 
 .l1tabsBrands__itemBoxInfoTitle {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: var(--l1-dark);
 }
 
-.l1tabsBrands__itemBoxInfoTitleText {
+.l1tabsBrands__itemBoxInfoCategory {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.l1tabsBrands__itemBoxInfoCategory span {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--l1-dark);
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  background: var(--l1-red);
+  display: inline-block;
+  padding: 3px 6px;
+  margin: 0 2px 2px 0;
+  border-radius: 4px;
 }
 
 .l1tabsBrands__itemBoxInfoTitleTextLink {
@@ -277,6 +288,21 @@
 
 .l1tabsBrands__itemBoxInfoTitleTextLink:hover {
   text-decoration: underline;
+}
+
+.l1tabsBrands__itemBoxInfoSocialLinks {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 0 0;
+}
+
+.l1tabsBrands__itemBoxInfoSocialLink {
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+.l1tabsBrands__itemBoxInfoSocialLink img {
+  width: 24px;
+  height: 24px;
 }
 
 .l1tabsBrands__itemBoxText {

@@ -12,14 +12,17 @@ function l1ScrollTo() {
         $this.parent('li').addClass('active');
     }
     let destination = $(elementClick).offset().top;
-    let l1headerHeight = $(".l1_header__area").outerHeight();
+    let l1headerHeight = $(".l1_header__left").outerHeight();
     DenyScroll = true;
     $("html:not(:animated),body:not(:animated)").animate(
-        { scrollTop: destination - 0 },
+        { scrollTop: destination - 20 },
         { 
             complete: function() { DenyScroll = false; },
             duration: 1100
         });
+    $(".menuButton_L1").removeClass("open");
+    $(".menuButton_L1__areaJS").removeClass("open");
+    $(".l1_header__center").slideUp();
     return false;
 }
 //END прокрутка к якорям на лендинге - функция сама
@@ -33,6 +36,25 @@ $(function () {
 
     
     
+
+    $(".menuButton_L1__areaJS").on("click", function (e) {
+        e.preventDefault();
+        if ($(this).hasClass("open")) {
+            $(this).removeClass("open");
+            $(".menuButton_L1").removeClass("open");
+            $(".l1_header__center").slideUp();
+        } else {
+            $(this).addClass("open");
+            $(".menuButton_L1").addClass("open");
+            $(".l1_header__center").slideDown();
+        }
+    });
+
+
+
+
+
+
     
     $(".toTop").hide();
     $(window).on("scroll", function () {

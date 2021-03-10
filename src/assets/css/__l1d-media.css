@@ -101,6 +101,29 @@
   .l1tabs__azItemOuter {
     width: 50%;
   }
+  .l1tabsBrands__itemBoxOuter {
+    width: 90%;
+  }
+  .l1tabsBrands__itemBox {
+    width: 100%;
+    padding: 20px;
+  }
+  .l1tabsBrands__itemBoxRedMore {
+    width: 90%;
+  }
+  .l1tabs__azLetterBoxTitle {
+    width: 10%;
+  }
+
+  .l1tabs__azLetterBoxContent {
+    width: 90%;
+  }
+  .l1tabs__outer {
+    padding: 20px 0;
+  }
+  .l1tabsBrands__itemBoxTop {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 480px) {

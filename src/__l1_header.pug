@@ -6,7 +6,8 @@ mixin l1_header
           .l1_header__logo
             a(href="") 
               img(src="assets/img/logo8801000.svg", alt="")
-          nav.l1_header__menu
+        .l1_header__center
+          .l1_header__menu
             ul.l1__menu 
               li.active
                 a.l1scrolltoTopMenu(href="#l1top", data-anchor="#l1top") Про Мир
@@ -19,9 +20,14 @@ mixin l1_header
               li
                 a.l1scrolltoTopMenu(href="#l1serv", data-anchor="#l1serv") Услуги
         .l1_header__right
-          a.l1_topItem(href="")  
+          a.l1_topItem.l1_topItem1(href="")  
             i.icon-marker1
             span Саратов, ул. Москосвкая, 113-117
-          a.l1_topItem(href="tel:+78452759933") 
+          a.l1_topItem.l1_topItem2(href="tel:+78452759933") 
             i.icon-phone
             span +7 (8452) 75 99 33
+          .menuButton_L1__area.menuButton_L1__areaJS
+            .menuButton_L1
+              span
+              span
+              span
