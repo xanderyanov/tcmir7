@@ -860,7 +860,7 @@
 
 .linkBox3__area {
   width: 100%;
-  order: 2;
+  order: 1;
 }
 
 .linkBox3__outer {
@@ -967,6 +967,10 @@
 
 .linkBox3__item:hover .linkBox3__itemImgCover {
   transform: scale(1.01);
+}
+
+.linkBox6__item {
+  text-decoration: none;
 }
 
 .linkBox3__item span {

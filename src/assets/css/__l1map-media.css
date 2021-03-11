@@ -108,9 +108,9 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .l1mapTabsArea {
+  /* .l1mapTabsArea {
     width: 90%;
-  }
+  } */
   .l1mapCategory__itemOuter {
     margin: 0 10px 5px 0;
   }

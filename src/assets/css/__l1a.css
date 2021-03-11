@@ -97,7 +97,7 @@
   width: 100%;
   height: 30vh;
   /* background: rgb(138, 167, 116); */
-  background: #000;
+  background: var(--l1-dark);
 }
 
 .lbox1__wrapper {

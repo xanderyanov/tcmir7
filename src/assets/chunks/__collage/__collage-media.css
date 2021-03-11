@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1320px) {
-  .collage__wrapper {
+  /* .collage__wrapper {
     padding: 0 10px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1280px) {
@@ -37,6 +37,9 @@
   }
   .collage__itemOuter_4_2 {
     width: 50%;
+  }
+  .collage__item {
+    opacity: 1;
   }
 }
 

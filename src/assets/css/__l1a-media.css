@@ -185,8 +185,14 @@
     font-size: 20px;
   }
 
+  .l1__outer {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
   .lbox1 {
     height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
     width: 100%;
     order: 0;
   }
@@ -194,11 +200,13 @@
   .lbox4 {
     width: 40%;
     height: 30vh;
+    height: calc(var(--vh, 1vh) * 30);
     order: 1;
   }
   .lbox1a {
     width: 60%;
     height: 30vh;
+    height: calc(var(--vh, 1vh) * 30);
     order: 2;
     padding: 0;
     background: var(--l1-dark);
@@ -216,12 +224,14 @@
   .lbox2 {
     width: 40%;
     height: 20vh;
+    height: calc(var(--vh, 1vh) * 20);
     order: 3;
     background: var(--l1-dark);
   }
   .lbox3 {
     width: 30%;
     height: 20vh;
+    height: calc(var(--vh, 1vh) * 20);
     order: 4;
     background: #fff;
   }
@@ -239,6 +249,7 @@
 
   .lbox6 {
     height: 20vh;
+    height: calc(var(--vh, 1vh) * 20);
   }
   .lbox4__link {
     padding: 10px 20px;

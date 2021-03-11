@@ -15,6 +15,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background: var(--l1-dark);
 }
 
 .collage {
@@ -50,7 +51,7 @@
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: all 0.5s;
 }
 .collage__item:hover {
