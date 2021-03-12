@@ -19,7 +19,7 @@
   width: 65%;
   display: flex;
   flex-wrap: wrap;
-  background: var(--l1-red);
+  background: var(--l1-dark);
 }
 .lbox__area2 {
   width: 35%;

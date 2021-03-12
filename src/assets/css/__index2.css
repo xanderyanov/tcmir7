@@ -1457,6 +1457,12 @@
   width: 1.5rem;
   height: 1.5rem;
   text-decoration: none;
+  margin: 0 10px 0 0;
+}
+
+.footer2__SGlinks a img {
+  display: block;
+  width: 100%;
 }
 
 .footer2__SGlinks a i {

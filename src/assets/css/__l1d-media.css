@@ -106,7 +106,11 @@
   }
   .l1tabsBrands__itemBox {
     width: 100%;
-    padding: 20px;
+    padding: 30px 20px 20px;
+  }
+  .l1tabs__close {
+    right: 5px;
+    top: 5px;
   }
   .l1tabsBrands__itemBoxRedMore {
     width: 90%;
@@ -130,6 +134,12 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .l1tabsBrands__itemBox {
+    padding: 30px 10px 10px;
+  }
+  .l1tabsBrands__itemBoxInfo {
+    padding: 0 0 0 10px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 400px) {

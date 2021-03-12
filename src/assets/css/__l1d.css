@@ -258,12 +258,14 @@
   font-size: 16px;
   line-height: 20px;
   color: var(--l1-dark);
+  margin-bottom: 5px;
 }
 
 .l1tabsBrands__itemBoxInfoCategory {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .l1tabsBrands__itemBoxInfoCategory span {
@@ -276,6 +278,15 @@
   padding: 3px 6px;
   margin: 0 2px 2px 0;
   border-radius: 4px;
+}
+
+.l1tabsBrands__itemBoxInfoTitleText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--l1-dark);
+  text-decoration: none;
+  margin-bottom: 5px;
 }
 
 .l1tabsBrands__itemBoxInfoTitleTextLink {

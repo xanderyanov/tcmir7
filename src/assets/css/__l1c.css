@@ -35,6 +35,8 @@
 
 .l1cServ__ItemImg {
   width: 100%;
+  border: 1px solid #edf0f0;
+  /* border-bottom: none; */
 }
 .l1cServ__ItemImg img {
   width: 100%;
@@ -50,4 +52,5 @@
   border: 1px solid #edf0f0;
   border-top: none;
   flex: 1;
+  background: #fbfbfb;
 }
