@@ -1464,7 +1464,7 @@ $(function () {
         $(elem).removeAttr("data-fancybox");
     });
 
-    $("a[data-fancybox='gallery']").fancybox({
+    $("a[data-caption]").fancybox({
         closeBtn: false,
         arrows: true,
         keyboard: true,
