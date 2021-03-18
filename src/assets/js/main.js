@@ -36,7 +36,13 @@ function l1ScrollTo() {
         });
     $(".menuButton_L1").removeClass("open");
     $(".menuButton_L1__areaJS").removeClass("open");
-    $(".l1_header__center").slideUp();
+    if ($(window).width() <= 1440) {
+        $(".l1_header__center").slideUp();
+    }
+
+
+
+    
     return false;
 }
 //END прокрутка к якорям на лендинге - функция сама
