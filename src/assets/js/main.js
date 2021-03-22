@@ -188,15 +188,29 @@ $(function () {
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
             $(".header2__searchArea").hide();
+            $('.header2__searchOverlay').hide();
+            $("body").removeClass("stop");
         } else {
             $(this).addClass("active");
             $(".header2__searchArea").show();
+            $('.header2__searchOverlay').show();
+            $("body").addClass("stop");
+            $("#searchInputLg").each(function (i, elem) { elem.focus(); });
         }
     });
     $(".header2_searchClose").on("click", function (e) {
         e.preventDefault;
         $(".header2__search_jsEvent").removeClass("active");
         $(".header2__searchArea").hide();
+        $('.header2__searchOverlay').hide();
+        $("body").removeClass("stop");
+    });
+    $(".header2__searchOverlay").on("click", function (e) {
+        e.preventDefault;
+        $(".header2__search_jsEvent").removeClass("active");
+        $(".header2__searchArea").hide();
+        $('.header2__searchOverlay').hide();
+        $("body").removeClass("stop");
     });
 
     // setTimeout(function () {
