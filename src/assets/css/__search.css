@@ -63,6 +63,7 @@
   padding: 10px 0;
   background: var(--header);
   z-index: 480;
+  /* z-index: 1020; */
   /* border-bottom-right-radius: 13px; */
   /* border-bottom-left-radius: 13px; */
   position: relative;

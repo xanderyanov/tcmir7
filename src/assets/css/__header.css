@@ -489,7 +489,8 @@
 .orangeHeader__area {
   width: 100%;
   display: none;
-  z-index: 100;
+  z-index: 1030;
+  position: relative;
   transition: all 0.3s;
 }
 

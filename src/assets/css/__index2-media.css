@@ -421,6 +421,24 @@
     font-size: 0.875rem;
     line-height: 1.3rem;
   } */
+
+  .searchPreResults__title {
+    font-size: 1rem;
+  }
+  .searchPreResults__brand {
+    font-size: 1rem;
+  }
+  .searchPreResults__img {
+    width: 20%;
+    padding: 5px 10px 5px 5px;
+  }
+  .searchPreResults__info {
+    padding: 0 0 0 5px;
+    width: 60%;
+  }
+  .searchPreResults__price {
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
