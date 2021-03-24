@@ -171,13 +171,13 @@ body {
 
 .xScroll::-webkit-scrollbar-track {
   border-radius: 8px;
-  background-color: var(--colorLightGrey);
+  background-color: transparent;
 }
 
 .xScroll::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
-  background-color: var(--colorLightGrey);
+  background-color: transparent;
 }
 
 .xScroll::-webkit-scrollbar-thumb {

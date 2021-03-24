@@ -1,3 +1,6 @@
+include __l1d
+
+
 mixin l1bTitle 
   .l1bTitle__area#l1action
     .l1bTitle
@@ -24,6 +27,7 @@ mixin l1actions
               .l1zctionsItem__redmoreArea 
                 span Подробнее
                 img(src="assets/img/landing/redmore-ico.svg", alt="")
+          +l1actionMoreBox
         .l1actionsItem__outer 
           a.l1actionsItem(href="")
             .l1actionsItem__img 
@@ -58,3 +62,29 @@ mixin l1actions
                 span Подробнее
                 img(src="assets/img/landing/redmore-ico.svg", alt="")
       a.l1redmoreAll(href="") Показать все
+
+
+
+mixin l1actionMoreBox 
+  .l1actionMoreBox__overlay
+    .l1actionMoreBox__wrapper
+      .l1actionMoreBox__outer
+        .l1actionMoreBox__close 
+          i.icon-close1
+        .l1actionMoreBox.xScroll
+          .l1actionMoreBox__img 
+            img(src="assets/img/landing/act1.jpg", alt="")
+          .l1actionMoreBox__title Лаки Hi-Lac Kapous professional
+          .l1actionMoreBox__info
+            .content 
+              p Лаки Hi-Lac Kapous professional по 150 рублей. Количество товара ограничено!
+              p Условие акции
+              ul
+                li Подписаться на Instagram магазина
+                li Подписаться на Instagram ТК Мир
+                li На своей сранице в Instagram Сделать перепост 
+                li Одеть серую вязаную шапочку и разместить фото в ней у себя на аватаре
+                li Бросить курить
+              p Лаки Hi-Lac Kapous professional по 150 рублей. Количество товара ограничено!
+              p Лаки Hi-Lac Kapous professional по 150 рублей. Количество товара ограничено!
+            +brandItemPopUpBoxOnActionPopUp

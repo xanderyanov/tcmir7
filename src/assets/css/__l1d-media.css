@@ -89,6 +89,10 @@
   .l1tabsBrands__itemOuter {
     width: 25%;
   }
+  .l1tabsBrands__itemBox_inActions .l1tabsBrands__itemBoxText {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 600px) {

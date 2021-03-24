@@ -63,6 +63,26 @@ $(function () {
     }
   });
 
+  // function openActionInfo() {
+  $(".l1actionsItem").on("click", function (e) {
+    e.preventDefault();
+    $("body").addClass("stop");
+    $(this).closest(".l1actionsItem__outer").find(".l1actionMoreBox__overlay").show();
+  });
+  $(".l1actionMoreBox__outer").on("click", function (e) {
+    e.stopPropagation();
+  });
+  $(".l1actionMoreBox__overlay").on("click", function () {
+    $("body").removeClass("stop");
+    $(this).hide();
+  });
+  $(".l1actionMoreBox__close").on("click", function () {
+    $("body").removeClass("stop");
+    $(".l1actionMoreBox__overlay").hide();
+  });
+  // }
+  // openActionInfo();
+
   $(".toTop").hide();
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 0) {

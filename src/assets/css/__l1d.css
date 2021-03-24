@@ -233,6 +233,17 @@
   position: relative;
 }
 
+.l1tabsBrands__itemBox_inActions {
+  padding: 35px 0 0;
+  margin: 35px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  border-top: 2px dotted rgba(0, 0, 0, 0.15);
+}
+
 .l1tabsBrands__itemBoxTop {
   display: flex;
   margin-bottom: 20px;
