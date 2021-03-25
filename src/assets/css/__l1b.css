@@ -293,12 +293,13 @@
 
 .l1actionMoreBox__img {
   margin: 0 auto 20px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .l1actionMoreBox__img img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  /* height: auto; */
 }
 
 .l1actionMoreBox__title {
