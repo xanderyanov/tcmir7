@@ -197,6 +197,13 @@
   padding-left: 2rem;
 }
 
+.searchPreResults__infoOnly {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 7px 10px;
+}
+
 .searchPreResults__info b {
   font-weight: 700;
   color: var(--orange);
@@ -206,6 +213,10 @@
   font-size: 0.875rem;
   color: #000;
   line-height: 1.4;
+}
+
+.searchPreResults__title_bold {
+  font-weight: 700;
 }
 
 .searchPreResults__brand {
@@ -346,6 +357,13 @@
   text-decoration: none;
 }
 /*Конец адаптивных пре-результатов*/
+
+/* START Стили страницы результатов поиска */
+.searchResultBlockTitle {
+  font-weight: 700;
+}
+
+/* END Стили страницы результатов поиска */
 
 .header2_searchClose {
   background: #fff;
