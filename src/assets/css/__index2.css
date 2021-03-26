@@ -166,6 +166,7 @@
   align-items: center;
   padding: 2px 0;
   transition: all 0.3s;
+  min-height: 50px;
 }
 
 .searchPreResults li a:hover {
@@ -194,7 +195,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  font-size: 0.875rem;
+  color: var(--text2light);
+  line-height: 1.4;
 }
 
 .searchPreResults__infoOnly {
@@ -219,12 +223,18 @@
   font-weight: 700;
 }
 
+.slash1 {
+  font-size: 0.875rem;
+  color: var(--text2light);
+  line-height: 1.4;
+  padding: 0 5px;
+}
+
 .searchPreResults__brand {
   font-size: 0.875rem;
   color: var(--text2light);
   line-height: 1.4;
   /* margin-left: 2rem; */
-  padding: 0 10px;
 }
 
 .searchPreResults__price {
@@ -361,6 +371,38 @@
 /* START Стили страницы результатов поиска */
 .searchResultBlockTitle {
   font-weight: 700;
+}
+
+.searchResultItem__outer {
+  padding: 5px;
+}
+a.searchResultItem {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid var(--x1border);
+  padding: 5px 10px;
+  color: var(--text2);
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+  height: 100%;
+}
+
+a.searchResultItem img {
+  width: 80px;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+
+a.searchResultItem span {
+  color: var(--text2);
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 /* END Стили страницы результатов поиска */
