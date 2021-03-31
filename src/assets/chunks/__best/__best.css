@@ -138,7 +138,18 @@
 .best2__itemDesc {
   font-size: 0.875rem;
   color: var(--text2);
-  line-height: 1.3;
+  line-height: 1.5em;
+  position: relative;
+  max-height: 3em;
+}
+
+.fadeToWhite {
+  height: 1.5em;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .best2__itemPriceArea {
