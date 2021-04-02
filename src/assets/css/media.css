@@ -47,6 +47,13 @@
   .site__center_snow1 {
     background: url(../img/snow/snowbg500.png);
   }
+  .p404 {
+    padding: 40px 0;
+  }
+  .p404text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -111,6 +118,16 @@
 }
 
 @media only screen and (max-width: 320px) {
+  .p404 {
+    padding: 20px 0;
+  }
+  .p404text {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  .p404link {
+    font-size: 1.375rem;
+  }
 }
 
 /* @media screen and (orientation: landscape) and (max-device-width: 900px) {
