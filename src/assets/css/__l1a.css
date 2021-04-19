@@ -1,6 +1,6 @@
 .l1__area {
   width: 100%;
-  background: var(--l1-dark);
+  background: var(--l1-white);
   position: relative;
   z-index: 1;
 }
@@ -8,7 +8,7 @@
 .l1__outer {
   height: 100vh;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1439px;
   background: #e7e7e7;
   display: flex;
   margin: 0 auto;
@@ -30,15 +30,16 @@
 .lbox1 {
   width: 65%;
   height: 65vh;
-  background-color: var(--l1-dark);
+  background-color: var(--l1-white);
   padding-top: 4rem;
 }
 
 .lbox1a {
   width: 35%;
   height: 65vh;
-  background-color: var(--l1-dark);
-  background-image: url(../img/l1-1.svg);
+  /* background-color: var(--l1-dark); */
+  background-color: var(--l1-white);
+  background-image: url(../img/l1-1a.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -46,7 +47,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  /* position: relative; */
 }
+
+/* .lbox1a {
+  position: absolute;
+  content: "";
+  width: 100%;
+} */
 
 .lbox1a__link {
   text-decoration: none;
@@ -119,7 +127,7 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 44px;
-  color: var(--l1-white);
+  color: var(--l1-dark);
 }
 
 .lbox1__nameH1 h1 {
@@ -136,7 +144,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: var(--l1-white);
+  color: var(--l1-dark);
   margin-bottom: 10px;
 }
 
@@ -144,7 +152,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
-  color: var(--l1-white);
+  color: var(--l1-dark);
   margin-bottom: 60px;
 }
 

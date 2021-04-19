@@ -1,6 +1,6 @@
 .l1bTitle__area {
   width: 100%;
-  background: var(--l1-dark);
+  background: var(--l1-white);
 }
 
 .l1bTitle {
@@ -18,7 +18,7 @@
   font-weight: 700;
   line-height: 1.1;
   font-size: 46px;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
 }
 
