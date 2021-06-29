@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
 @import "../../../node_modules/nouislider/distribute/nouislider.css";
@@ -156,8 +156,11 @@
 @import "__l1_header.css";
 @import "__l1_header-media.css";
 
-@import "__l1a.css";
-@import "__l1a-media.css";
+@import "__l2.css";
+@import "__l2-media.css";
+
+@import "__l1a.css"; /*убрать*/
+@import "__l1a-media.css"; /*убрать*/
 
 @import "__l1b.css";
 @import "__l1b-media.css";

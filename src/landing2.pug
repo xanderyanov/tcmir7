@@ -1,0 +1,51 @@
+- var pageTitle = 'Лэндинг 2'
+
+include __const
+include __index2
+include __l1_header
+include __l2
+include __l1a
+include __l1b
+include __l1c
+include __l1d
+include __l1map
+include assets/chunks/__collage/__collage
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+  body
+
+    .site__header#l1top
+      +l1_header
+    .site__center
+      +l2main
+
+      +l1fTitle
+      +collage
+
+      +l1bTitle
+      +l1actions
+
+      +l1cTitle
+      +l1cServ
+
+      +l1dTitle
+      +l1tabs
+
+      +l1mapTitle
+      +l1map
+
+
+
+    .site__footer
+
+    +scripts
+
+
+
+
+
+
+
+  
