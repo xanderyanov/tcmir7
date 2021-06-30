@@ -1,7 +1,7 @@
 mixin l2main
   .l2
     .l2main__area 
-      .l2main__outer
+      .l2main__outer.l2x
         .l2main
           .l2main__left
             .l2main__titleBox 
@@ -13,25 +13,30 @@ mixin l2main
               span Интернет-магазин
           .l2main__right
             .l2main__rightInner
+              a.l2main__linkActionMb.l1scrolltoTopMenu(href="#l1action" data-anchor="#l1action")
+                i.icon-l1-action
+                span Акции
               .l2main__rightTitle Акции
-              .l2main__rightIntro Теперь товары торгового комплекса можно<br>купить в официальном интернет-магазине<br> и заказать курьерскую доставку<br> (доставляем компанией СДЭК).
+              .l2main__rightIntro Теперь товары торгового комплекса можно купить в официальном интернет-магазине и заказать курьерскую доставку (доставляем компанией СДЭК).
               a.l2main__rightLink.l1scrolltoTopMenu(href="#l1action" data-anchor="#l1action") 
                 span Подробнее
                 i.icon-rightss2
     .l2mainBottom__area 
-      .l2mainBottom__outer
+      .l2mainBottom__outer.l2x
         .l2mainBottom
           .l2mainBottom__left
             .l2mainBottom__leftItemOuter 
               a.l2mainBottom__leftItem.l1scrolltoTopMenu(href="#l1mag" data-anchor="#l1mag")
                 .l2mainBottom__leftItemImg
                   img(src="assets/img/landing2/01.jpg", alt="")
+                i.icon-l1-shop
                 .l2mainBottom__leftItemTitle Магазины
                 .l2mainBottom__leftItemText Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного.
             .l2mainBottom__leftItemOuter 
               a.l2mainBottom__leftItem.l1scrolltoTopMenu(href="#l1serv" data-anchor="#l1serv")
                 .l2mainBottom__leftItemImg
                   img(src="assets/img/landing2/02.jpg", alt="")
+                i.icon-l1-serv
                 .l2mainBottom__leftItemTitle Услуги
                 .l2mainBottom__leftItemText Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного.
           .l2mainBottom__right
