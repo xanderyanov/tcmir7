@@ -156,9 +156,6 @@
 @import "__l1_header.css";
 @import "__l1_header-media.css";
 
-@import "__l2.css";
-@import "__l2-media.css";
-
 @import "__l1a.css"; /*убрать*/
 @import "__l1a-media.css"; /*убрать*/
 
@@ -173,6 +170,9 @@
 
 @import "__l1map.css";
 @import "__l1map-media.css";
+
+@import "__l2.css";
+@import "__l2-media.css";
 
 @import "main.css";
 @import "media.css";

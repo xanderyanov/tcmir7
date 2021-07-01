@@ -1,17 +1,17 @@
 @media only screen and (max-width: 1440px) {
-  .l1cServ {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
+	.l1cServ {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 1440px) {
 }
 
 @media only screen and (max-width: 1280px) {
-  .l1cServ__ItemOuter {
-    width: 20%;
-  }
+	.l1cServ__ItemOuter {
+		width: 20%;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1280px) {
@@ -24,12 +24,12 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  .l1cServ__ItemOuter {
-    padding: 10px;
-  }
-  .l1cServ__ItemInfo {
-    padding: 20px;
-  }
+	.l1cServ__ItemOuter {
+		padding: 10px;
+	}
+	.l1cServ__ItemInfo {
+		padding: 20px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1080px) {
@@ -42,12 +42,18 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .l1cServ__ItemOuter {
-    width: 25%;
-  }
+	.l1cServ__ItemOuter {
+		width: 25%;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 920px) {
+}
+
+@media screen and (max-height: 414px) and (max-width: 812px) {
+	/* .l1cServ__outer {
+		padding: 10px 0;
+	} */
 }
 
 @media only screen and (max-width: 800px) {
@@ -57,27 +63,27 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .l1cServ__ItemOuter {
-    width: 33.333%;
-  }
+	.l1cServ__ItemOuter {
+		width: 33.333%;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 768px) {
 }
 
 @media only screen and (max-width: 600px) {
-  .l1cServ__ItemInfo {
-    padding: 10px;
-  }
+	.l1cServ__ItemInfo {
+		padding: 10px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {
-  .l1cServ__ItemOuter {
-    width: 50%;
-  }
+	.l1cServ__ItemOuter {
+		width: 50%;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 480px) {

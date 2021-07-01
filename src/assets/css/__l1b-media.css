@@ -1,24 +1,24 @@
 @media only screen and (max-width: 1440px) {
-  .l1actions {
-    margin: 0;
-  }
+	.l1actions {
+		margin: 0;
+	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 1440px) {
 }
 
 @media only screen and (max-width: 1280px) {
-  .l1actionsItem__info {
-    padding: 30px 20px;
-  }
-  .l1actionsItem__title {
-    font-size: 18px;
-    line-height: 1.2;
-    min-height: 44px;
-    margin-bottom: 15px;
-  }
-  .l1actionsItem__desc {
-    margin-bottom: 20px;
-  }
+	.l1actionsItem__info {
+		padding: 30px 20px;
+	}
+	.l1actionsItem__title {
+		font-size: 18px;
+		line-height: 1.2;
+		min-height: 44px;
+		margin-bottom: 15px;
+	}
+	.l1actionsItem__desc {
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1280px) {
@@ -31,12 +31,12 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  .l1actions {
-    margin: 0 5px;
-  }
-  .l1actionsItem__outer {
-    padding: 10px;
-  }
+	.l1actions {
+		margin: 0 5px;
+	}
+	.l1actionsItem__outer {
+		padding: 10px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 1080px) {
@@ -49,11 +49,11 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .l1actionsItem__outer {
-    padding: 15px;
-    width: 50%;
-  }
-  /* .l1actionsItem {
+	.l1actionsItem__outer {
+		padding: 15px;
+		width: 50%;
+	}
+	/* .l1actionsItem {
     flex-direction: row;
     border: 1px solid #edf0f0;
   }
@@ -74,6 +74,24 @@
 @media screen and (orientation: landscape) and (max-device-width: 920px) {
 }
 
+/* @media screen and (max-height: 414px) and (max-width: 812px) {
+	.l1bTitle {
+		padding: 0;
+		height: auto;
+	}
+
+	.l1bTitle h2 {
+		font-size: 32px;
+	}
+	.l1actionsItem__outer {
+		padding: 10px;
+		width: 33%;
+	}
+	.l1actions__outer {
+		padding: 10px 0;
+	}
+} */
+
 @media only screen and (max-width: 800px) {
 }
 
@@ -81,7 +99,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  /* .l1actionsItem {
+	/* .l1actionsItem {
     flex-direction: column;
     border: 1px solid #edf0f0;
   }
@@ -98,69 +116,87 @@
     top: 0;
     bottom: auto;
   } */
-  .l1redmoreAll {
-    margin: 50px auto 0;
-  }
-  .l1bTitle {
-    padding: 0 0 20px 0;
-    height: 150px;
-  }
-  .l1actionsItem__info {
-    padding: 20px 15px;
-  }
+	.l1redmoreAll {
+		margin: 50px auto 0;
+	}
+	.l1bTitle {
+		padding: 0 0 20px 0;
+		height: 150px;
+	}
+	.l1actionsItem__info {
+		padding: 20px 15px;
+	}
+}
+
+@media screen and (max-height: 414px) and (max-width: 812px) {
+	/* .l1bTitle {
+		padding: 0;
+		height: auto;
+	}
+
+	.l1bTitle h2 {
+		font-size: 32px;
+	}
+	.l1actionsItem__outer {
+		padding: 10px;
+		width: 33%;
+	}
+	.l1actions__outer {
+		padding: 10px 0;
+	} */
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 768px) {
 }
 
 @media only screen and (max-width: 600px) {
-  .l1redmoreAll {
-    margin: 40px auto 0;
-  }
-  .l1bTitle {
-    height: 120px;
-  }
-  .l1bTitle h2 {
-    font-size: 36px;
-  }
+	.l1redmoreAll {
+		margin: 40px auto 0;
+	}
+	.l1bTitle {
+		height: 120px;
+	}
+	.l1bTitle h2 {
+		font-size: 36px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {
-  .l1actions {
-    margin: 0;
-  }
-  .l1actionsItem__outer {
-    padding: 15px 15px 0;
-    width: 100%;
-  }
-  .l1actions__outer {
-    padding: 0 0 15px;
-  }
-  .l1redmoreAll {
-    margin: 30px auto 0;
-  }
-  .l1actionsItem__title {
-    min-height: auto;
-    margin-bottom: 10px;
-  }
-  .l1actionsItem__desc {
-    margin-bottom: 10px;
-  }
-  .l1bTitle {
-    height: auto;
-    padding: 30px 10px 10px;
-  }
-  .l1bTitle h2 {
-    font-size: 26px;
-  }
-  .l1actionMoreBox__outer {
-    width: 90%;
-    max-width: none;
-    padding: 40px 10px 10px;
-  }
+	.l1actions {
+		margin: 0;
+	}
+	.l1actionsItem__outer {
+		padding: 15px 15px 0;
+		width: 100%;
+	}
+	.l1actions__outer {
+		padding: 0 0 15px;
+	}
+	.l1redmoreAll {
+		margin: 30px auto 0;
+	}
+	.l1actionsItem__title {
+		min-height: auto;
+		margin-bottom: 10px;
+	}
+	.l1actionsItem__desc {
+		margin-bottom: 10px;
+	}
+	.l1bTitle {
+		height: auto;
+		padding: 30px 10px 10px;
+	}
+	.l1bTitle h2 {
+		font-size: 26px;
+	}
+	.l1actionMoreBox__outer {
+		width: 90%;
+		max-width: none;
+		padding: 40px 10px 10px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 480px) {
