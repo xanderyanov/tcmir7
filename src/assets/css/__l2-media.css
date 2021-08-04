@@ -1,3 +1,10 @@
+@media screen and (min-width: 2300px) and (max-height: 940px) {
+	.l2main__introBox {
+		padding: 2vh 0 0 0;
+		font-size: 16px;
+	}
+}
+
 @media only screen and (max-width: 1920px) {
 	.l2main__titleBox {
 		max-width: 70%;
@@ -206,7 +213,7 @@
 	}
 }
 
-@media screen and (max-height: 414px) and (max-width: 812px) {
+@media screen and (max-height: 414px) and (max-width: 900px) {
 	.l1_header__area {
 		position: relative;
 	}
@@ -334,6 +341,10 @@
 	.l2mainBottom__link {
 		padding: 20px;
 	}
+
+	.l2main__rightInner {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -423,6 +434,16 @@
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 480px) {
+	.l1actionsItem__title {
+		font-size: 14px;
+	}
+	.l1actionsItem__desc {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.l1zctionsItem__redmoreArea img {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -477,6 +498,19 @@
 }
 
 @media only screen and (max-width: 320px) {
+	.l2main__link {
+		margin: 20px 0 0 0;
+		height: 40px;
+	}
+	.l2main__linkActionMb {
+		height: 40px;
+	}
+	.l2main__introBox {
+		font-size: 12px;
+	}
+	.l2main__left {
+		padding: 0 15px 10px 15px;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 320px) {
