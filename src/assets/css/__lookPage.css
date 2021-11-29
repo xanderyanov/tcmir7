@@ -1,317 +1,319 @@
 .lookBreadcrumbs__area {
-  background: #f8f8f8;
+	background: #f8f8f8;
 }
 
 .lookBreadcrumbs__outer {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .lookBreadcrumbs {
-  position: relative;
+	position: relative;
 }
 
 .lookPage__area {
-  position: relative;
+	position: relative;
 }
 
 .lookPage__outer {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .lookPage {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 4rem;
 }
 
 .lookPage__left {
-  width: 20%;
-  padding: 5px 0 0 0;
+	width: 20%;
+	padding: 5px 0 0 0;
 }
 .lookPage__right {
-  width: 80%;
-  padding: 0 0 0 20px;
+	width: 80%;
+	padding: 0 0 0 20px;
 }
 
 /* lookSlider */
 
 .lookSlider {
-  margin-bottom: 20px;
-  width: 100%;
+	margin-bottom: 20px;
+	width: 100%;
 }
 
 .lookSlider_withPaddingRight {
-  /* padding: 0 20px 0 0; */
+	/* padding: 0 20px 0 0; */
 }
 
 .lookSlider-container {
-  position: relative;
+	position: relative;
 }
 
 .lookSlider-container_2slide {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .lookSlider-container_1slide {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
 }
 
 .lookSlider-wrapper {
-  position: relative;
+	position: relative;
 }
 
 .lookSlider-slide {
-  position: relative;
+	position: relative;
 }
 
 .lookSlider-slide a {
-  display: block;
-  text-decoration: none;
+	display: block;
+	text-decoration: none;
 }
 
 .lookSlider-slide img {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .lookSlider__pag {
-  position: absolute;
-  z-index: 10;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
 }
 
 .lookSlider__arrows {
-  display: flex;
+	display: flex;
 }
 
 .lookSlider__left,
 .lookSlider__right {
-  height: 42px;
-  width: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f8f8f8;
-  cursor: pointer;
-  position: relative;
+	height: 42px;
+	width: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f8f8f8;
+	cursor: pointer;
+	position: relative;
 }
 
 .lookSlider__left:focus,
 .lookSlider__right:focus {
-  outline: none;
+	outline: none;
 }
 
 .lookSlider__left:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 10px;
-  top: 50%;
-  margin-top: -5px;
-  right: 0;
-  background: #e5e5e5;
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 10px;
+	top: 50%;
+	margin-top: -5px;
+	right: 0;
+	background: #e5e5e5;
 }
 
 .lookSlider__left i,
 .lookSlider__right i {
-  color: #e5e5e5;
-  font-size: 1rem;
+	color: #e5e5e5;
+	font-size: 1rem;
 }
 
 .lookSlider__left:hover i,
 .lookSlider__right:hover i {
-  color: var(--lmDark);
+	color: var(--lmDark);
 }
 
 .lookSlider__buttons {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
 }
 
 .lookSlider-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #e6e4e4;
-  margin: 0 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #e6e4e4;
+	margin: 0 6px;
 }
 
 .lookSlider-pagination .swiper-pagination-bullet-active {
-  background: var(--orange);
+	background: var(--orange);
 }
 
 .lookSlider-wrapper.disabled {
-  transform: translate3d(0px, 0, 0) !important;
+	transform: translate3d(0px, 0, 0) !important;
 }
 .lookSlider__left.disabled,
 .lookSlider__right.disabled {
-  display: none;
+	display: none;
 }
 
 /* lookVideo */
 
 .lookVideo {
-  position: relative;
-  width: 100%;
-  display: flex;
+	position: relative;
+	width: 100%;
+	display: flex;
 }
 
 .lookVideo:after {
-  display: block;
-  content: "";
-  margin-top: 100%;
+	display: block;
+	content: "";
+	margin-top: 100%;
 }
 
 .lookVideo a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-decoration: none;
-  display: block;
-  background-position: center center;
-  background-size: cover;
-  transition: all 0.5s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-decoration: none;
+	display: block;
+	background-position: center center;
+	background-size: cover;
+	transition: all 0.5s;
 }
 
 .lookVideo a:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  opacity: 1;
-  transition: all 0.5s;
-  background: rgba(0, 0, 0, 0.4);
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	opacity: 1;
+	transition: all 0.5s;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .lookVideo a:hover:before {
-  background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.7);
 }
 
 .lookVideo a:after {
-  content: "";
-  position: absolute;
-  width: 7.5rem;
-  height: 7.5rem;
-  top: 50%;
-  left: 50%;
-  margin-top: -3.75em;
-  margin-left: -3.75rem;
-  background-image: url(../img/index2/play2.svg);
-  background-size: cover;
-  z-index: 10;
-  opacity: 0.8;
-  transition: all 0.5s;
+	content: "";
+	position: absolute;
+	width: 7.5rem;
+	height: 7.5rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.75em;
+	margin-left: -3.75rem;
+	background-image: url(../img/index2/play2.svg);
+	background-size: cover;
+	z-index: 10;
+	opacity: 0.8;
+	transition: all 0.5s;
 }
 
 .lookVideo a:hover:after {
-  opacity: 1;
+	opacity: 1;
 }
 
 .lookLinks__area {
-  position: relative;
+	position: relative;
 }
 
 .lookLinks__outer {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto 10px;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  /* padding: 0 5px 5px 5px; */
-  position: relative;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto 10px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	/* padding: 0 5px 5px 5px; */
+	position: relative;
 }
 
 .lookLinks {
-  display: flex;
-  /* flex-wrap: wrap; */
-  /* margin: 0 -6px; */
-  padding: 0;
-  position: relative;
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* margin: 0 -6px; */
+	padding: 0;
+	position: relative;
 }
 
 .lookLink__outer {
-  padding: 7px;
+	padding: 7px;
 }
 
 .lookLink {
-  display: flex;
-  color: var(--lmDark);
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 6px 1rem;
-  border-radius: 4px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+	display: flex;
+	color: var(--lmDark);
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 6px 1rem;
+	border-radius: 4px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
 
-  text-decoration: none;
-  border: 1px solid transparent;
-  transition: all 0.3s;
-  white-space: nowrap;
-  /* box-sizing: border-box; */
+	text-decoration: none;
+	border: 1px solid transparent;
+	transition: all 0.3s;
+	white-space: nowrap;
+	/* box-sizing: border-box; */
 }
 
 a.lookLink,
 a.lookLink:focus,
 a.lookLink:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .lookLink:hover {
-  color: #fff;
-  background: var(--orange);
-  text-decoration: none;
+	color: #fff;
+	background: var(--orange);
+	text-decoration: none;
 }
 
 .lookLink_all {
-  background: #f8f8f8;
-  border: 1px solid #dedede;
+	background: #f8f8f8;
+	border: 1px solid #dedede;
 }
 
 .lookLink__current {
-  color: #fff;
-  background: var(--orange);
-  text-decoration: none;
+	color: #fff;
+	background: var(--orange);
+	text-decoration: none;
 }
 
 /* lookCard in Catalog */
 
 .lookCard__area {
-  width: 25%;
-  padding: 5px;
-  position: relative;
-  box-sizing: border-box;
-  cursor: pointer;
-  z-index: 1;
+	width: 25%;
+	padding: 5px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	z-index: 1;
+	min-height: 340px;
+	/* display: flex; */
 }
 .lookCard__area_inLeftMenu {
-  width: 100%;
-  padding: 5px;
-  position: relative;
-  box-sizing: border-box;
-  cursor: pointer;
-  z-index: 1;
-  margin-top: 20px;
+	width: 100%;
+	padding: 5px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	z-index: 1;
+	margin-top: 20px;
 }
 
 .lookCard__area_dt {
-  display: block;
+	display: block;
 }
 
 /* .lookCard__area_mb {
@@ -319,118 +321,123 @@ a.lookLink:hover {
 } */
 
 .lookCard__outer {
-  border: 1px solid var(--x1border);
-  height: 100%;
-  box-sizing: border-box;
+	border: 1px solid var(--x1border);
+	height: 100%;
+	box-sizing: border-box;
+	/* display: flex; */
+	width: 100%;
 }
 
 .lookCard {
-  display: flex;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+	/* display: flex; */
+	display: block;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
 }
 
 .lookCard__inner {
-  display: flex;
-  height: 100%;
-  position: relative;
+	display: flex;
+	/* height: 100%; */
+	position: relative;
+	width: 100%;
 }
 
 .lookCard__inner_left {
-  position: relative;
+	position: relative;
 }
 
 .lookCard__inner_bg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .lookCard__inner img {
-  display: block;
-  width: 100%;
-  position: relative;
-  transition: all 0.5s;
-  object-fit: cover;
+	display: block;
+	width: 100%;
+	position: relative;
+	transition: all 0.5s;
+	object-fit: cover;
 }
 
 .lookCard__inner_left img {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .lookCard__buyBtn {
-  position: absolute;
-  width: 60%;
-  height: 40px;
-  left: 20%;
-  top: 50%;
-  margin-top: -20px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--orange);
-  font-size: 1rem;
-  font-weight: 500;
-  transition: all 0.3s;
-  opacity: 0;
+	position: absolute;
+	width: 60%;
+	height: 40px;
+	left: 20%;
+	top: 50%;
+	margin-top: -20px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--orange);
+	font-size: 1rem;
+	font-weight: 500;
+	transition: all 0.3s;
+	opacity: 0;
 }
 
 .lookCard:hover .lookCard__buyBtn {
-  opacity: 1;
+	opacity: 1;
 }
 
 .lookCard__area_mb .lookCard__buyBtn {
-  opacity: 1;
+	opacity: 1;
 }
 
 .lookCard:hover .lookCard__inner img {
-  transform: scale(1.02);
+	transform: scale(1.02);
 }
 
 .lookCard:hover .lookCard__buyBtn {
-  background: var(--orange);
-  color: #fff;
+	background: var(--orange);
+	color: #fff;
 }
 
 .lookPage__info {
-  padding: 30px 30px 20px;
-  margin: 5px 0 10px;
-  background: #f8f8f8;
+	padding: 30px 30px 20px;
+	margin: 5px 0 10px;
+	background: #f8f8f8;
 }
 
 .lookPage__info .content {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .lookCard__buyBtnBottom {
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  /* background: rgba(255, 255, 255, 0.8); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0 10px;
-  transition: all 0.3s;
+	position: absolute;
+	width: 100%;
+	height: 15%;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	/* background: rgba(255, 255, 255, 0.8); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 0 10px;
+	transition: all 0.3s;
 }
 
 .lookCard:hover .lookCard__buyBtnBottom {
-  opacity: 1;
-  background: var(--orange);
-  color: #fff;
+	opacity: 1;
+	background: var(--orange);
+	color: #fff;
 }

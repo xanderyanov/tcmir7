@@ -45,7 +45,26 @@ function l1ScrollTo() {
 }
 //END прокрутка к якорям на лендинге - функция сама
 
+var $window;
+var prevWindowWidth = 0;
+var windowWidth;
+
+function siteResizeFunction() {
+	// if (prevWindowWidth <= 800 && windowWidth > 800) {
+	// }
+
+	headerLanding();
+}
+
 $(function () {
+	// headerLanding();
+
+	// $window = $(window);
+	// windowWidth = $window.width();
+	// prevWindowWidth = windowWidth;
+
+	// $window.on("resize", siteResizeFunction());
+
 	//прокрутка к якорям на лендинге через функцию
 	$("a.l1scrolltoTopMenu").on("click", l1ScrollTo);
 	$("a.l1scrolltoBtn").on("click", l1ScrollTo);
