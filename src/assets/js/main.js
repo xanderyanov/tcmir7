@@ -65,14 +65,27 @@ function siteResizeFunction() {
 	headerLanding();
 }
 
+function fuckingIpad() {
+	if ($(window).width() > 768) {
+		let firstScreenHeight = vh * 100;
+		let l4topMenuHeight = $(".l4topLine__area");
+		l4topMenuHeight = l4topMenuHeight.outerHeight();
+		let safariFuckingHeight = (firstScreenHeight - l4topMenuHeight) / 2;
+		console.log(safariFuckingHeight);
+		$(".l4box__areaSafari").css({ height: safariFuckingHeight });
+	} else if ($(window).width() >= 600) {
+		$(".l4box__areaSafari").css({ height: "100%" });
+	} else {
+		$(".l4box__areaSafari").css({ height: "50%" });
+	}
+}
+
 $(function () {
 	// headerLanding();
 
-	// $window = $(window);
-	// windowWidth = $window.width();
-	// prevWindowWidth = windowWidth;
-
-	// $window.on("resize", siteResizeFunction());
+	$window = $(window);
+	fuckingIpad();
+	$window.on("resize", fuckingIpad);
 
 	//прокрутка к якорям на лендинге через функцию
 	$("a.l1scrolltoTopMenu").on("click", l1ScrollTo);

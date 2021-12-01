@@ -1,5 +1,6 @@
 :root {
 	--fixMenu: 7000;
+	--popUpOverlay: 8000;
 	--workscreen: 1920px;
 
 	--colorFFF: #fff;

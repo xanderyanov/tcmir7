@@ -18,6 +18,7 @@ var postcss = require("gulp-postcss");
 var postcssImport = require("postcss-import");
 var data = require("gulp-data");
 var fs = require("fs");
+var autoprefixer = require("gulp-autoprefixer");
 // var path = require("path");
 
 gulp.task("pug", function () {
@@ -41,6 +42,7 @@ gulp.task("css", function () {
 		.src("src/assets/css/apps.css")
 		.pipe(sourcemaps.init())
 		.pipe(postcss([postcssImport()]))
+		.pipe(autoprefixer())
 		.pipe(sourcemaps.write("."))
 		.pipe(gulp.dest("build/assets/css/"));
 });
