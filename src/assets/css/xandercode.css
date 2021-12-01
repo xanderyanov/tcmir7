@@ -1,92 +1,95 @@
 :root {
-  --colorFFF: #fff;
-  --color000: #000;
-  --colorLightGrey: #f6f6fa;
-  --colorMediumGrey: #d2d2d2;
-  --colorGrey: #bebebe;
-  --colorDarkGrey: #6b6b6b;
-  --color1: rgba(65, 51, 40, 0.6);
-  --color2: rgba(65, 51, 40, 0.8);
-  /* --redFill: #f76060; */
-  /* --redFill: #ff4141; */
-  --redFill: #ff8000;
-  --redFillhover: #ff8000;
-  /* --tColor: #413328; */
-  --tColor: #000;
-  --x1dark: #4b4b4b;
-  --x1grey: #929292;
-  --x1greyLight: #aaaaaa;
-  --x1border: #e0e0e0;
-  --x1greySuperLight: #cccccc;
-  --x1greyDark: #525252;
-  --title1bg: #e6e6e6;
-  /* --orange: #ff6600; */
-  --orange: rgba(255, 51, 0, 1);
-  --LimeGreen: #32cd32;
-  --blueLink: #346ca6;
-  --xGreen: #00994c;
+	--fixMenu: 7000;
+	--workscreen: 1920px;
 
-  --dark2: #252525;
-  --text2: #404040;
-  --text2light: #8d8d8d;
-  /* --header: #404040; */
-  /* --header: rgba(255, 51, 0, 1); */
-  --header: rgba(255, 255, 255, 1);
-  --lmDark: #404040;
+	--colorFFF: #fff;
+	--color000: #000;
+	--colorLightGrey: #f6f6fa;
+	--colorMediumGrey: #d2d2d2;
+	--colorGrey: #bebebe;
+	--colorDarkGrey: #6b6b6b;
+	--color1: rgba(65, 51, 40, 0.6);
+	--color2: rgba(65, 51, 40, 0.8);
+	/* --redFill: #f76060; */
+	/* --redFill: #ff4141; */
+	--redFill: #ff8000;
+	--redFillhover: #ff8000;
+	/* --tColor: #413328; */
+	--tColor: #000;
+	--x1dark: #4b4b4b;
+	--x1grey: #929292;
+	--x1greyLight: #aaaaaa;
+	--x1border: #e0e0e0;
+	--x1greySuperLight: #cccccc;
+	--x1greyDark: #525252;
+	--title1bg: #e6e6e6;
+	/* --orange: #ff6600; */
+	--orange: rgba(255, 51, 0, 1);
+	--LimeGreen: #32cd32;
+	--blueLink: #346ca6;
+	--xGreen: #00994c;
 
-  --l1-dark: #141414;
-  --l1-grey: #4f4f4f;
-  --l1-red: #ff3300;
-  --l1-white: #f2f2f2;
+	--dark2: #252525;
+	--text2: #404040;
+	--text2light: #8d8d8d;
+	/* --header: #404040; */
+	/* --header: rgba(255, 51, 0, 1); */
+	--header: rgba(255, 255, 255, 1);
+	--lmDark: #404040;
+
+	--l1-dark: #141414;
+	--l1-grey: #4f4f4f;
+	--l1-red: #ff3300;
+	--l1-white: #f2f2f2;
 }
 
 .w0 {
-  width: 100%;
-  position: relative;
+	width: 100%;
+	position: relative;
 }
 
 .w1 {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 0 0 0;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 0 0 0;
 }
 .mx15- {
-  margin-left: -15px;
-  margin-right: -15px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 .colorFFF {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 .color000 {
-  color: #000000;
+	color: #000000;
 }
 
 .bgE5E5E5 {
-  background-color: #e5e5e5;
+	background-color: #e5e5e5;
 }
 
 a:hover {
-  text-decoration: none !important;
+	text-decoration: none !important;
 }
 a:focus {
-  text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 .hide_600 {
-  display: block;
-  display: inline-block;
+	display: block;
+	display: inline-block;
 }
 
 .show_600 {
-  display: none;
+	display: none;
 }
 
 .visible {
-  visibility: visible !important;
-  opacity: 1 !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 }
 
 /* .indent0 {
@@ -106,23 +109,23 @@ a:focus {
 } */
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
 
 .clearfix::before {
-  display: none;
+	display: none;
 }
 
 .h20 {
-  height: 1.25rem;
-  width: 100%;
+	height: 1.25rem;
+	width: 100%;
 }
 
 .detailed {
-  color: var(--orange);
-  font-weight: 700;
+	color: var(--orange);
+	font-weight: 700;
 }
 
 input:-webkit-autofill,
@@ -133,61 +136,61 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  transition: all 5000s ease-in-out 0s;
-  background: -webkit-linear-gradient(
-    top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 51%,
-    rgba(255, 255, 255, 1) 100%
-  );
+	-webkit-box-shadow: 0 0 0px 1000px transparent inset;
+	transition: all 5000s ease-in-out 0s;
+	background: -webkit-linear-gradient(
+		top,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 255, 255, 1) 51%,
+		rgba(255, 255, 255, 1) 100%
+	);
 }
 
 .lookCard__inner img {
-  /* image-rendering: optimizeSpeed;
+	/* image-rendering: optimizeSpeed;
   image-rendering: -moz-crisp-edges; */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: optimize-contrast;
-  /* image-rendering: pixelated; */
-  -ms-interpolation-mode: nearest-neighbor;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	/* image-rendering: pixelated; */
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
 .tovarCard__imgImg {
-  /* image-rendering: optimizeSpeed;
+	/* image-rendering: optimizeSpeed;
   image-rendering: -moz-crisp-edges; */
-  /* image-rendering: -webkit-optimize-contrast; */
-  /* image-rendering: optimize-contrast; */
-  /* image-rendering: pixelated; */
-  -ms-interpolation-mode: nearest-neighbor;
+	/* image-rendering: -webkit-optimize-contrast; */
+	/* image-rendering: optimize-contrast; */
+	/* image-rendering: pixelated; */
+	-ms-interpolation-mode: nearest-neighbor;
 
-  image-rendering: -webkit-optimize-contrast; /* Safari 6, UC Browser 9.9*/
+	image-rendering: -webkit-optimize-contrast; /* Safari 6, UC Browser 9.9*/
 
-  image-rendering: -webkit-crisp-edges; /* Safari 7+*/
+	image-rendering: -webkit-crisp-edges; /* Safari 7+*/
 
-  image-rendering: -moz-crisp-edges; /* Firefox 3.6+*/
+	image-rendering: -moz-crisp-edges; /* Firefox 3.6+*/
 
-  image-rendering: -o-crisp-edges; /* Opera 12*/
+	image-rendering: -o-crisp-edges; /* Opera 12*/
 
-  image-rendering: auto; /* Chrome 41+ and Opera 26+*/
+	image-rendering: auto; /* Chrome 41+ and Opera 26+*/
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 .valign-content {
-  display: -moz-inline-box;
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-  zoom: 1;
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	zoom: 1;
 }
 .valign-helper {
-  display: -moz-inline-box;
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  width: 0;
-  /*zoom: 1;*/
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0;
+	/*zoom: 1;*/
 }

@@ -1,0 +1,151 @@
+- var pageTitle = 'Лэндинг 4'
+
+include __const
+include __index2
+include __l1_header
+include __l2
+include __l1a
+include __l1b
+include __l1c
+include __l1d
+include __l1map
+include assets/chunks/__collage/__collage
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+  body
+    .l4topLine__area
+      .l4topLine
+        .l4topLine__leftArea
+          .l4topLine__left
+            .l4logo 
+              a(href="") 
+                //- img(src="assets/img/logo8801000mir.svg", alt="")
+                img(src="assets/img/logo8801000mir.svg", alt="")
+            nav.l4topMenu__area 
+              ul.l4topMenu 
+                li
+                  a(class="l1scrolltoBtn" href="#l1top" data-anchor="#l1top") Про мир
+                li
+                  a(class="l1scrolltoBtn" href="#l1action" data-anchor="#l1action") Акции
+                li
+                  a(class="l1scrolltoBtn" href="#l1map" data-anchor="#l1map") Схема ТК
+                li
+                  a(class="l1scrolltoBtn" href="#l1mag" data-anchor="#l1mag") Магазины
+                li
+                  a(class="l1scrolltoBtn" href="#l1serv" data-anchor="#l1serv") Услуги
+        .l4topLine__rightArea
+          .l4topLine__right
+            .l4cont__area 
+              .l4cont__item.l4cont__item_dt 
+                i.icon-marker1
+                span Саратов, ул. Московская 113-117
+              .l4cont__item 
+                i.icon-phone
+                a(href="tel:+78452759933") +7 (8452) 75 99 33
+            .l4menuButton__area.l4menuButton_areaJS
+              .l4menuButton
+                span
+                span
+                span
+      .l4topLine__mobileMenuOuter
+        .l4topLine__mobileMenuArea
+          nav.l4topLine__mobileMenu
+            ul.l4topMenu 
+              li
+                a(class="l1scrolltoBtn" href="#l1top" data-anchor="#l1top") Про мир
+              li
+                a(class="l1scrolltoBtn" href="#l1action" data-anchor="#l1action") Акции
+              li
+                a(class="l1scrolltoBtn" href="#l1map" data-anchor="#l1map") Схема ТК
+              li
+                a(class="l1scrolltoBtn" href="#l1mag" data-anchor="#l1mag") Магазины
+              li
+                a(class="l1scrolltoBtn" href="#l1serv" data-anchor="#l1serv") Услуги
+          .l4cont__item_mb 
+            i.icon-marker1
+            span Саратов, ул. Московская 113-117
+    .l4firstScreen(id="l1top")
+      .l4firstScreen__leftArea
+        //- .l4video
+        //-   video(width='auto' height='100%' muted='' playsinline='' autoplay='' loop='' preload='auto')
+        //-     source(src='https://bt-l.ru/img/btlvideo/main/video12.11.mp4' type='video/mp4')
+        .l4videoSlider
+          .swiper-container.l4videoSlider-container
+            .swiper-wrapper.l4videoSlider-wrapper
+              .l4videoSlider-slide.swiper-slide
+                .l4videoSlider-slideInner(style="background-image: url(assets/img/collage/010.jpg)")
+              .l4videoSlider-slide.swiper-slide
+                .l4videoSlider-slideInner(style="background-image: url(assets/img/collage/004.jpg)")
+              .l4videoSlider-slide.swiper-slide
+                .l4videoSlider-slideInner(style="background-image: url(assets/img/collage/009.jpg)")
+              .l4videoSlider-slide.swiper-slide
+                .l4videoSlider-slideInner(style="background-image: url(assets/img/collage/006.jpg)")
+              .l4videoSlider-slide.swiper-slide
+                .l4videoSlider-slideInner(style="background-image: url(assets/img/collage/011.jpg)")
+        .l4firstScreen__left
+          .l4tm
+            .l4tm__top 
+              .l4tm__topLeft Торговый комплекс
+              .l4tm__topRight МИР
+            .l4tm__bottom 
+              span Более 10 лет радует жителей Саратова качественным европейским шопингом
+      .l4firstScreen__rightArea
+        .l4firstScreen__right
+          .l4box__outer
+            .l4box__area.l4box__area1 
+              a.l4box.l4box1.l1scrolltoBtn(href="#l1action" data-anchor="#l1action")
+                .l4box__img1 
+                  img(src="assets/img/mirlogowhite.svg", alt="")
+                .l4box__title
+                  span Акции
+            .l4box__area.l4box__area2(style="background-image: url(assets/img/collage/001.jpg)") 
+              a.l4box.l4boxBg.l4box2.l1scrolltoBtn(href="#l1serv" data-anchor="#l1serv")
+                .l4box__title.l4box__titleBg
+                  i.icon-l1-serv
+                  span Услуги
+            .l4box__area.l4box__area3(style="background-image: url(assets/img/collage/002.jpg)") 
+              a.l4box.l4boxBg.l4box3.l1scrolltoBtn(href="#l1mag" data-anchor="#l1mag")
+                .l4box__title.l4box__titleBg
+                  i.icon-l1-shop
+                  span Магазины
+            .l4box__area.l4box__area4 
+              a.l4box.l4box4.l1scrolltoBtn(href="#l1map" data-anchor="#l1map")
+                .l4box__img 
+                  img(src="assets/img/landing2/l4schema.svg", alt="")
+                .l4box__title
+                  span Схема ТК
+    .site__center
+      +l1fTitle
+      +collage
+
+      +l1bTitle
+      +l1actions
+
+      +l1cTitle
+      +l1cServ
+
+      +l1dTitle
+      +l1tabs
+
+      +l1mapTitle
+      +l1map
+
+
+
+
+
+
+
+
+
+    +scripts
+
+
+
+
+
+
+
+  
