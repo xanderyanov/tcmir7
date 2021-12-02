@@ -466,3 +466,19 @@
 		order: 4;
 	}
 }
+
+@media screen and (orientation: landscape) and (max-device-height: 360px) {
+	.l4firstScreen {
+		height: auto;
+	}
+	.l4firstScreen__leftArea {
+		height: auto;
+		padding: 30px 0;
+	}
+	.l4firstScreen__rightArea {
+		height: auto;
+	}
+	.l4box {
+		padding: 10px 0;
+	}
+}

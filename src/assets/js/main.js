@@ -65,6 +65,21 @@ function siteResizeFunction() {
 	headerLanding();
 }
 
+// function fuckingIpad() {
+// 	if ($(window).width() > 768) {
+// 		let firstScreenHeight = vh * 100;
+// 		let l4topMenuHeight = $(".l4topLine__area");
+// 		l4topMenuHeight = l4topMenuHeight.outerHeight();
+// 		let safariFuckingHeight = (firstScreenHeight - l4topMenuHeight) / 2;
+// 		console.log(safariFuckingHeight);
+// 		$(".l4box__areaSafari").css({ height: safariFuckingHeight });
+// 	} else if ($(window).width() >= 600) {
+// 		$(".l4box__areaSafari").css({ height: "100%" });
+// 	} else {
+// 		$(".l4box__areaSafari").css({ height: "50%" });
+// 	}
+// }
+
 function fuckingIpad() {
 	if ($(window).width() > 768) {
 		let firstScreenHeight = vh * 100;
@@ -73,8 +88,13 @@ function fuckingIpad() {
 		let safariFuckingHeight = (firstScreenHeight - l4topMenuHeight) / 2;
 		console.log(safariFuckingHeight);
 		$(".l4box__areaSafari").css({ height: safariFuckingHeight });
-	} else if ($(window).width() >= 600) {
+	} else if (window.matchMedia("(orientation: landscape)").matches && $(window).height() <= 360) {
 		$(".l4box__areaSafari").css({ height: "100%" });
+	} else if ($(window).width() >= 600 && window.matchMedia("(orientation: portrait)").matches) {
+		$(".l4box__areaSafari").css({ height: "100%" });
+	} else if ($(window).width() >= 480 && $(window).height() <= 414) {
+		$(".l4box__areaSafari").css({ height: "100%" });
+		alert("1");
 	} else {
 		$(".l4box__areaSafari").css({ height: "50%" });
 	}
