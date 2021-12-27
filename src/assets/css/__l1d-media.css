@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1440px) {
-	.l1tabs {
+	/* .l1tabs {
 		padding: 0 15px;
-	}
+	} */
 }
 @media screen and (orientation: landscape) and (max-device-width: 1440px) {
 }
@@ -133,7 +133,7 @@
 		width: 90%;
 	}
 	.l1tabs__outer {
-		padding: 20px 0;
+		padding: 20px 15px;
 	}
 	.l1tabsBrands__itemBoxTop {
 		margin-bottom: 10px;

@@ -86,7 +86,7 @@ function fuckingIpad() {
 		let l4topMenuHeight = $(".l4topLine__area");
 		l4topMenuHeight = l4topMenuHeight.outerHeight();
 		let safariFuckingHeight = (firstScreenHeight - l4topMenuHeight) / 2;
-		console.log(safariFuckingHeight);
+		// console.log(safariFuckingHeight);
 		$(".l4box__areaSafari").css({ height: safariFuckingHeight });
 	} else if (window.matchMedia("(orientation: landscape)").matches && $(window).height() <= 360) {
 		$(".l4box__areaSafari").css({ height: "100%" });
@@ -94,7 +94,6 @@ function fuckingIpad() {
 		$(".l4box__areaSafari").css({ height: "100%" });
 	} else if ($(window).width() >= 480 && $(window).height() <= 414) {
 		$(".l4box__areaSafari").css({ height: "100%" });
-		alert("1");
 	} else {
 		$(".l4box__areaSafari").css({ height: "50%" });
 	}

@@ -1,7 +1,4 @@
 @media only screen and (max-width: 1440px) {
-	.l1map__outer {
-		padding: 35px 15px;
-	}
 }
 @media screen and (orientation: landscape) and (max-device-width: 1440px) {
 }
@@ -10,7 +7,7 @@
 	.l1map__outer {
 		max-width: 920px;
 		/* margin: 0 auto; */
-		padding: 25px 0;
+		padding: 25px 15px;
 	}
 }
 

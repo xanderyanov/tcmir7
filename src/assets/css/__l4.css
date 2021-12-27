@@ -651,3 +651,16 @@
 	bottom: -50px;
 	left: -50px;
 } */
+
+.l4box__info {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.l4box__info p {
+	font-size: 14px;
+	line-height: 1.2;
+	color: #fff;
+	margin-bottom: 10px;
+}

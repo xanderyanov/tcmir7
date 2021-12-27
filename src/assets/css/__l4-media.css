@@ -232,6 +232,9 @@
 	.l4box2 .l4box__title:after {
 		background: #ff3300;
 	}
+	.l4box__info p {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -283,6 +286,9 @@
 	}
 	.l4box__area4 {
 		order: 4;
+	}
+	.l4box__img1_hide600 {
+		display: none;
 	}
 }
 
@@ -464,6 +470,9 @@
 	}
 	.l4box__area4 {
 		order: 4;
+	}
+	.l4box__info {
+		display: none;
 	}
 }
 
