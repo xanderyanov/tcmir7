@@ -107,6 +107,10 @@
 	position: relative;
 }
 
+.l1tabsTabs__title_rent {
+	color: var(--orange);
+}
+
 .l1tabsTabs__title:last-child {
 	margin: 0;
 }

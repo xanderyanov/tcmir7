@@ -23,6 +23,18 @@ function l1ScrollTo() {
 		// let topMenuElement = $(".l1__menu li").find("[data-anchor='" + elementClick + "']");
 		let topMenuElement = $(".l4topMenu li").find("[data-anchor='" + elementClick + "']");
 		topMenuElement.parent("li").addClass("active");
+		if ($this.data("tablink") == "32") {
+			$(".l1tabsTabs__title").removeClass("active");
+			$(".l1tabsTabs__widget").hide().removeClass("active");
+
+			$(".l1tabsTabs__titles")
+				.find("[data-tab='" + 32 + "']")
+				.addClass("active");
+			$(".l1tabsTabs__widgets")
+				.find("[data-widget='" + 32 + "']")
+				.fadeIn(400)
+				.addClass("active");
+		}
 	} else {
 		$this.parent("li").addClass("active");
 	}
